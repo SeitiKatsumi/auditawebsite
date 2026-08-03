@@ -44,3 +44,7 @@ next-env.d.ts
 *.tsbuildinfo
 public/images/*-preview.jpg
 package-lock.json
+app/chatgpt-auth.ts
+public/file.svg
+public/globe.svg
+public/window.svg
