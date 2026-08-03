@@ -1,0 +1,12 @@
+node_modules
+.git
+.github
+.next
+dist
+coverage
+.env
+.env.local
+.env.production
+*.log
+logo-preview.jpg
+word-preview.jpg
