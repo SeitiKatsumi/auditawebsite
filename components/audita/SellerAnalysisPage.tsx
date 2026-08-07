@@ -35,7 +35,7 @@ function track(event: string, params: Record<string, unknown> = {}) {
   dataLayer.push({ event, page: "seller_analysis", device: window.innerWidth < 768 ? "mobile" : "desktop", ...params });
 }
 
-function Logo() { return <Image src="/images/audita-wordmark.png" width={1624} height={668} alt="Audita" className="brand-logo" priority />; }
+function Logo() { return <Image src="/images/audita-oficial-branca.png" width={800} height={600} alt="Audita" className="brand-logo" priority />; }
 
 export function SellerAnalysisPage() {
   const [menu, setMenu] = useState(false);
