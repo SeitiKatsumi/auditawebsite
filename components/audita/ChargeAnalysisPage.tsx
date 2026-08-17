@@ -68,13 +68,25 @@ export function ChargeAnalysisPage() {
       </div>
     </header>
 
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${styles.chargeHero}`}>
       <Image src="/images/hero-cobrancas-indevidas.png" fill priority sizes="100vw" alt="Consumidora conferindo faturas e extratos em casa" className={styles.heroImage} />
       <div className={styles.heroShade}/>
       <div className={`${styles.container} ${styles.heroContent}`}>
         <p className={styles.eyebrow}>Caso Itaú · cobranças de seguros sem consentimento</p>
-        <h1>O Itaú cobrou um seguro que você não contratou?<br/><em>Descubra nas suas faturas.</em></h1>
-        <p className={styles.heroText}>Existe um acordo nacional sobre seguros cobrados sem consentimento entre 2011 e 2025. Envie suas faturas e extratos: a Audita encontra os lançamentos, organiza as provas e calcula o que aparece nos documentos.</p>
+        <h1 className={styles.chargeQuestion}>O Itaú cobrou um seguro que você não contratou?</h1>
+        <h2 className={styles.chargeAlert}>A inclusão de seguros sem sua autorização é ILEGAL</h2>
+        <div className={styles.chargeLegal}>
+          <p className={styles.chargeLegalIntro}>(Art. 39, I do CDC) e dá direito à devolução dos valores. Essa prática abusiva foi comprovada na Ação Civil Coletiva nº 5085307-63.2016.8.13.0024 (TJMG) para cobranças ocorridas desde 2011 até a presente data, em que o Itaú se comprometeu a ressarcir os consumidores.</p>
+          <p className={styles.chargeEvidenceLead}>Foi judicialmente confirmado na ação que os seguros abaixo foram debitados sem prévia autorização:</p>
+          <ul className={styles.chargeInsuranceList}>
+            <li><strong>Prestamista</strong><span>Embutido em empréstimos e financiamentos</span></li>
+            <li><strong>Cartão/Bolsa Protegida, Perda e Roubo</strong><span>Tarifas mensais na fatura</span></li>
+            <li><strong>Proteção Financeira / Perda de Renda</strong><span>Cobrada para quitar faturas</span></li>
+            <li><strong>Acidentes Pessoais / Vida</strong><span>Débitos em conta ou cartão</span></li>
+            <li><strong>Tarifas e Pacotes de Terceiros</strong><span>Assistências não solicitadas</span></li>
+          </ul>
+          <p className={styles.chargeCoverage}><strong>Abrangência citada:</strong> cartões Itaú, Itaucard e 133 parceiras, como Casas Bahia, Magalu, Ponto e Marisa.</p>
+        </div>
         <div className={styles.heroActions}>
           <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "hero")}>Verificar minhas cobranças do Itaú <span>→</span></a>
         </div>
