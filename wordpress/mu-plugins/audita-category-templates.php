@@ -22,6 +22,9 @@ add_action('wp_enqueue_scripts', static function (): void {
     wp_enqueue_script('audita-category-template', audita_category_template_asset('charge-analysis.js'), [], (string) filemtime($base . 'charge-analysis.js'), true);
 });
 add_filter('body_class', static function (array $classes): array { if (audita_category_template_for_post()) $classes[] = 'audita-category-template'; return $classes; });
+add_filter('mod_rewrite_rules', static function (string $rules): string {
+    return str_replace(['RewriteBase /conteudo/', 'RewriteRule . /conteudo/index.php'], ['RewriteBase /', 'RewriteRule . /index.php'], $rules);
+});
 add_action('admin_notices', static function (): void {
     $post = get_post(); if (!$post || $post->post_type !== 'post') return;
     $mapped = array_filter(array_keys(audita_category_template_registry()), static fn(string $slug): bool => has_category($slug, $post));
