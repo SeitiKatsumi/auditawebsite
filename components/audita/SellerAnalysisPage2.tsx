@@ -21,9 +21,9 @@ const risks = [
 ];
 
 const faqs = [
-  ["A Audita analisa o imóvel?", "Esta análise é focada no vendedor. Matrícula, situação física e documentação do imóvel precisam de uma verificação própria e complementar."],
+  ["A IA Audita analisa o imóvel?", "Esta análise é focada no vendedor. Matrícula, situação física e documentação do imóvel precisam de uma verificação própria e complementar."],
   ["Apareceu um processo. Devo desistir da compra?", "Não necessariamente. Uma ocorrência precisa ser entendida no contexto. O relatório ajuda você a saber o que perguntar e quando buscar apoio especializado."],
-  ["A análise garante que não vou ter prejuízo?", "Não. Nenhuma consulta promete risco zero. A Audita organiza fontes disponíveis e destaca pontos de atenção para você decidir com mais informação."],
+  ["A análise garante que não vou ter prejuízo?", "Não. Nenhuma consulta promete risco zero. A IA Audita organiza fontes disponíveis e destaca pontos de atenção para você decidir com mais informação."],
   ["O resultado sai na hora?", "O tempo depende da disponibilidade dos órgãos e das fontes consultadas. Você acompanha o andamento e recebe os documentos organizados."],
 ];
 
@@ -32,11 +32,10 @@ function track(event: string, payload: Record<string, unknown> = {}) {
 }
 
 function Logo() {
-  return <Image src="/images/audita-oficial-branca.png" width={800} height={600} alt="Audita" className={styles.logo} priority />;
+  return <Image src="/images/audita-oficial-branca.png" width={800} height={600} alt="IA Audita" className={styles.logo} priority />;
 }
 
 export function SellerAnalysisPage2() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   useEffect(() => { track("view_seller_analysis_lp_v2"); }, []);
@@ -50,18 +49,6 @@ export function SellerAnalysisPage2() {
   }
 
   return <main className={styles.page}>
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <Link href="/analise-de-vendedor-2" aria-label="Audita — início"><Logo /></Link>
-        <nav className={menuOpen ? `${styles.nav} ${styles.navOpen}` : styles.nav} aria-label="Navegação principal">
-          <a href="#riscos" onClick={() => setMenuOpen(false)}>O que pode dar errado</a>
-          <a href="#como-funciona" onClick={() => setMenuOpen(false)}>Como funciona</a>
-          <a href="#duvidas" onClick={() => setMenuOpen(false)}>Dúvidas</a>
-        </nav>
-        <a className={`${styles.button} ${styles.headerButton}`} href={appUrl} onClick={(event) => goToApp(event, "header")}>Analisar vendedor</a>
-        <button className={styles.menuButton} aria-label="Abrir menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><span/><span/><span/></button>
-      </div>
-    </header>
 
     <section className={styles.hero}>
       <Image src="/images/hero-popular.webp" fill priority sizes="100vw" alt="Casal brasileiro conferindo documentos antes de comprar uma casa" className={styles.heroImage} />
@@ -69,7 +56,7 @@ export function SellerAnalysisPage2() {
       <div className={`${styles.container} ${styles.heroContent}`}>
         <p className={styles.eyebrow}>Antes de entregar seu dinheiro</p>
         <h1>Vai comprar um imóvel?<br/><em>Confira quem está vendendo.</em></h1>
-        <p className={styles.heroText}>Uma dívida, um processo ou um documento irregular pode transformar o sonho da casa própria em um problemão. A Audita consulta o CPF do vendedor e mostra os sinais de alerta em linguagem simples.</p>
+        <p className={styles.heroText}>Uma dívida, um processo ou um documento irregular pode transformar o sonho da casa própria em um problemão. A IA Audita consulta o CPF do vendedor e mostra os sinais de alerta em linguagem simples.</p>
         <div className={styles.heroActions}>
           <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "hero")}>Começar auditoria do CPF agora <span>→</span></a>
         </div>
@@ -125,12 +112,12 @@ export function SellerAnalysisPage2() {
         <div className={styles.howIntro}>
           <p className={styles.kicker}>Sem complicação</p>
           <h2>Um CPF entra.<br/><em>O que importa sai organizado.</em></h2>
-          <p>Sem linguagem de cartório e sem dezenas de abas abertas. Você informa o vendedor; a Audita devolve o que merece sua atenção.</p>
+          <p>Sem linguagem de cartório e sem dezenas de abas abertas. Você informa o vendedor; a IA Audita devolve o que merece sua atenção.</p>
           <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "how_it_works")}>Começar minha análise →</a>
         </div>
         <div className={styles.processStack}>
           <article className={styles.processItem}><span>Você informa</span><div><h3>CPF e dados básicos do vendedor</h3><p>O ponto de partida para saber quem está do outro lado da compra.</p></div></article>
-          <article className={`${styles.processItem} ${styles.processAccent}`}><span>A Audita cruza</span><div><h3>Certidões, vínculos e ocorrências</h3><p>As fontes disponíveis são reunidas e lidas como uma história, não como PDFs soltos.</p></div></article>
+          <article className={`${styles.processItem} ${styles.processAccent}`}><span>A IA Audita cruza</span><div><h3>Certidões, vínculos e ocorrências</h3><p>As fontes disponíveis são reunidas e lidas como uma história, não como PDFs soltos.</p></div></article>
           <article className={styles.processItem}><span>Você recebe</span><div><h3>Documentos e sinais de alerta</h3><p>Uma visão clara do que perguntar antes de assinar ou transferir.</p></div></article>
         </div>
       </div>
@@ -141,7 +128,7 @@ export function SellerAnalysisPage2() {
         <div>
           <p className={styles.kicker}>Tudo num só lugar</p>
           <h2>Chega de abrir dezenas de sites e guardar PDF solto.</h2>
-          <p>A Audita organiza tudo e te entrega uma análise completa e resumida, com tudo o que você precisa saber para comprar com tranquilidade.</p>
+          <p>A IA Audita organiza tudo e te entrega uma análise completa e resumida, com tudo o que você precisa saber para comprar com tranquilidade.</p>
         </div>
         <div className={styles.checkList}>
           <div><b>✓</b><span><strong>Dados conferidos</strong><small>Validação das informações básicas</small></span></div>
@@ -162,7 +149,7 @@ export function SellerAnalysisPage2() {
       </div>
     </section>
 
-    <footer className={styles.footer}><div className={styles.container}><div><Logo/><p>Informação clara para uma compra mais segura.</p></div><div><Link href="/politica-de-privacidade">Política de Privacidade</Link><Link href="/termos-de-uso">Termos de Uso</Link><a href="mailto:contato@audita.com.br">Contato</a></div><p>© {new Date().getFullYear()} Audita. Análise informativa. Não substitui assessoria jurídica.</p></div></footer>
+    <footer className={styles.footer}><div className={styles.container}><div><Logo/><p>Informação clara para uma compra mais segura.</p></div><div><Link href="/politica-de-privacidade">Política de Privacidade</Link><Link href="/termos-de-uso">Termos de Uso</Link><a href="mailto:contato@audita.com.br">Contato</a></div><p>© {new Date().getFullYear()} IA Audita. Análise informativa. Não substitui assessoria jurídica.</p></div></footer>
 
     <a className={styles.mobileSticky} href={appUrl} onClick={(event) => goToApp(event, "mobile_sticky")}>Analisar vendedor agora →</a>
   </main>;

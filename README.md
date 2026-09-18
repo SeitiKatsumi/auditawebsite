@@ -1,6 +1,6 @@
-# Audita Website
+# IA Audita Website
 
-Landing page comercial da Análise de Vendedor da Audita, construída em Next.js e preparada para produção via Docker e CapRover.
+Landing page comercial da Análise de Vendedor da IA Audita, construída em Next.js e preparada para produção via Docker e CapRover.
 
 ## Desenvolvimento
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-A aplicação usa a porta `80`. A rota principal é `/analise-de-vendedor`; `/` redireciona para ela.
+A aplicação usa a porta `80`. A home institucional está em `/`, com serviços e links para as LPs `/analise-de-vendedor` e `/analise-cobrancas-indevidas`. A variante `/analise-de-vendedor-2` continua disponível. Todas as páginas compartilham o header institucional.
 
 ## Validação
 
