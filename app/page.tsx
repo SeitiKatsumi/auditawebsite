@@ -12,8 +12,14 @@ const otherServices = [
 export default function Home() {
   return <main className={styles.home}>
     <section className={styles.intro}>
-      <div className={styles.introCopy}><p className={styles.label}>Inteligência artificial. Clareza para você.</p><h1>Por trás de cada documento,<br/><em>uma decisão importante.</em></h1><p className={styles.lead}>Comprar um imóvel. Conferir uma cobrança. Entender seus direitos. A IA Audita organiza informações e traduz documentos em análises que ajudam você a decidir.</p><a href="#servicos" className={styles.button}>Encontre a análise que você precisa ↓</a><p className={styles.caption}>Menos informação espalhada. Mais clareza para seguir em frente.</p></div>
-      <div className={styles.introImage}><Image src="/images/hero-popular.webp" alt="Casal conferindo documentos para uma decisão importante" fill priority sizes="(max-width: 800px) 100vw, 45vw" /><div className={styles.imageNote}><span>Documentos que fazem parte da vida.</span><strong>Informação que faz a diferença.</strong></div></div>
+      <div className={styles.brandSymbol} aria-hidden="true"><Image src="/images/audita-oficial-branca.png" alt="" width={800} height={600} priority /></div>
+      <div className={styles.introCopy}>
+        <p className={styles.label}>IA Audita · Inteligência a serviço das pessoas</p>
+        <h1>Informação complexa.<br/><em>Entendimento simples.</em></h1>
+        <p className={styles.lead}>Uma plataforma, diferentes formas de ajudar. Conectamos inteligência artificial e análise documental para transformar informações dispersas em conhecimento que você pode usar.</p>
+        <div className={styles.introActions}><a href="#sobre" className={styles.button}>Conheça a IA Audita ↓</a><a href="#servicos" className={styles.textLink}>Explore nossas soluções ↗</a></div>
+      </div>
+      <div className={styles.brandStatement}><span>Documentos. Contexto. Clareza.</span><p>Diferentes necessidades.<br/>O mesmo propósito: ajudar você a entender.</p></div>
     </section>
     <section id="servicos" className={styles.services}>
       <div className={styles.sectionHead}><p className={styles.label}>Nossos serviços</p><h2>O que você precisa<br/>entender melhor hoje?</h2><p>Escolha a análise para o seu momento. Conheça o serviço e comece pela plataforma.</p></div>
