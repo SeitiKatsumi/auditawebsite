@@ -3,5 +3,7 @@
 .brand{display:flex;align-items:center;gap:12px;white-space:nowrap;font-size:21px;font-weight:750;letter-spacing:-.04em}.brand img{width:53px;height:40px;object-fit:contain}
 .nav{display:flex;align-items:center;gap:22px;font-size:12px}.nav>a{color:#bac9d9}.nav>a:hover,.nav>a[aria-current]{color:#52ceff}.nav .access{background:#159fec;color:white;padding:12px 17px;border-radius:7px;font-weight:750}
 .toggle{display:none;background:none;border:1px solid #35506b;color:white;padding:8px 12px;border-radius:6px;font:inherit;cursor:pointer}
+.light{background:#fffffffa;color:#071a32;border-color:#e5eef4;backdrop-filter:none}.light .brand img{filter:brightness(0) saturate(100%)}.light .nav>a{color:#253b51}.light .nav>a:hover{color:#007ebc}.light .nav .access{color:#fff;background:#007fbd}.light .toggle{color:#071a32;border-color:#b7cbd8}.light .nav.open{background:#fff;border-color:#dce9f0;box-shadow:none}
 :global(.legal-page){padding-top:125px}
+@media(min-width:1101px){.light .inner{height:104px}.light .brand{font-size:26px}.light .brand img{width:72px;height:54px}.light .nav{font-size:14px;gap:32px}.light .nav .access{padding:17px 22px}}
 @media(max-width:1000px){.inner{height:70px;width:calc(100% - 32px)}.toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:70px;padding:20px 24px;background:#051427;border-bottom:1px solid #284660;align-items:stretch;gap:0;box-shadow:0 20px 35px #0005}.nav.open{display:flex;flex-direction:column}.nav>a{padding:14px 0}.nav .access{margin-top:10px;padding:14px 18px}.brand{font-size:19px}}

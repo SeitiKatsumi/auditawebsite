@@ -1,47 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./page.module.css";
+import type { Metadata } from "next";
+export { default } from "./home-clara/page";
 
-const otherServices = [
-  { title: "Dívidas bancárias", route: "dividas-bancarias", status: "Disponível na plataforma", audience: "Para quem precisa entender como uma dívida cresceu e se preparar para negociar com o banco.", analysis: "Leitura dos extratos para organizar juros, pagamentos, saldo devedor e evolução da dívida ao longo do período documentado.", delivery: "Relatório com estimativas, memória de cálculo e premissas, além de orientações para negociação e possibilidade de avaliação por advogado.", note: "Os valores dependem dos documentos enviados. Uma estimativa de redução não é garantia de desconto ou de acordo." },
-  { title: "Cotas antigas PIS/PASEP", route: "pis-pasep", status: "Disponível na plataforma", audience: "Para titulares e herdeiros de cotas do antigo fundo PIS/PASEP, referentes ao período de 1971 a 1988.", analysis: "Orientação para a consulta no REPIS e organização e conferência dos documentos necessários ao requerimento, conforme a situação do titular ou herdeiro.", delivery: "Documentação organizada e acompanhamento assistido das etapas e dos protocolos informados.", note: "Não é o abono salarial anual. O serviço não consulta automaticamente o saldo nem realiza revisão judicial de desfalques." },
-  { title: "Auditoria de contas de luz", route: "contas-de-luz", status: "Disponível em piloto", audience: "Para consumidores que querem entender os valores da conta de energia e preparar um pedido de revisão.", analysis: "Conferência dos itens da fatura, somas, consumo, bandeiras e tarifas quando existe uma referência compatível para comparação.", delivery: "Resumo da análise e requerimento para baixar. Você apresenta o pedido à distribuidora, registra o protocolo e conta com acompanhamento da equipe.", note: "Não há envio automático à distribuidora nem garantia de restituição. A análise se limita aos dados e referências disponíveis." },
-  { title: "Consulta de imóveis", route: "consulta-imoveis", status: "Em homologação", audience: "Para quem procura informações imobiliárias e quer conhecer os canais de consulta disponíveis na plataforma.", analysis: "Módulo de busca de informações sobre imóveis, com canais e cobertura ainda em validação.", delivery: "A apresentação do módulo está disponível no aplicativo. A disponibilidade de cada consulta depende da conclusão da homologação.", note: "Ainda não anunciamos cobertura nacional, busca irrestrita ou resultado de consulta garantido." },
-];
-
-const upcomingServices = [
-  { title: "Isenção e restituição de IR", status: "Temporariamente indisponível", description: "Módulo previsto para triagem e organização documental, com revisão e acompanhamento da equipe. Não está habilitado para iniciar solicitações no momento." },
-  { title: "Laudo para análise de exames", status: "Em desenvolvimento", description: "Serviço em construção. O escopo, as condições de uso e os entregáveis serão apresentados quando estiver disponível." },
-  { title: "Laudo para atualização de processos judiciais", status: "Em desenvolvimento", description: "Serviço em construção. As funcionalidades e os documentos entregues serão detalhados no lançamento." },
-];
-
-export default function Home() {
-  return <main className={styles.home}>
-    <section className={styles.intro}>
-      <div className={styles.brandSymbol} aria-hidden="true"><Image src="/images/audita-oficial-branca.png" alt="" width={800} height={600} priority /></div>
-      <div className={styles.introCopy}>
-        <p className={styles.label}>IA Audita · Inteligência a serviço das pessoas</p>
-        <h1>Informação complexa.<br/><em>Entendimento simples.</em></h1>
-        <p className={styles.lead}>Uma plataforma, diferentes formas de ajudar. Conectamos inteligência artificial e análise documental para transformar informações dispersas em conhecimento que você pode usar.</p>
-        <div className={styles.introActions}><a href="#sobre" className={styles.button}>Conheça a IA Audita ↓</a><a href="#servicos" className={styles.textLink}>Explore nossas soluções ↗</a></div>
-      </div>
-      <div className={styles.brandStatement}><span>Documentos. Contexto. Clareza.</span><p>Diferentes necessidades.<br/>O mesmo propósito: ajudar você a entender.</p></div>
-    </section>
-    <section id="servicos" className={styles.services}>
-      <div className={styles.sectionHead}><p className={styles.label}>Nossos serviços</p><h2>Diferentes necessidades.<br/>Uma plataforma de apoio.</h2><p>Conheça o que cada serviço analisa, para quem ele foi pensado e o que você recebe. Confira também os limites de atendimento e os módulos em preparação.</p></div>
-      <article className={styles.service}><div className={styles.serviceImage}><Image src="/images/risco-compra-popular.webp" fill sizes="(max-width: 800px) 100vw, 45vw" alt="Documentos e chaves de uma negociação imobiliária" /></div><div className={styles.serviceCopy}><p className={styles.label}>Pessoa física · Distrito Federal</p><h3>Certidões do vendedor</h3><p>Para quem vai comprar um imóvel e precisa reunir a documentação do vendedor. O serviço atual consulta quatro certidões do TJDFT para vendedor pessoa física no Distrito Federal.</p><ul><li>Certidões criminal e cível</li><li>Certidão de falência e recuperação</li><li>Certidão especial cível e criminal</li><li>PDFs oficiais organizados para sua conferência</li></ul><p>O atendimento ainda não inclui diligência nacional, cruzamento de outras fontes ou análise de risco por IA. Esses recursos estão previstos para etapas futuras.</p><Link href="/analise-de-vendedor" className={styles.textLink}>Conhecer a análise de vendedor ↗</Link></div></article>
-<article className={`${styles.service} ${styles.reverse}`}><div className={styles.serviceImage}><Image src="/images/hero-cobrancas-indevidas.png" fill sizes="(max-width: 800px) 100vw, 45vw" alt="Mulher revisando suas faturas e extratos bancários" /></div><div className={styles.serviceCopy}><p className={styles.label}>De olho nas suas faturas</p><h3>Cobranças indevidas<br/>em contas e cartões Itaú</h3><p>Encontrou um seguro que não reconhece? Nossa análise de cobranças indevidas, com foco no caso Itaú, ajuda a localizar lançamentos e organizar os documentos.</p><ul><li>Leitura de faturas e extratos enviados</li><li>Conferência das cobranças por você</li><li>Valores documentados e relatório em PDF</li><li>Preparação documental para os próximos passos, conforme o caso</li></ul><p>Você recebe uma análise dos documentos, não uma promessa de restituição. A plataforma não ajuíza processos automaticamente.</p><Link href="/analise-cobrancas-indevidas" className={styles.textLink}>Conhecer a análise de cobranças ↗</Link></div></article>
-      <div className={styles.catalog}>
-        <div className={styles.catalogIntro}><p className={styles.label}>Conheça também</p><h3>Mais serviços para situações<br/>que fazem parte da sua vida.</h3><p>Os serviços abaixo têm acesso pelo aplicativo, mesmo sem uma página comercial própria. É necessário fazer login para utilizar a plataforma.</p></div>
-        {otherServices.map(service => <article key={service.route} id={service.route} className={styles.catalogItem}>
-          <div><p className={styles.availability}>{service.status}</p><h4>{service.title}</h4><p>{service.audience}</p><a href={`https://app.auditainteligente.com.br/#${service.route}`} className={styles.textLink}>{service.status === "Em homologação" ? "Ver disponibilidade no aplicativo" : "Acessar serviço no aplicativo"} ↗</a></div>
-          <div><dl><dt>O que o serviço analisa</dt><dd>{service.analysis}</dd><dt>O que você recebe</dt><dd>{service.delivery}</dd></dl><p className={styles.limit}>{service.note}</p></div>
-        </article>)}
-      </div>
-      <div className={styles.roadmap}><h3>Serviços em preparação</h3><p>Também fazem parte do catálogo da IA Audita, mas ainda não estão disponíveis para novas solicitações.</p><div className={styles.roadmapItems}>{upcomingServices.map(service => <article key={service.title}><span>{service.status}</span><h4>{service.title}</h4><p>{service.description}</p></article>)}</div></div>
-    </section>
-    <section id="sobre" className={styles.about}><div><p className={styles.label}>Sobre a IA Audita</p><h2>Tecnologia para ler.<br/>Clareza para decidir.</h2></div><div><p>Acreditamos que entender documentos não deveria ser um obstáculo para tomar boas decisões. A IA Audita usa inteligência artificial para organizar informações, facilitar a leitura e destacar o que merece sua atenção.</p><p>Da negociação de um imóvel às cobranças do dia a dia, nosso trabalho é tornar a informação mais acessível — com documentos reunidos e uma visão objetiva dos próximos passos.</p><p className={styles.disclaimer}>A análise depende dos documentos e das fontes disponíveis. Não garante ausência de riscos, redução de dívidas ou ressarcimento e não substitui orientação jurídica quando necessária.</p></div></section>
-    <section className={styles.closing}><p className={styles.label}>Seu próximo passo começa com informação</p><h2>Olhe com mais atenção.<br/>Decida com mais clareza.</h2><a className={styles.button} href="https://app.auditainteligente.com.br/#central-servicos">Conhecer a plataforma ↗</a></section>
-    <footer className={styles.footer}><div><strong>IA Audita</strong><p>Inteligência para as decisões da vida.</p></div><nav aria-label="Links institucionais"><Link href="/#servicos">Serviços</Link><Link href="/politica-de-privacidade">Privacidade</Link><Link href="/termos-de-uso">Termos de uso</Link></nav><small>© {new Date().getFullYear()} IA Audita</small></footer>
-  </main>;
-}
+export const metadata: Metadata = {
+  title: "IA Audita | Clareza para suas decisões",
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
+  openGraph: { images: [{ url: "/images/home-clara-marca.png", width: 1254, height: 1254 }] },
+  twitter: { images: ["/images/home-clara-marca.png"] },
+};
