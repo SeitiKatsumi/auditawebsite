@@ -13,3 +13,9 @@ test('light proposal preserves service navigation, accessible chart and isolated
   const financial = page.slice(page.indexOf('id="contexto-financeiro"'), page.indexOf('id="sobre"'));
   for (const text of ['Analisar minha dívida bancária', 'Conhecer a análise de cobranças no cartão', '#dividas-bancarias', 'laudo em PDF', 'cheque especial PF/MEI', 'não garantem redução ou restituição']) assert.ok(financial.includes(text), text);
 });
+
+test('product banner rotates accessibly between the two existing products', () => {
+  const banner = readFileSync('app/home-clara/ProductBanner.tsx', 'utf8');
+  for (const text of ['8000', 'clearInterval', 'document.hidden', 'prefers-reduced-motion', 'inert={active !==', 'onFocusCapture', 'aria-pressed', '/analise-cobrancas-indevidas']) assert.ok(banner.includes(text), text);
+  assert.ok(existsSync('public/images/home-clara-cobrancas.png'));
+});
