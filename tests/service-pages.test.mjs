@@ -2,6 +2,14 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 const pages = JSON.parse(readFileSync('content/service-pages.json', 'utf8'));
+
+test('shared solutions menu links all twelve services and keeps the mobile menu accessible', () => {
+  const header = readFileSync('components/audita/SiteHeader.tsx', 'utf8');
+  for (const href of [...pages.map(page => '/servicos/' + page.slug), '/analise-de-vendedor', '/analise-cobrancas-indevidas']) assert.ok(header.includes(`"${href}"`), href);
+  assert.ok(header.includes('<summary>Soluções'));
+  assert.ok(header.includes('aria-expanded={open}'));
+  assert.ok(header.includes('closest("a")'), 'Opening the solutions disclosure must not close mobile navigation');
+});
 test('every new service landing is reachable from the home', () => {
   const home = readFileSync('app/home-clara/page.tsx', 'utf8');
   for (const page of pages) assert.ok(home.includes('/servicos/' + page.slug), page.slug);
