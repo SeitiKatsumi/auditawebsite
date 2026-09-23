@@ -304,5 +304,57 @@
         "answer": "Não. A certidão informa o resultado da pesquisa dentro do seu próprio escopo. Confira o tribunal, a natureza da consulta, a data e a finalidade do documento; uma negociação pode exigir outros documentos e avaliação profissional."
       }
     ]
+  },
+  {
+    "slug": "indisponibilidade-de-bens",
+    "title": "Indisponibilidade de bens",
+    "category": "Certidões",
+    "eyebrow": "ANTES DE AVANÇAR NA NEGOCIAÇÃO",
+    "headline": "O vendedor tem alguma restrição?",
+    "accent": "Comece conferindo os dados disponíveis.",
+    "description": "Possíveis registros de indisponibilidade de bens merecem atenção antes de uma negociação. A IA Audita reúne a consulta por CPF ou CNPJ e apresenta os indicadores retornados pelo provedor habilitado.",
+    "status": "Consulta sujeita à disponibilidade do provedor",
+    "cta": "Conhecer disponibilidade",
+    "appHash": "consulta-cnib",
+    "image": "/images/home-clara-marca.png",
+    "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
+    "insight": "Um nome conhecido não dispensa uma conferência bem feita.",
+    "intro": "Uma restrição pode mudar a negociação. Confira antes de avançar.",
+    "benefits": [
+      {
+        "title": "Pesquisa por CPF ou CNPJ",
+        "text": "Direcione a consulta à pessoa ou empresa envolvida na negociação, usando o documento informado e o provedor integrado disponível."
+      },
+      {
+        "title": "Indicadores para conferir",
+        "text": "Veja se a fonte consultada retornou possíveis registros de indisponibilidade e quais informações foram disponibilizadas para análise."
+      },
+      {
+        "title": "Mais contexto para o próximo passo",
+        "text": "Use o resultado para decidir o que precisa ser esclarecido e se é necessário obter uma certidão oficial ou buscar orientação profissional antes de avançar."
+      }
+    ],
+    "documents": [
+      "CPF ou CNPJ correto do vendedor ou da pessoa pesquisada.",
+      "Nome completo ou razão social, quando disponível.",
+      "Finalidade da consulta e relação com a negociação em análise.",
+      "Confirmação de autorização ou base legal para consultar os dados."
+    ],
+    "delivery": "Quando o provedor estiver habilitado, o resultado da pesquisa aparece na plataforma com os indicadores e as informações retornadas pela fonte. A ausência de retorno ou uma falha de consulta é diferente de um resultado sem ocorrências.",
+    "limit": "A consulta depende de provedor habilitado e da cobertura da fonte. O resultado não é uma avaliação completa do patrimônio e não substitui automaticamente uma certidão oficial da CNIB. A análise de uma negociação pode exigir outros documentos.",
+    "questions": [
+      {
+        "question": "Este resultado é uma certidão oficial da CNIB?",
+        "answer": "Não automaticamente. O módulo consulta indicadores por meio de um provedor de dados. Confira se o resultado atende à sua finalidade e se você precisa solicitar uma certidão oficial pelos canais competentes."
+      },
+      {
+        "question": "A pesquisa encontra todos os bens de uma pessoa?",
+        "answer": "Não. O objetivo deste módulo é consultar possíveis indicadores de indisponibilidade, conforme a fonte habilitada. Ele não realiza um levantamento completo de imóveis ou do patrimônio da pessoa pesquisada."
+      },
+      {
+        "question": "E se a consulta não estiver disponível?",
+        "answer": "A execução depende da habilitação e da disponibilidade do provedor. Uma consulta indisponível não autoriza concluir que a pessoa está sem restrições; nesse caso, será necessário verificar os canais oficiais ou a disponibilidade do serviço."
+      }
+    ]
   }
 ]
