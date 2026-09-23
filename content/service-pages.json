@@ -512,5 +512,57 @@
         "answer": "Não. Não há análise clínica disponível nesta página. Para interpretar um exame ou tomar decisões sobre sua saúde, procure o profissional responsável pelo seu atendimento."
       }
     ]
+  },
+  {
+    "slug": "laudos-de-processos-judiciais",
+    "title": "Laudo para atualização de processos judiciais",
+    "category": "Laudos",
+    "eyebrow": "UMA NOVA FRENTE DA IA AUDITA",
+    "headline": "Laudos para processos judiciais.",
+    "accent": "Conheça o que está em preparação.",
+    "description": "A IA Audita está preparando um serviço de laudos para atualização de processos judiciais. O módulo faz parte do catálogo futuro; o escopo, os documentos necessários e a forma de entrega serão informados quando estiver disponível.",
+    "status": "Em desenvolvimento",
+    "cta": "Ver serviços disponíveis",
+    "appHash": "central-servicos",
+    "image": "/images/home-clara-marca.png",
+    "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
+    "insight": "Cada processo tem um contexto. Um novo serviço precisa ter seu alcance bem definido.",
+    "intro": "Uma nova proposta para organizar informações processuais.",
+    "benefits": [
+      {
+        "title": "Proposta identificada no catálogo",
+        "text": "O serviço está previsto entre os módulos da IA Audita. A apresentação separa essa proposta das consultas e análises que já têm um fluxo disponível no aplicativo."
+      },
+      {
+        "title": "Escopo antes da solicitação",
+        "text": "O tipo de laudo, as situações atendidas e os documentos necessários serão informados antes de qualquer disponibilização. Não há promessa de cobertura para um processo específico nesta etapa."
+      },
+      {
+        "title": "Condições de entrega a definir",
+        "text": "A forma de solicitar e receber o resultado será divulgada quando o serviço estiver disponível. Por enquanto, nenhuma entrega ou intervenção processual é realizada por este módulo."
+      }
+    ],
+    "documents": [
+      "Não envie peças ou documentos: o módulo ainda não recebe arquivos.",
+      "A lista de documentos necessários será informada na disponibilização do serviço.",
+      "O escopo e os tipos de processo atendidos ainda não foram divulgados.",
+      "Prazos e providências do seu processo devem continuar sendo acompanhados pelos canais responsáveis."
+    ],
+    "delivery": "Ainda não é possível solicitar ou receber laudos por este módulo. O escopo e a forma de entrega serão apresentados quando o serviço estiver disponível, sem presumir protocolo, movimentação ou atualização automática de processos.",
+    "limit": "Serviço em desenvolvimento, sem recebimento de documentos ou solicitações. Esta página não acompanha prazos, não protocola petições e não altera processos judiciais. Ela não substitui a consulta ao tribunal ou a orientação do profissional responsável pelo caso.",
+    "questions": [
+      {
+        "question": "Já posso solicitar um laudo para meu processo?",
+        "answer": "Não. O módulo ainda está sendo preparado. Os documentos necessários, o escopo e a forma de entrega serão informados quando o serviço estiver disponível."
+      },
+      {
+        "question": "O serviço atualiza meu processo no tribunal?",
+        "answer": "Não. Nesta etapa, não há solicitação de laudos nem atualização de processos pelo módulo. A apresentação no catálogo não significa protocolo de documentos, acompanhamento de prazos ou movimentação no tribunal."
+      },
+      {
+        "question": "Posso enviar agora o número ou os documentos do processo?",
+        "answer": "Não por este módulo. Ele ainda não recebe pedidos ou arquivos. Continue utilizando os canais responsáveis pelo seu caso para consultas, prazos e providências necessárias."
+      }
+    ]
   }
 ]
