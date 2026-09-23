@@ -187,5 +187,71 @@
         "url": "https://www.gov.br/pgfn/pt-br/cidadania-tributaria/por-assunto/imposto-de-renda-pessoa-fisica-irpf-2/isencao-por-molestia-grave"
       }
     ]
+  },
+  {
+    "slug": "revisao-contas-de-luz",
+    "title": "Conta de luz: revisão de cobranças",
+    "category": "Energia",
+    "eyebrow": "Energia · Clareza sobre sua fatura",
+    "headline": "Sua conta de luz",
+    "accent": "explicada além do total.",
+    "description": "Consumo, tarifas, tributos e outros lançamentos: cada parte da fatura conta uma história. Conheça a proposta de auditoria da IA Audita para organizar suas contas e identificar o que merece uma conferência.",
+    "status": "Em piloto",
+    "cta": "Conhecer a auditoria",
+    "appHash": "contas-de-luz",
+    "image": "/images/home-clara-marca.png",
+    "imageAlt": "Composição institucional da IA Audita em azul e branco",
+    "insight": "Uma conta alta é motivo para entender melhor. Sozinha, não comprova uma cobrança indevida.",
+    "intro": "Consumo, tarifas e lançamentos. Cada parte merece uma leitura.",
+    "benefits": [
+      {
+        "title": "Veja a composição da conta",
+        "text": "Separe o valor do consumo dos demais componentes da fatura para compreender o que está sendo cobrado em cada período."
+      },
+      {
+        "title": "Compare o histórico",
+        "text": "Organize contas e comprovantes para observar mudanças de valor, consumo e identificação dos lançamentos que merecem atenção."
+      },
+      {
+        "title": "Prepare uma revisão fundamentada",
+        "text": "Reúna os registros relevantes para esclarecer dúvidas com a distribuidora e avaliar os próximos passos com apoio especializado, quando necessário."
+      }
+    ],
+    "documents": [
+      "Faturas completas dos períodos que você deseja conferir.",
+      "Comprovantes de pagamento das contas relacionadas à revisão.",
+      "Identificação do titular e da unidade consumidora indicada nas faturas.",
+      "Protocolos, respostas da distribuidora e documentos de revisões anteriores, se houver."
+    ],
+    "delivery": "O serviço está em piloto. Consulte o escopo disponível para sua unidade consumidora antes de contratar. A proposta é organizar as faturas e os pontos a esclarecer; eventuais pedidos de revisão ou devolução dependem de apuração específica.",
+    "limit": "Não há restituição automática de ICMS nem garantia de recuperação de valores por um período fixo. O montante da conta, por si só, não comprova direito a devolução. O alcance de qualquer revisão depende das faturas, da regra aplicável, da distribuidora e da análise do caso.",
+    "questions": [
+      {
+        "question": "Uma conta acima de R$ 1.500 dá direito a restituição?",
+        "answer": "Não automaticamente. O valor total da conta não é suficiente para demonstrar uma cobrança indevida. É preciso identificar o lançamento questionado, os documentos e a regra aplicável. A análise não pode prometer restituição com base apenas no valor mensal."
+      },
+      {
+        "question": "O ICMS sobre TUST e TUSD é sempre indevido?",
+        "answer": "Não. No Tema 986, o STJ estabeleceu que TUST e TUSD integram a base de cálculo do ICMS quando cobradas diretamente do consumidor final na fatura, com regras específicas de modulação. A presença dessas tarifas não permite concluir, sozinha, que existe um valor a recuperar."
+      },
+      {
+        "question": "A Lei 14.385/2022 garante um saque individual?",
+        "answer": "A lei disciplina a devolução de tributos recolhidos a maior pelas distribuidoras e atribui competências à ANEEL nesse processo. Ela não deve ser apresentada como garantia genérica de saque individual ou de devolução de dez anos de ICMS. Uma eventual cobrança indevida na sua conta exige verificação própria."
+      }
+    ],
+    "sources": [
+      {
+        "label": "ANEEL · Direitos e deveres na distribuição de energia",
+        "url": "https://www2.aneel.gov.br/cedoc/ren20211000.pdf"
+      },
+      {
+        "label": "Câmara dos Deputados · Lei 14.385/2022",
+        "url": "https://www2.camara.leg.br/legin/fed/lei/2022/lei-14385-27-junho-2022-792896-norma-pl.html"
+      },
+      {
+        "label": "STJ · Tema 986 sobre TUST e TUSD",
+        "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/13032024-TUSD-e-TUST-integram-base-de-calculo-do-ICMS-sobre-energia--define-Primeira-Secao.aspx"
+      }
+    ]
   }
 ]
