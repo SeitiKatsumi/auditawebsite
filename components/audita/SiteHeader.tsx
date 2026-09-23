@@ -8,7 +8,7 @@ import styles from "./SiteHeader.module.css";
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const light = pathname === "/" || pathname === "/home-clara";
+  const light = pathname === "/" || pathname === "/home-clara" || pathname.startsWith("/servicos/");
   return <header className={`${styles.header} ${light ? styles.light : ""}`} onKeyDown={(event) => { if (event.key === "Escape") setOpen(false); }}>
     <div className={styles.inner}>
       <Link href="/" className={styles.brand} onClick={() => setOpen(false)} aria-label="IA Audita — início"><Image src="/images/audita-oficial-branca.png" alt="" width={64} height={48} priority /><span>IA Audita</span></Link>

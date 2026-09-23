@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "dividas-bancarias",
+    "title": "Auditoria de dívidas bancárias",
+    "category": "Seu dinheiro",
+    "eyebrow": "Dívidas bancárias · análise documental",
+    "headline": "Sua dívida tem uma história.",
+    "accent": "Entenda os números antes de negociar.",
+    "description": "Reúna seus extratos. A IA Audita identifica juros e encargos, confere a evolução do saldo e organiza uma análise para apoiar sua conversa com o banco.",
+    "cta": "Analisar minha dívida",
+    "appHash": "dividas-bancarias",
+    "image": "/images/home-clara-cobrancas.png",
+    "imageAlt": "Documento financeiro e lupa para conferir lançamentos",
+    "insight": "Negociar fica mais claro quando você sabe como o saldo foi formado.",
+    "intro": "Não é só olhar o valor final. É entender como ele chegou até ali.",
+    "benefits": [
+      {
+        "title": "O histórico em ordem",
+        "text": "Leitura dos documentos para reunir datas, movimentações, juros e saldos, com referência às informações encontradas nos extratos."
+      },
+      {
+        "title": "Uma comparação explicada",
+        "text": "Cenários comparativos com referências do Banco Central ajudam a entender os encargos. A referência não é um teto legal nem prova automática de abusividade."
+      },
+      {
+        "title": "Base para negociar",
+        "text": "Com documentação suficiente e contratação concluída, o relatório em PDF reúne a análise e orientações para você conduzir a negociação no canal oficial do cobrador."
+      }
+    ],
+    "documents": [
+      "Extratos desde o início do saldo devedor até a data mais recente disponível.",
+      "Todas as páginas, com datas, lançamentos e saldos legíveis.",
+      "Documentos da mesma conta e modalidade, sem omitir períodos.",
+      "PDFs, imagens ou prints. O aplicativo informa os formatos e limites aceitos."
+    ],
+    "delivery": "Envie os documentos e autorize a leitura. A plataforma confere os dados antes de apresentar uma proposta de análise. Com informação suficiente, você segue para a contratação e acessa o relatório de renegociação.",
+    "limit": "A análise automática atual cobre cheque especial PF/MEI e PJ identificado. Outras modalidades exigem metodologia própria. Não há redução garantida, negociação automática com o banco nem processo judicial aberto automaticamente.",
+    "questions": [
+      {
+        "question": "Qualquer dívida pode ser analisada automaticamente?",
+        "answer": "O cálculo automático atual foi estruturado para cheque especial PF/MEI e PJ identificado. Empréstimos, cartões e outras modalidades não devem ser tratados como cheque especial. Confira o enquadramento no aplicativo."
+      },
+      {
+        "question": "E se meus extratos estiverem incompletos?",
+        "answer": "A plataforma informa quando a documentação não permite uma conclusão e orienta a complementar o envio. Um saldo ausente ou uma lacuna não é preenchido com um valor inventado."
+      },
+      {
+        "question": "A IA Audita negocia diretamente com o banco?",
+        "answer": "Não. Você recebe uma base documental para conduzir a negociação pelos canais oficiais. Eventual atuação de advogado depende de solicitação, análise e condições próprias."
+      }
+    ],
+    "sources": [
+      {
+        "label": "STJ · avaliação de juros bancários",
+        "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2023/24032023-Para-Terceira-Turma--contrato-de-mutuo-com-juros-acima-de-niveis-predefinidos--por-si-so--nao-e-abusivo.aspx"
+      }
+    ]
+  }
+]

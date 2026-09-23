@@ -9,7 +9,7 @@ const app = "https://app.auditainteligente.com.br/";
 const groups = [
   { title: "Seu dinheiro", label: "Cobranças indevidas · Dívidas bancárias", icon: "bank", services: [
     { name: "Análise de cobranças indevidas", text: "Leitura de faturas e extratos para localizar seguros e tarifas não reconhecidos, organizar valores e documentos e preparar um relatório técnico em PDF. Conheça o escopo da análise para cartões e contas Itaú.", href: "/analise-cobrancas-indevidas", action: "Conhecer a análise de cobranças" },
-    { name: "Auditoria de dívidas bancárias", text: "Conferência de contratos e extratos, organização de encargos e cálculos e preparação de um Relatório Técnico de Auditoria Financeira para apoiar a renegociação. O resultado depende da documentação e da avaliação de cada caso.", href: `${app}#dividas-bancarias`, action: "Ver no aplicativo" },
+    { name: "Auditoria de dívidas bancárias", text: "Conferência de contratos e extratos, organização de encargos e cálculos e preparação de um Relatório Técnico de Auditoria Financeira para apoiar a renegociação. O resultado depende da documentação e da avaliação de cada caso.", href: "/servicos/dividas-bancarias", action: "Conhecer a auditoria de dívidas" },
   ] },
   { title: "Seus direitos", label: "PIS/PASEP · Isenção de IR", icon: "file-earmark-text", services: [
     { name: "Cotas antigas do PIS/PASEP", text: "Apoio a titulares e herdeiros na consulta de cotas do antigo fundo, de 1971 a 1988. Orientação para a consulta pública gratuita no REPIS, organização de documentos e acompanhamento assistido. Não se trata do abono salarial anual.", href: `${app}#pis-pasep`, action: "Ver no aplicativo" },
