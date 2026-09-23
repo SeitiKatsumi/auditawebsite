@@ -253,5 +253,56 @@
         "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/13032024-TUSD-e-TUST-integram-base-de-calculo-do-ICMS-sobre-energia--define-Primeira-Secao.aspx"
       }
     ]
+  },
+  {
+    "slug": "certidoes-estaduais",
+    "title": "Certidões estaduais",
+    "category": "Certidões",
+    "eyebrow": "DOCUMENTOS JUDICIAIS, COM MAIS CLAREZA",
+    "headline": "A certidão de que você precisa.",
+    "accent": "Um caminho mais organizado para consultar.",
+    "description": "Reunir certidões não precisa começar com uma busca sem direção. Escolha o estado, confira as opções disponíveis e siga o fluxo para consultar documentos de pessoas ou empresas nos tribunais estaduais.",
+    "cta": "Consultar certidões estaduais",
+    "appHash": "consulta-tjdft-pf",
+    "image": "/images/home-clara-marca.png",
+    "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
+    "insight": "Cada tribunal tem suas regras. Saber onde consultar já faz diferença.",
+    "intro": "A documentação certa, para a finalidade certa.",
+    "benefits": [
+      {
+        "title": "Consulta direcionada por estado",
+        "text": "Selecione a UF e encontre as opções de certidões judiciais disponíveis para aquela localidade, sem tratar todos os tribunais como se fossem iguais."
+      },
+      {
+        "title": "Dados reunidos para o pedido",
+        "text": "Os formulários ajudam a organizar as informações exigidas em cada consulta, tanto para pessoa física quanto para pessoa jurídica, conforme o tribunal."
+      },
+      {
+        "title": "Acompanhamento da emissão",
+        "text": "Acompanhe o resultado pelos canais disponíveis e confira os documentos obtidos. Quando uma etapa depender de você, a validação humana continua fazendo parte do processo."
+      }
+    ],
+    "documents": [
+      "CPF ou CNPJ da pessoa ou empresa pesquisada.",
+      "Nome completo ou razão social correspondente ao documento.",
+      "Estado da consulta e tipo de certidão necessário.",
+      "Informações complementares pedidas pelo tribunal, como filiação, data de nascimento ou contato."
+    ],
+    "delivery": "Você acompanha o andamento e confere os resultados ou documentos disponibilizados pela fonte consultada. A emissão e o formato da certidão dependem do tribunal e do tipo de consulta.",
+    "limit": "A disponibilidade varia por tribunal. Alguns fluxos exigem login, CAPTCHA ou outra validação humana. Uma consulta indisponível ou incompleta não equivale a uma certidão negativa, e o serviço não garante emissão imediata em todos os estados.",
+    "questions": [
+      {
+        "question": "Posso consultar uma pessoa ou uma empresa?",
+        "answer": "O módulo reúne opções para CPF e CNPJ, conforme o tribunal e o tipo de certidão. Os campos e as opções disponíveis são apresentados no fluxo da consulta."
+      },
+      {
+        "question": "Todas as certidões são emitidas automaticamente?",
+        "answer": "Não. Os tribunais têm procedimentos diferentes. Algumas consultas podem exigir validação humana, acesso ao portal oficial ou etapas complementares antes da emissão."
+      },
+      {
+        "question": "Uma certidão negativa resolve toda a análise de uma negociação?",
+        "answer": "Não. A certidão informa o resultado da pesquisa dentro do seu próprio escopo. Confira o tribunal, a natureza da consulta, a data e a finalidade do documento; uma negociação pode exigir outros documentos e avaliação profissional."
+      }
+    ]
   }
 ]
