@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const page = servicePages.find(page => page.slug === slug);
   if (!page) notFound();
-  return { title: page.title, description: page.description, alternates: { canonical: `/servicos/${slug}` }, openGraph: { title: `${page.title} | IA Audita`, description: page.description }, twitter: { title: `${page.title} | IA Audita`, description: page.description } };
+  return { title: page.title, description: page.description, alternates: { canonical: `https://auditainteligente.com.br/servicos/${slug}` }, openGraph: { title: `${page.title} | IA Audita`, description: page.description, url: `https://auditainteligente.com.br/servicos/${slug}` }, twitter: { title: `${page.title} | IA Audita`, description: page.description } };
 }
 export default async function ServiceLanding({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
