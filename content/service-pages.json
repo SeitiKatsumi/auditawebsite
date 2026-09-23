@@ -121,5 +121,71 @@
         "url": "https://www.caixa.gov.br/beneficios-trabalhador/Ressarcimento-pis-pasep/Paginas/default.aspx"
       }
     ]
+  },
+  {
+    "slug": "isencao-imposto-de-renda",
+    "title": "Imposto de Renda: isenção por doença grave",
+    "category": "Benefícios e tributos",
+    "eyebrow": "Imposto de Renda · Aposentados e pensionistas",
+    "headline": "Seu benefício merece",
+    "accent": "uma conferência cuidadosa.",
+    "description": "Quem recebe aposentadoria, pensão, reforma ou reserva e tem uma doença prevista em lei pode ter direito à isenção de Imposto de Renda sobre esses rendimentos. Entenda os requisitos e prepare os documentos para avaliar seu caso.",
+    "status": "Temporariamente indisponível",
+    "cta": "Consultar disponibilidade",
+    "appHash": "isencao-ir",
+    "image": "/images/home-clara-marca.png",
+    "imageAlt": "Composição institucional da IA Audita em azul e branco",
+    "insight": "O desconto aparece todo mês. Entender se ele se aplica ao seu benefício faz diferença.",
+    "intro": "O direito começa com a conferência dos requisitos.",
+    "benefits": [
+      {
+        "title": "Entenda os requisitos",
+        "text": "Confira quais tipos de benefício podem ser alcançados pela isenção e por que o diagnóstico precisa se enquadrar nas condições previstas em lei."
+      },
+      {
+        "title": "Organize a comprovação",
+        "text": "Reúna os documentos médicos, a concessão do benefício e os informes de rendimentos para ter uma visão clara do que está disponível e do que falta."
+      },
+      {
+        "title": "Saiba o que pode ser revisado",
+        "text": "Compreenda a importância das datas e das declarações anteriores na avaliação de eventual imposto pago a maior, respeitando os requisitos e os prazos aplicáveis."
+      }
+    ],
+    "documents": [
+      "Documento de concessão da aposentadoria, pensão, reforma ou reserva.",
+      "Laudos e relatórios médicos com as datas e informações pertinentes à condição de saúde.",
+      "Informes de rendimentos e comprovantes de Imposto de Renda retido na fonte.",
+      "Declarações de Imposto de Renda e recibos dos períodos que se pretende avaliar."
+    ],
+    "delivery": "O módulo está temporariamente indisponível. Esta página apresenta sua proposta e os documentos relevantes; consulte a disponibilidade antes de encaminhar dados ou contratar qualquer análise.",
+    "limit": "A isenção não alcança automaticamente salários, trabalho autônomo, aluguel ou todos os rendimentos do contribuinte. O reconhecimento depende do enquadramento e da documentação. A IA Audita não emite laudo médico oficial, não concede isenção e não garante restituição. Questões médicas e tributárias exigem avaliação dos profissionais e órgãos competentes.",
+    "questions": [
+      {
+        "question": "Toda doença grave dá direito à isenção?",
+        "answer": "Não. É necessário verificar se a condição se enquadra nas hipóteses legais e se os rendimentos são elegíveis. Entre as condições previstas estão neoplasia maligna, cardiopatia grave e doença de Parkinson. A conclusão exige análise da documentação, não apenas do nome de um diagnóstico."
+      },
+      {
+        "question": "A isenção vale para todo o meu Imposto de Renda?",
+        "answer": "Não. A regra alcança rendimentos elegíveis de aposentadoria, pensão, reforma ou reserva. Outros valores, como salário, trabalho autônomo e aluguel, continuam sujeitos às regras próprias. A doença pode ter surgido antes ou depois da aposentadoria, e as datas influenciam o início do direito."
+      },
+      {
+        "question": "Posso revisar valores de anos anteriores?",
+        "answer": "Pode haver valores a revisar quando os requisitos já eram atendidos. O procedimento pode envolver retificação das declarações, pedido de restituição e apresentação de comprovantes à Receita Federal. Na via administrativa, a Receita orienta a obtenção de laudo por serviço médico oficial. O período e o valor não são garantidos antecipadamente."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Receita Federal · Isenção por moléstia grave",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/preenchimento/molestia-grave"
+      },
+      {
+        "label": "Receita Federal · Doenças e rendimentos abrangidos",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/imposto-de-renda/dirpf/deducoes/quais-doencas-podem-dar-isencao"
+      },
+      {
+        "label": "PGFN · Condições para isenção",
+        "url": "https://www.gov.br/pgfn/pt-br/cidadania-tributaria/por-assunto/imposto-de-renda-pessoa-fisica-irpf-2/isencao-por-molestia-grave"
+      }
+    ]
   }
 ]
