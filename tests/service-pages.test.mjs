@@ -2,6 +2,10 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 const pages = JSON.parse(readFileSync('content/service-pages.json', 'utf8'));
+test('every new service landing is reachable from the home', () => {
+  const home = readFileSync('app/home-clara/page.tsx', 'utf8');
+  for (const page of pages) assert.ok(home.includes('/servicos/' + page.slug), page.slug);
+});
 test('service landing pages have distinct content, valid assets and honest destinations', () => {
   assert.equal(new Set(pages.map(p => p.slug)).size, pages.length);
   for (const page of pages) {

@@ -33,7 +33,7 @@ export default function ProductBanner() {
       <div className={styles.bannerStage}>
         <div className={styles.bannerSlide} inert={active !== 0} aria-hidden={active !== 0} data-active={active === 0}>
           <div className={styles.split}>
-            <div><p className={styles.eyebrow}>Para quem importa</p><h2>Mais clareza para importar.<br/><em>Mais controle para decidir.</em></h2><p className={styles.lead}>Documentos de importação, classificação fiscal e oportunidades na TIPI, reunidos em uma análise organizada.</p><span className={styles.status}>Em preparação</span><details className={styles.importDetails}><summary>Conheça a proposta</summary><p>Da Invoice e do Packing List à conferência da DI/Duimp: leitura e tradução de documentos, apoio à classificação NCM, pesquisa de benefícios fiscais e Ex-Tarifários e análise preventiva de inconsistências. Integrações e disponibilidade em validação.</p></details></div>
+            <div><p className={styles.eyebrow}>Para quem importa</p><h2>Mais clareza para importar.<br/><em>Mais controle para decidir.</em></h2><p className={styles.lead}>Conferência de documentos, sugestões de NCM e pesquisa de possíveis benefícios, com simulação de II e IPI para revisão humana.</p><span className={styles.status}>Recebimento de documentos ainda não habilitado</span><Link className={styles.bannerCta} href="/servicos/auditoria-de-importacao">Conheça a auditoria de importação <span aria-hidden="true">→</span></Link></div>
             <Image src="/images/home-clara-importacao.png" width={800} height={650} alt="Ilustração de documento de importação, contêiner e globo" className={styles.importArt}/>
           </div>
         </div>
