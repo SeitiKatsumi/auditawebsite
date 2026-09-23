@@ -460,5 +460,57 @@
         "answer": "O recebimento ainda não está habilitado em produção. Quando disponível, o fluxo prevê Invoice, Packing List ou ficha técnica em PDF, PNG, JPEG ou XML, com até quatro arquivos, dez megabytes por arquivo e vinte megabytes por atendimento. Confira a disponibilidade antes de iniciar."
       }
     ]
+  },
+  {
+    "slug": "laudos-de-exames",
+    "title": "Laudo para análise de exames",
+    "category": "Laudos",
+    "eyebrow": "UMA NOVA FRENTE DA IA AUDITA",
+    "headline": "Análise de exames.",
+    "accent": "Um serviço em desenvolvimento.",
+    "description": "A IA Audita está preparando um módulo dedicado à análise de exames. Esta página apresenta o serviço previsto no catálogo; os tipos de exame, o escopo e a forma de entrega serão informados quando ele estiver disponível.",
+    "status": "Em desenvolvimento",
+    "cta": "Ver serviços disponíveis",
+    "appHash": "central-servicos",
+    "image": "/images/home-clara-marca.png",
+    "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
+    "insight": "Informações de saúde pedem cuidado. Disponibilidade e limites precisam estar claros.",
+    "intro": "Um novo módulo, com disponibilidade e limites claros.",
+    "benefits": [
+      {
+        "title": "Um espaço dedicado ao serviço",
+        "text": "Esta página reúne a apresentação do módulo previsto para que você saiba o que está em desenvolvimento, sem confundi-lo com uma análise já disponível."
+      },
+      {
+        "title": "Escopo a ser informado",
+        "text": "Os exames aceitos e o tipo de análise ainda serão definidos e comunicados. Nesta etapa, não há promessa de diagnóstico, avaliação clínica ou interpretação de um exame específico."
+      },
+      {
+        "title": "Entrega com condições claras",
+        "text": "A forma de solicitação e de entrega será informada quando o serviço for disponibilizado. Nenhuma solicitação ou documento é recebido por esta página."
+      }
+    ],
+    "documents": [
+      "Não envie exames: o módulo ainda não recebe arquivos.",
+      "A relação de exames aceitos será informada quando o serviço estiver disponível.",
+      "Os documentos e formatos necessários ainda não foram divulgados.",
+      "Continue acompanhando seus exames com o profissional de saúde responsável."
+    ],
+    "delivery": "Ainda não há emissão ou entrega de laudos por este módulo. O escopo, a forma de análise, os documentos necessários e as condições de entrega serão apresentados quando o serviço estiver disponível.",
+    "limit": "Serviço em desenvolvimento, sem recebimento de exames ou solicitações. Esta página não oferece diagnóstico, interpretação clínica ou orientação de tratamento e não substitui o atendimento de um profissional de saúde.",
+    "questions": [
+      {
+        "question": "Já posso enviar um exame para análise?",
+        "answer": "Não. O módulo ainda está em desenvolvimento e não recebe arquivos ou solicitações de laudo. Esta página serve apenas para apresentar o serviço previsto."
+      },
+      {
+        "question": "Quais exames serão aceitos?",
+        "answer": "A lista de exames, os formatos de documentos e o tipo de análise ainda não foram divulgados. Essas informações serão apresentadas quando o serviço estiver disponível."
+      },
+      {
+        "question": "Posso usar essa página para entender um resultado médico?",
+        "answer": "Não. Não há análise clínica disponível nesta página. Para interpretar um exame ou tomar decisões sobre sua saúde, procure o profissional responsável pelo seu atendimento."
+      }
+    ]
   }
 ]
