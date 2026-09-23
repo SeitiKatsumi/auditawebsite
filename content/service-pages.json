@@ -356,5 +356,57 @@
         "answer": "A execução depende da habilitação e da disponibilidade do provedor. Uma consulta indisponível não autoriza concluir que a pessoa está sem restrições; nesse caso, será necessário verificar os canais oficiais ou a disponibilidade do serviço."
       }
     ]
+  },
+  {
+    "slug": "consulta-de-imoveis",
+    "title": "Consulta de imóveis",
+    "category": "Imóveis",
+    "eyebrow": "INFORMAÇÃO IMOBILIÁRIA, NA FONTE CERTA",
+    "headline": "Antes de decidir sobre um imóvel,",
+    "accent": "conheça melhor os registros.",
+    "description": "A IA Audita reúne opções de pesquisa e documentos imobiliários pelos serviços do ONR / RI Digital. Conheça a proposta para localizar referências de matrículas, conferir vínculos e solicitar documentos conforme a cobertura disponível.",
+    "status": "Integração em homologação",
+    "cta": "Conhecer disponibilidade",
+    "appHash": "consulta-imoveis",
+    "image": "/images/home-clara-marca.png",
+    "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
+    "insight": "Uma referência de imóvel é o começo da pesquisa, não a conclusão.",
+    "intro": "Pesquise referências. Confira vínculos. Entenda os documentos.",
+    "benefits": [
+      {
+        "title": "Localize referências de matrículas",
+        "text": "A Pesquisa Prévia busca referências associadas a CPF ou CNPJ nas bases participantes. A cobertura depende do estado, dos registros disponíveis e da habilitação do serviço."
+      },
+      {
+        "title": "Aprofunde a conferência do vínculo",
+        "text": "A Pesquisa Qualificada permite encaminhar a conferência da relação atual do pesquisado com a matrícula ao cartório competente, quando o serviço estiver habilitado."
+      },
+      {
+        "title": "Direcione o pedido de certidão",
+        "text": "Com matrícula e cartório identificados, o módulo prevê a solicitação e o acompanhamento de certidão digital pelos serviços integrados disponíveis."
+      }
+    ],
+    "documents": [
+      "CPF ou CNPJ e nome da pessoa ou empresa pesquisada, conforme a operação.",
+      "Estado e, quando necessário, município do imóvel.",
+      "Número da matrícula e cartório para operações que exigem esses dados.",
+      "Autorização ou base legal e finalidade legítima para a pesquisa."
+    ],
+    "delivery": "A proposta do módulo é reunir o andamento e os resultados dos serviços habilitados, incluindo referências de matrículas e documentos disponibilizados pelo ONR / RI Digital. A integração ainda está em homologação; consulte a disponibilidade antes de contar com uma emissão.",
+    "limit": "A execução depende de credenciamento, habilitação do convênio, cobertura e disponibilidade do ONR / RI Digital. Uma busca não garante localizar todos os imóveis e não substitui a conferência da matrícula atualizada. Não há promessa de resultado imediato ou de aprovação de uma negociação.",
+    "questions": [
+      {
+        "question": "Já posso fazer uma consulta automática pelo site?",
+        "answer": "A integração está em homologação e depende de credenciamento e habilitação dos serviços. Abra o módulo para conhecer as opções e verificar a disponibilidade; não considere a consulta automática garantida nesta etapa."
+      },
+      {
+        "question": "Qual a diferença entre pesquisa e certidão?",
+        "answer": "Uma pesquisa ajuda a localizar referências ou a conferir o vínculo com uma matrícula, conforme sua modalidade. A certidão é o documento emitido pelo Registro de Imóveis e tem escopo próprio. Uma pesquisa preliminar não substitui sua conferência."
+      },
+      {
+        "question": "A pesquisa por CPF ou CNPJ encontra todos os imóveis?",
+        "answer": "Não há essa garantia. O resultado depende das bases participantes, da cobertura territorial, da qualidade dos dados e do serviço consultado. A ausência de referências não deve ser tratada como prova de inexistência de patrimônio."
+      }
+    ]
   }
 ]
