@@ -408,5 +408,57 @@
         "answer": "Não há essa garantia. O resultado depende das bases participantes, da cobertura territorial, da qualidade dos dados e do serviço consultado. A ausência de referências não deve ser tratada como prova de inexistência de patrimônio."
       }
     ]
+  },
+  {
+    "slug": "auditoria-de-importacao",
+    "title": "Auditoria do Imposto de Importação",
+    "category": "Imposto de Importação",
+    "eyebrow": "MAIS CLAREZA PARA QUEM IMPORTA",
+    "headline": "Documentos de importação conferidos.",
+    "accent": "Decisões fiscais mais bem informadas.",
+    "description": "Invoice, Packing List, características do produto e enquadramento fiscal precisam conversar entre si. Conheça a auditoria assistida que organiza os documentos, destaca divergências e prepara a pesquisa de NCMs e a simulação de II e IPI para revisão humana.",
+    "status": "Recebimento de documentos ainda não habilitado",
+    "cta": "Conhecer disponibilidade",
+    "appHash": "auditoria-importacao",
+    "image": "/images/home-clara-importacao.png",
+    "imageAlt": "Ilustração de contêiner azul, documento e globo em fundo claro",
+    "insight": "Uma diferença nos documentos merece atenção antes de virar uma decisão fiscal.",
+    "intro": "Mais consistência nos documentos. Mais contexto na decisão fiscal.",
+    "benefits": [
+      {
+        "title": "Invoice e Packing List, lado a lado",
+        "text": "A leitura organiza os itens para que você confira vínculos, quantidades e informações divergentes. Os originais são preservados, e correções ou escolhas de origem ficam registradas à parte."
+      },
+      {
+        "title": "Pesquisa com fontes para revisar",
+        "text": "Sugestões de NCM são confrontadas com a tabela pública, e possíveis benefícios são pesquisados com referências oficiais. São subsídios para conferência, não uma classificação fiscal definitiva."
+      },
+      {
+        "title": "Simulação de II e IPI com revisão",
+        "text": "Após a revisão fiscal dos dados, alíquotas e condições, o módulo prepara uma simulação e um relatório com fontes e histórico para apoiar a decisão."
+      }
+    ],
+    "documents": [
+      "Invoice com a descrição e os valores dos produtos.",
+      "Packing List para conferir os itens e as informações da remessa.",
+      "Ficha técnica ou documentação que detalhe características, fabricante e modelo.",
+      "Dados da operação que serão conferidos na revisão, como data e valor aduaneiro."
+    ],
+    "delivery": "O fluxo prevê relatório em PDF preliminar ou revisado, com informações dos produtos, fontes consultadas e histórico do atendimento. A entrega depende da conferência documental e das etapas de revisão aplicáveis. O recebimento de documentos ainda não está habilitado em produção; consulte a disponibilidade do módulo.",
+    "limit": "A simulação cobre somente II e IPI ad valorem, não o custo total de importação. Não inclui ICMS, PIS/Cofins, taxas ou todos os regimes especiais. O serviço não registra DI/Duimp, não substitui a revisão fiscal e não garante benefício, economia ou desembaraço. Ex-tarifário de II não significa IPI zero.",
+    "questions": [
+      {
+        "question": "A IA Audita define a NCM do meu produto?",
+        "answer": "O módulo organiza os dados e apresenta sugestões fundamentadas para conferência. A classificação não é definitiva: características insuficientes ou divergências precisam ser corrigidas, e o enquadramento passa por revisão humana."
+      },
+      {
+        "question": "A simulação mostra tudo o que vou pagar na importação?",
+        "answer": "Não. Ela cobre II e IPI ad valorem a partir dos dados e das alíquotas revisados. Outros tributos, taxas, despesas e regimes especiais não compõem esse cálculo, que não representa o custo total da operação."
+      },
+      {
+        "question": "Já posso enviar os documentos?",
+        "answer": "O recebimento ainda não está habilitado em produção. Quando disponível, o fluxo prevê Invoice, Packing List ou ficha técnica em PDF, PNG, JPEG ou XML, com até quatro arquivos, dez megabytes por arquivo e vinte megabytes por atendimento. Confira a disponibilidade antes de iniciar."
+      }
+    ]
   }
 ]
