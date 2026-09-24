@@ -63,15 +63,19 @@ export function ChargeAnalysisPage() {
         <h2 className={styles.chargeAlert}>A inclusão de seguros sem sua autorização é ILEGAL</h2>
         <div className={styles.chargeLegal}>
           <p className={styles.chargeLegalIntro}>(Art. 39, I do CDC) e dá direito à devolução dos valores. Essa prática abusiva foi comprovada na Ação Civil Coletiva nº 5085307-63.2016.8.13.0024 (TJMG) para cobranças ocorridas desde 2011 até a presente data, em que o Itaú se comprometeu a ressarcir os consumidores.</p>
-          <p className={styles.chargeEvidenceLead}>Foi judicialmente confirmado na ação que os seguros abaixo foram debitados sem prévia autorização:</p>
+          <p className={styles.chargeEvidenceLead}>Confira estes seguros e descrições de lançamentos nas suas faturas e extratos e verifique se houve contratação:</p>
           <ul className={styles.chargeInsuranceList}>
             <li><strong>Prestamista</strong><span>Embutido em empréstimos e financiamentos</span></li>
             <li><strong>Cartão/Bolsa Protegida, Perda e Roubo</strong><span>Tarifas mensais na fatura</span></li>
             <li><strong>Proteção Financeira / Perda de Renda</strong><span>Cobrada para quitar faturas</span></li>
             <li><strong>Acidentes Pessoais / Vida</strong><span>Débitos em conta ou cartão</span></li>
-            <li><strong>Tarifas e Pacotes de Terceiros</strong><span>Assistências não solicitadas</span></li>
+            <li><strong>Tarifas e Pacotes de Terceiros</strong><span>Assistências não solicitadas</span><span>Envio de mensagem automática</span></li>
+            <li><strong>Seguro de AP premiado</strong><span>Seguro AP, AP Premiado ou Seguro Acidentes Pessoais</span></li>
+            <li><strong>Ligue bloqueio</strong><span>Confira também variações de grafia dessa descrição</span></li>
+            <li><strong>Renda premiada master</strong><span>Renda premiada, Renda premiada master ou Seguro Renda</span></li>
+            <li><strong>Acidente pessoal premiado</strong><span>Acidentes pessoais ou Seg. Acidente Pessoal</span></li>
           </ul>
-          <p className={styles.chargeCoverage}><strong>Abrangência citada:</strong> cartões Itaú, Itaucard e 133 parceiras, como Casas Bahia, Magalu, Ponto e Marisa.</p>
+          <p className={styles.chargeCoverage}><strong>Abrangência citada:</strong> cartões Itaú, Itaucard e <a href={appUrl} onClick={(event) => goToApp(event, "partners")} style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>133 parceiras</a>, como Casas Bahia, Magalu, Ponto e Marisa, etc.</p>
         </div>
         <div className={styles.heroActions}>
           <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "hero")}>Verificar minhas cobranças do Itaú <span>→</span></a>
@@ -185,16 +189,16 @@ export function ChargeAnalysisPage() {
     <section className={styles.how} id="como-funciona">
       <div className={`${styles.container} ${styles.howLayout}`}>
         <div className={styles.howIntro}>
-          <p className={styles.kicker}>Como recuperar o controle</p>
-          <h2>Envie o extrato.<br/><em>A IA Audita encontra.</em><br/>Você decide.</h2>
-          <p>Em poucos passos, a IA Audita transforma faturas espalhadas em uma análise clara do que foi cobrado e do que merece contestação.</p>
+          <p className={styles.kicker}>Como conseguir o extrato</p>
+          <h2>Precisa dos extratos?<br/><em>Veja onde solicitar.</em></h2>
+          <p>Para solicitar a emissão ou uma cópia dos extratos e faturas históricas do Itaú, utilize os canais oficiais do banco. Escolha a opção mais prática para você e reúna os documentos para a análise.</p>
           <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "how_it_works")}>Analisar faturas e extratos →</a>
         </div>
         <div className={styles.processStack}>
-          <article className={styles.processItem}><span>Envie</span><div><h3>Suas faturas ou extratos do Itaú</h3><p>PDF, imagem, CSV ou TXT. Reúna vários meses na mesma análise para enxergar a recorrência.</p></div></article>
-          <article className={`${styles.processItem} ${styles.processAccent}`}><span>Analise</span><div><h3>A IA Audita encontra seguros, proteções e cobranças recorrentes</h3><p>Cada ocorrência permanece ligada ao arquivo, à data e ao valor em que foi encontrada.</p></div></article>
-          <article className={styles.processItem}><span>Confirme</span><div><h3>Diga o que você contratou — e o que não reconhece</h3><p>Você responde “reconheço”, “não reconheço” ou “não sei” para cada lançamento.</p></div></article>
-          <article className={styles.processItem}><span>Receba</span><div><h3>Cálculo documental, relatório e próximos passos</h3><p>A IA Audita organiza tudo o que você precisa saber para avaliar a contestação com clareza.</p></div></article>
+          <article className={styles.processItem}><span>Aplicativo</span><div><h3>Aplicativo Itaú ou Cartões</h3><p>Acesse a área de extratos ou faturas e procure as opções de consultar e exportar em PDF. Os nomes dos menus podem variar conforme o aplicativo.</p></div></article>
+          <article className={`${styles.processItem} ${styles.processAccent}`}><span>Pelo site</span><div><h3>Internet Banking Itaú</h3><p>Acesse sua conta no site do Itaú. Na área de Conta Corrente ou Cartões, consulte os extratos e faturas mês a mês.</p></div></article>
+          <article className={styles.processItem}><span>Presencial</span><div><h3>Agência bancária</h3><p>Solicite os documentos presencialmente ao gerente ou consulte as opções disponíveis no caixa eletrônico.</p></div></article>
+          <article className={styles.processItem}><span>Telefone</span><div><h3>SAC Itaú: <a href="tel:08007280728">0800 728 0728</a></h3><p>Canal de atendimento geral. Peça orientação para solicitar a emissão ou cópia dos extratos e faturas históricas.</p></div></article>
         </div>
       </div>
     </section>
@@ -238,9 +242,56 @@ export function ChargeAnalysisPage() {
       <div className={styles.container}>
         <Logo />
         <p>Seu histórico pode ter a resposta</p>
-        <h2>Não aceite o “sempre foi assim”.<br/>Confira o que o Itaú cobrou.</h2>
+        <h2>VEJA SE VOCÊ TEM VALORES A RECEBER.<br/>14 ANOS DE COBRANÇAS INDEVIDAS ITAÚ</h2>
         <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "final")}>Verificar minhas faturas agora →</a>
         <small>O resultado depende dos documentos enviados e da sua confirmação.</small>
+      </div>
+    </section>
+
+    <section className={`${styles.agreementSection} ${styles.practicalGuide}`} id="guia-pratico" aria-labelledby="guide-title">
+      <div className={styles.container}>
+        <p className={styles.kicker}>Relatório técnico e guia prático</p>
+        <h2 id="guide-title">Entenda o acordo.<br/>Organize os documentos.<br/>Avalie os próximos passos.</h2>
+        <h3>O processo coletivo MPMG / Idec</h3>
+        <p>A ação coletiva movida pelo Ministério Público de Minas Gerais e pelo Idec contra o Itaú resultou em um acordo com regras de prevenção, transparência e ressarcimento de cobranças de seguros sem consentimento ou mantidas após o cancelamento. O enquadramento depende dos requisitos e das provas de cada caso.</p>
+        <div className={styles.agreementGrid}>
+          <article>
+            <h3>Acordo administrativo</h3>
+            <p>Segundo o MPMG, os requisitos incluem evidências da cobrança, reclamação registrada até 18/12/2025 e ausência de ressarcimento anterior. São admitidos canais do banco e canais oficiais de reclamação.</p>
+            <p>Não atender a esse recorte não elimina automaticamente outras possibilidades de restituição. O pedido deve ser avaliado conforme a data, os documentos e as regras aplicáveis.</p>
+            <a className={styles.sourceLink} href={officialCaseUrl} target="_blank" rel="noreferrer">Ver as condições oficiais do acordo ↗</a>
+          </article>
+          <article>
+            <h3>Ação judicial individual</h3>
+            <p>A via judicial permite discutir eventual devolução em dobro, juros, correção monetária e indenização por danos morais e materiais, quando houver fundamento. Esses pedidos não são concedidos automaticamente.</p>
+            <p>A jurisprudência orienta a análise, mas cada processo depende de provas e das circunstâncias concretas. Não há garantia de ganho percentual em relação ao acordo.</p>
+            <a className={styles.sourceLink} href="#jurisprudencia">Entender o contexto dos julgados →</a>
+          </article>
+        </div>
+        <div className={styles.agreementReport}>
+          <h3>Auditoria financeira e organização das provas</h3>
+          <p>Faturas e extratos permitem identificar débitos, datas, descrições e valores. A IA Audita organiza os lançamentos confirmados por você em um relatório técnico para apoiar a contestação e a avaliação profissional. A apuração de juros e da evolução de dívidas faz parte do <Link className={styles.sourceLink} href="/servicos/dividas-bancarias">serviço de auditoria financeira</Link>; cálculos de restituição em dobro e de perdas e danos dependem de análise específica.</p>
+        </div>
+        <div className={styles.guideStepsLayout}>
+          <article className={styles.guideSteps}>
+            <h3>Passo a passo para buscar seus valores</h3>
+            <ol>
+              <li><strong>Obtenha os extratos e as faturas históricas.</strong> Solicite os documentos do período das cobranças e guarde protocolos de reclamação e cancelamento.</li>
+              <li><strong>Organize a análise técnica.</strong> Confira os lançamentos, identifique o que não reconhece e reúna os documentos que sustentam a contestação.</li>
+              <li><strong>Avalie as medidas cabíveis.</strong> Busque orientação de advogado ou da Defensoria Pública para analisar prazos, custos, riscos e a possibilidade de uma ação individual.</li>
+            </ol>
+          </article>
+          <article>
+            <h3>Como conseguir os extratos no Itaú</h3>
+            <ul>
+              <li><strong>Aplicativo Itaú / Cartões:</strong> procure a área de extratos ou faturas e as opções de consultar e exportar em PDF.</li>
+              <li><strong>Internet Banking:</strong> consulte os extratos mês a mês na área de Conta Corrente ou Cartões.</li>
+              <li><strong>Agência bancária:</strong> solicite ao gerente ou consulte as opções do caixa eletrônico.</li>
+              <li><strong>SAC Itaú:</strong> <a className={styles.textLink} href="tel:08007280728">0800 728 0728</a>. Peça orientação para obter cópias dos documentos.</li>
+            </ul>
+          </article>
+        </div>
+        <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "practical_guide")}>Iniciar a análise dos meus extratos →</a>
       </div>
     </section>
 
