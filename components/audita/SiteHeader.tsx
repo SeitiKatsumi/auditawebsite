@@ -6,16 +6,18 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./SiteHeader.module.css";
 
 const solutions = [
+  ["Assistente IA", "https://app.auditainteligente.com.br/chat"],
   ["Cobranças indevidas", "/analise-cobrancas-indevidas"],
   ["Dívidas bancárias", "/servicos/dividas-bancarias"],
   ["PIS/PASEP", "/servicos/pis-pasep"],
   ["Isenção de Imposto de Renda", "/servicos/isencao-imposto-de-renda"],
   ["Certidões estaduais", "/servicos/certidoes-estaduais"],
   ["Indisponibilidade de bens", "/servicos/indisponibilidade-de-bens"],
-  ["Análise de vendedor", "/analise-de-vendedor"],
+  ["Certidões do vendedor", "/analise-de-vendedor"],
   ["Consulta de imóveis", "/servicos/consulta-de-imoveis"],
   ["Auditoria de importação", "/servicos/auditoria-de-importacao"],
   ["Revisão de contas de luz", "/servicos/revisao-contas-de-luz"],
+  ["Consulta de imóveis", "/servicos/consulta-de-imoveis"],
   ["Laudos de exames", "/servicos/laudos-de-exames"],
   ["Laudos de processos judiciais", "/servicos/laudos-de-processos-judiciais"],
 ];

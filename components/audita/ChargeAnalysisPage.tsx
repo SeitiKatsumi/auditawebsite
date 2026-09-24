@@ -107,6 +107,47 @@ export function ChargeAnalysisPage() {
       <p className={`${styles.container} ${styles.caseCaution}`}>O enquadramento no acordo depende de requisitos e provas. A análise da IA Audita não garante ressarcimento nem substitui avaliação jurídica.</p>
     </section>
 
+    <section className={styles.agreementSection} id="acordo-e-via-judicial" aria-labelledby="agreement-title">
+      <div className={styles.container}>
+        <p className={styles.kicker}>Acordo e via judicial</p>
+        <h2 id="agreement-title">Entenda as limitações do acordo e as possibilidades da via judicial.</h2>
+        <figure className={styles.agreementClause}>
+          <blockquote>9.1.1. As condições para o consumidor ter direito ao ressarcimento são: 1. ter evidências da cobrança de seguro não contratado ou cobrado após o pedido de cancelamento; 2. ter evidência de que reclamou pelo seguro não contratado ou não cancelado após o pedido de cancelamento, nos canais oficiais de reclamação, entre os quais o SINDEC, consumidor.gov.br, Pró-Consumidor, Ministérios Públicos, Defensorias Públicas, IDEC, reclame aqui e outros, <mark>apesar de haver contrato assinado; e 3. a reclamação ser posterior à 13/06/2011 e anterior à assinatura do presente instrumento por todas as partes. Em todos os casos, o consumidor não pode ter sido ressarcido até então.</mark></blockquote>
+          <figcaption><em>Sub cláusula 9.1.1 do Instrumento de Acordo de  Transação, assinado em 17.12.2025 TJMG, destacada a condição do item 3</em></figcaption>
+        </figure>
+        <div className={styles.agreementGrid}>
+          <article>
+            <h3>Quais são os requisitos do acordo?</h3>
+            <p>O acordo firmado entre o Itaú, o Procon-MPMG e o Idec estabelece condições específicas para o ressarcimento administrativo.</p>
+            <ul>
+              <li><strong>Evidências da cobrança:</strong> documentos que mostrem seguro não contratado ou cobranças mantidas após o pedido de cancelamento.</li>
+              <li><strong>Reclamação registrada:</strong> segundo o MPMG, o acordo contempla situações entre 13/06/2011 e 18/12/2025 e exige reclamação até 18/12/2025, nos canais admitidos.</li>
+              <li><strong>Ausência de ressarcimento anterior:</strong> o consumidor não pode ter sido ressarcido pelos mesmos valores.</li>
+            </ul>
+            <p>Não atender aos requisitos desse acordo não significa perder automaticamente qualquer possibilidade de restituição. Quem identificar uma cobrança pode registrar reclamação, pedir cancelamento e avaliar os caminhos disponíveis para o seu caso.</p>
+            <a className={styles.sourceLink} href={officialCaseUrl} target="_blank" rel="noreferrer">Consultar os requisitos divulgados pelo MPMG ↗</a>
+          </article>
+          <article>
+            <h3>Por que avaliar a via judicial?</h3>
+            <p>Quando o pedido não é resolvido administrativamente, a ação individual pode permitir a discussão das cobranças e de eventuais prejuízos. Conforme os fatos, as provas e os requisitos legais, podem ser avaliados:</p>
+            <ol>
+              <li><strong>Devolução em dobro (repetição do indébito):</strong> pode ser cabível para valores pagos indevidamente, observadas as condições do CDC, a hipótese de engano justificável e a jurisprudência aplicável.</li>
+              <li><strong>Juros e correção monetária:</strong> os índices e os termos iniciais dependem da natureza do pedido e das regras aplicáveis ao caso.</li>
+              <li><strong>Danos morais, perdas e danos:</strong> eventuais pedidos exigem fundamentos e avaliação das circunstâncias; a indenização não decorre automaticamente de toda cobrança indevida.</li>
+            </ol>
+            <p>O STJ possui entendimento sobre a devolução em dobro por cobrança contrária à boa-fé objetiva. A aplicação depende, entre outros fatores, da data da cobrança e das particularidades do processo.</p>
+            <a className={styles.sourceLink} href="https://processo.stj.jus.br/jurisprudencia/externo/informativo/?livre=%40CNOT%3D020568" target="_blank" rel="noreferrer">Consultar o entendimento do STJ ↗</a>
+          </article>
+        </div>
+        <div className={styles.agreementReport}>
+          <h3>O primeiro passo é documentar o que foi cobrado.</h3>
+          <p>Com suas faturas e extratos, a IA Audita identifica possíveis débitos indevidos e organiza datas, valores e documentos em um relatório técnico. Esse material apoia a avaliação profissional sobre restituição, eventuais encargos e próximos passos. A análise de juros e da evolução de dívidas possui um <Link className={styles.sourceLink} href="/servicos/dividas-bancarias">serviço específico de auditoria financeira</Link>.</p>
+          <p>A decisão de ingressar com uma ação deve considerar provas, prazos, custos e riscos. Não há garantia de indenização nem de ganho percentual em relação ao acordo.</p>
+          <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "agreement")}>Analisar minhas faturas e extratos →</a>
+        </div>
+      </div>
+    </section>
+
     <section className={styles.warning} id="o-que-procurar">
       <div className={styles.container}>
         <div className={styles.centerHeading}>
@@ -171,6 +212,15 @@ export function ChargeAnalysisPage() {
           <div><b>✓</b><span><strong>Cálculo do valor documentado</strong><small>Somente do que você marcou como não reconhecido</small></span></div>
           <div><b>✓</b><span><strong>Relatório técnico em PDF</strong><small>Material para revisar, consultar e compartilhar</small></span></div>
         </div>
+      </div>
+    </section>
+
+    <section className={styles.agreementSection} id="jurisprudencia" aria-labelledby="jurisprudence-title">
+      <div className={styles.container}>
+        <p className={styles.kicker}>Cobranças indevidas nos tribunais</p>
+        <h2 id="jurisprudence-title">Jurisprudência consolidada e milhares de julgados nos Tribunais de todo Brasil</h2>
+        <p>O contexto é o de ações sobre cobranças e descontos realizados pelo Banco Itaú sem autorização dos clientes, discutidas nos Tribunais e nas Turmas Recursais. Os pedidos podem envolver a restituição em dobro dos valores pagos, acrescida de juros e correção monetária, além de indenização por danos morais.</p>
+        <p>Cada decisão deve ser analisada conforme os fatos, as provas e o entendimento aplicado ao processo. A devolução em dobro e a indenização por danos morais não são automáticas, e decisões anteriores não garantem o mesmo resultado em outros casos.</p>
       </div>
     </section>
 
