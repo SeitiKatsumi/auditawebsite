@@ -14,7 +14,6 @@ const solutions = [
   ["Certidões estaduais", "/servicos/certidoes-estaduais"],
   ["Indisponibilidade de bens", "/servicos/indisponibilidade-de-bens"],
   ["Certidões do vendedor", "/analise-de-vendedor"],
-  ["Consulta de imóveis", "/servicos/consulta-de-imoveis"],
   ["Auditoria de importação", "/servicos/auditoria-de-importacao"],
   ["Revisão de contas de luz", "/servicos/revisao-contas-de-luz"],
   ["Consulta de imóveis", "/servicos/consulta-de-imoveis"],

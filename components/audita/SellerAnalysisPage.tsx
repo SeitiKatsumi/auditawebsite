@@ -1,25 +1,29 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { FormEvent, MouseEvent, useEffect, useMemo, useState } from "react";
+import { MouseEvent, useEffect, useMemo } from "react";
+import styles from "./SellerAnalysisPage.module.css";
 
-const risks = [
-  ["01", "⚖", "Processos e ocorrências", "Registros que merecem avaliação antes do avanço da negociação."],
-  ["02", "▤", "Pendências documentais", "Documentos ausentes, inconsistentes ou que exigem atenção adicional."],
-  ["03", "◇", "Riscos relacionados ao vendedor", "Pontos que podem impactar a segurança da compra."],
-  ["04", "▱", "Informações dispersas", "Certidões e documentos reunidos em uma análise estruturada."],
+const documents = [
+  { title: "Vendedor", icon: "person", subtitle: "A situação de quem vende também importa.", description: "Consultamos certidões e documentos do vendedor para identificar possíveis ocorrências que podem impactar a negociação, como ações cíveis, fiscais, trabalhistas, protestos e outras informações públicas.", items: ["Certidões cíveis e distribuição de ações", "Débitos fiscais: federal, estadual e municipal", "Ações trabalhistas e outras obrigações", "Protestos e restrições em cadastros públicos", "Outros pontos de atenção, conforme o caso"] },
+  { title: "Imóvel", icon: "house", subtitle: "A regularidade do imóvel é parte da segurança.", description: "A diligência complementar considera a documentação do imóvel, sua situação registral e eventuais ônus, além de informações relacionadas ao condomínio, quando aplicável.", items: ["Matrícula e situação registral no cartório", "Ônus, gravames e indisponibilidades", "Ações envolvendo o imóvel", "Situação do condomínio, quando aplicável", "Outros documentos relevantes, conforme o caso"] },
 ];
-const steps = ["Informe os dados", "Consultamos as fontes", "Organizamos os documentos", "A IA apoia a leitura", "Você recebe o parecer"];
-const stepIcons = ["⌨", "⌕", "▱", "✦", "✓"];
-const benefits = [["◎","Antecipe pontos de atenção"],["◷","Economize tempo"],["⇄","Reduza a assimetria de informação"],["▤","Centralize a documentação"],["◌","Facilite o alinhamento profissional"],["◇","Decida com mais confiança"]];
-const plans = [
-  { slug:"essencial", icon:"▤", name:"IA Audita Essencial", price:"99", description:"Uma primeira verificação para negociações em fase inicial.", features:["1 vendedor pessoa física","Validação de nome e CPF","Principais certidões disponíveis","Leitura inicial com IA","Resumo executivo","Relatório e documentos em PDF"], cta:"Fazer análise essencial", note:"Uma primeira visão antes de avançar." },
-  { slug:"completa", icon:"◎", name:"IA Audita Completa", price:"199", description:"O melhor equilíbrio para quem está próximo de assinar ou pagar.", features:["Tudo do plano Essencial","Consulta ampliada de certidões","Leitura aprofundada e cruzamentos","Mapa visual dos riscos","Recomendações objetivas","Relatório completo e prioridade"], cta:"Escolher análise completa", note:"Mais profundidade antes de assinar ou pagar.", featured:true },
-  { slug:"protecao-360", icon:"◇", name:"IA Audita Proteção 360", price:"299", description:"Camada adicional de profundidade para negociações complexas.", features:["Tudo do plano Completa","Até 2 vendedores na negociação","Cruzamento consolidado","Revisão técnica especializada","Atualização em até 30 dias","Atendimento com prioridade máxima"], cta:"Quero a Proteção 360", note:"Maior profundidade para decisões de maior valor." },
+const journey = [
+  ["Consultar.", "Informe os dados do vendedor e do imóvel. A IA Audita consulta certidões e documentos em fontes oficiais, conforme o escopo disponível no aplicativo."],
+  ["Entender.", "Receba informações organizadas, com os documentos encontrados e os pontos de atenção em uma linguagem clara e objetiva."],
+  ["Aprofundar.", "Se houver algo que exija investigação, avalie uma análise complementar, com leitura de processos e documentos adicionais, conforme o seu caso."],
 ];
-const comparison = [["Validação de nome e CPF","Sim","Sim","Sim"],["Consulta de certidões","Principais","Ampliada","Ampliada"],["Leitura com IA","Inicial","Aprofundada","Avançada"],["Cruzamento de informações","—","Sim","Avançado"],["Número de vendedores","1","1","Até 2"],["Revisão especializada","—","—","Sim"],["Atualização das consultas","—","—","Até 30 dias"],["Atendimento prioritário","—","Sim","Prioridade máxima"]];
+const scenarios = [
+  ["Imóvel urbano", "Apartamento, casa ou terreno", "Matrícula atualizada e titularidade; ônus e restrições; cadastro e débitos de IPTU; regularidade da construção e uso do solo. Em condomínios, também é importante conferir as obrigações da unidade."],
+  ["Imóvel rural", "Terra, documentação e limites", "Além da matrícula e do histórico de titularidade, a análise pode envolver CCIR, ITR, CAR, dados do SIGEF/INCRA, limites da área e eventuais restrições ambientais. Os cadastros precisam ser avaliados em conjunto."],
+  ["Imóvel na planta", "A compra começa antes da entrega", "Avalie a incorporadora e a SPE, o registro da incorporação, o memorial descritivo, as licenças e as condições do contrato. Histórico de processos e documentação da obra podem exigir uma verificação específica."],
+  ["Situações especiais", "Cada negociação pede um olhar próprio", "Herança, leilão, usufruto, ocupação, áreas da União ou divergências de registro exigem documentos e cuidados próprios. Identifique essas condições no início para definir o alcance da diligência."],
+];
+function Icon({name}: {name: string}) { return <Image src={`/icons/${name}.svg`} alt="" width={28} height={28} aria-hidden="true" />; }
 const faqs = [
+  ["As certidões estão incluídas no plano?", "As certidões de TJ, TRT e Receita Federal fazem parte da consulta prevista no plano, conforme sua abrangência e a disponibilidade das fontes. Quando surgem processos ou pontos que exigem aprofundamento, o assinante pode solicitar a Due Diligence Avançada. Eventuais taxas de cartório são informadas antes da emissão dos documentos adicionais."],
+  ["Por que verificar empresas vinculadas ao vendedor?", "O vendedor pode participar de empresas com processos ou obrigações que merecem avaliação. Identificar o vínculo não significa que ele responde pessoalmente por todas as dívidas: é necessário analisar o tipo de responsabilidade, os processos e as decisões existentes."],
+  ["Quanto custa e qual é o prazo?", "O escopo, os valores e as condições são apresentados no aplicativo. A disponibilidade das certidões, os prazos dos órgãos e eventuais custos de cartório podem variar conforme o caso."],
   ["O que é a Análise de Vendedor?", "É uma diligência que reúne certidões e documentos oficiais, organiza as informações e destaca ocorrências relevantes para apoiar a decisão de compra."],
   ["A IA Audita analisa o imóvel?", "Este serviço é focado no vendedor. A análise do imóvel é uma etapa complementar e deve considerar matrícula, condição física, urbanística e demais documentos aplicáveis."],
   ["A existência de um processo impede a venda?", "Não necessariamente. Uma ocorrência precisa ser compreendida dentro de seu contexto, natureza, fase e possível impacto na negociação."],
@@ -38,11 +42,8 @@ function track(event: string, params: Record<string, unknown> = {}) {
 function Logo() { return <Image src="/images/audita-oficial-branca.png" width={800} height={600} alt="IA Audita" className="brand-logo" priority />; }
 
 export function SellerAnalysisPage() {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const utms = useMemo(() => typeof window === "undefined" ? {} : Object.fromEntries(new URLSearchParams(window.location.search).entries()), []);
   const appUrl = "https://app.auditainteligente.com.br/";
-  const planUrl = (plan: string) => `${appUrl}?plano=${plan}`;
   const goToApp = (event: MouseEvent<HTMLAnchorElement>, plan?: string) => {
     event.preventDefault();
     const query = new URLSearchParams(window.location.search);
@@ -51,68 +52,86 @@ export function SellerAnalysisPage() {
   };
   useEffect(() => { track("view_seller_analysis_lp", { ...utms }); }, [utms]);
 
-  async function submit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault(); if (status === "loading") return;
-    const form = event.currentTarget; const data = Object.fromEntries(new FormData(form));
-    setStatus("loading"); track("submit_lead_form", { profile: data.profile, step: "single" });
-    try {
-      const response = await fetch("/api/leads", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...data, utms, source: document.referrer || "direct", page: location.pathname, submittedAt: new Date().toISOString() }) });
-      if (!response.ok) throw new Error(); setStatus("success"); form.reset(); track("lead_form_success", { profile: data.profile });
-    } catch { setStatus("error"); track("lead_form_error"); }
-  }
-
   const schema = { "@context":"https://schema.org", "@graph":[{ "@type":"Service", name:"Análise de Vendedor de Imóvel", provider:{"@type":"Organization",name:"IA Audita"}, areaServed:"BR", serviceType:"Diligência imobiliária com inteligência artificial", description:"Consulta e organização de certidões e documentos para apoiar a análise de riscos relacionados ao vendedor de um imóvel." },{ "@type":"FAQPage", mainEntity:faqs.map(([name,text])=>({"@type":"Question",name,acceptedAnswer:{"@type":"Answer",text}})) }] };
 
-  return <main>
+  return <main className={styles.page}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-
-    <section className="hero"><Image src="/images/hero.webp" fill priority sizes="100vw" alt="Profissional usando tablet em ambiente de análise digital" className="hero-image" />
-      <div className="hero-overlay"/><div className="container hero-content">
-        <p className="eyebrow"><span/> Diligência imobiliária com inteligência artificial</p>
-        <h1>Antes de comprar um imóvel, analise <em>quem está vendendo.</em></h1>
-        <p className="hero-copy">A IA Audita consulta certidões oficiais, organiza os documentos e utiliza inteligência artificial para identificar ocorrências, riscos e pontos de atenção relacionados ao vendedor.</p>
-        <div className="hero-actions"><a className="btn" href={appUrl} onClick={(event) => { track("click_hero_cta", { position: "hero" }); goToApp(event); }}>Analisar o vendedor agora <b>→</b></a><a className="btn-link" href="#como-funciona" onClick={() => track("click_how_it_works")}>Entender como funciona ↓</a></div>
-        <p className="microcopy">Mais clareza antes de assinar, pagar ou avançar na negociação.</p>
-        <div className="trust-row">{["Certidões oficiais", "Documentos organizados", "Análise assistida por IA", "Parecer objetivo"].map(x => <span key={x}>✓ {x}</span>)}</div>
-      </div>
+    <section className={styles.hero}>
+      <Image src="/images/seller-diligence-hero.webp" alt="Casa contemporânea ao entardecer e exemplo ilustrativo de relatório de análise do vendedor" fill priority sizes="100vw" className={styles.heroImage} />
+      <div className={styles.container}><div className={styles.heroCopy}>
+        <p className={styles.eyebrow}>Diligência imobiliária com inteligência artificial</p>
+        <h1>Antes de comprar um imóvel, conheça <span>quem está vendendo.</span></h1>
+        <p>Certidões, documentos e pontos de atenção organizados para você decidir com mais clareza.</p>
+        <div className={styles.actions}><a className={styles.button} href={appUrl} onClick={(event)=>{track("click_hero_cta");goToApp(event);}}>Analisar o vendedor <Icon name="arrow-right" /></a><a href="#analise">O que será consultado</a></div>
+        <small>Mais segurança na negociação, com informação.</small>
+      </div></div>
     </section>
-
-    <section className="section tension"><div className="container"><div className="section-heading narrow"><p className="kicker">O risco que costuma ficar fora do radar</p><h2>O imóvel pode parecer seguro.<br/><span>A negociação pode não ser.</span></h2><p>Uma compra imobiliária envolve muito mais do que localização, preço e estado de conservação. Situações relacionadas ao vendedor precisam ser identificadas antes da decisão.</p></div>
-      <div className="risk-grid">{risks.map(([n,icon,t,d]) => <article className="risk-card" key={n}><span className="card-number">{n}</span><div className="line-icon" aria-hidden="true">{icon}</div><h3>{t}</h3><p>{d}</p></article>)}</div>
-      <p className="legal-note">A existência de uma ocorrência não significa, isoladamente, impedimento para a negociação. Cada situação deve ser analisada dentro de seu contexto.</p>
+    <section className={styles.section} id="analise"><div className={styles.container}>
+      <p className={styles.eyebrow}>Mais contexto para uma boa decisão</p>
+      <h2>Escritura assinada <span>não encerra a análise.</span></h2>
+      <p className={styles.intro}>A compra de um imóvel envolve mais do que o bem. A situação de quem vende e a regularidade do imóvel fazem parte da decisão. A IA Audita organiza essas informações de forma clara, para você avaliar com tranquilidade.</p>
+      <div className={styles.documentGrid}>{documents.map(doc=><article key={doc.title}>
+        <div className={styles.documentTitle}><div className={styles.icon}><Icon name={doc.icon}/></div><div><h3>{doc.title}</h3><p>{doc.subtitle}</p></div></div>
+        <p>{doc.description}</p><h4>Principais documentos analisados</h4>
+        <ul className={styles.checklist}>{doc.items.map(item=><li key={item}>{item}</li>)}</ul>
+      </article>)}</div>
+      <p className={styles.note}>As consultas dependem da localidade, da disponibilidade das fontes e do escopo contratado. A análise do imóvel pode ser complementar à consulta do vendedor.</p>
     </div></section>
-
-    <section className="section analysis" id="analise"><div className="container split"><div><p className="kicker">O que a IA Audita analisa</p><h2>Informações dispersas transformadas em uma <span>visão clara da negociação.</span></h2><p>A IA Audita percorre uma jornada de validação, consulta, organização e interpretação para apresentar os pontos mais relevantes relacionados ao vendedor.</p><div className="feature-list">{["Validação dos dados", "Consulta de certidões", "Organização dos documentos", "Leitura inteligente", "Classificação dos pontos de atenção", "Parecer objetivo"].map((x,i)=><div key={x}><b>0{i+1}</b><span>{x}</span></div>)}</div></div>
-      <div className="analysis-visual"><Image src="/images/analysis.webp" fill sizes="(max-width: 800px) 100vw, 50vw" alt="Especialista analisando documentos e indicadores digitais" /><div className="floating-card fc-one"><b>DOCUMENTOS</b><span>Organizados e validados</span></div><div className="floating-card fc-two"><b>ANÁLISE</b><span>Pontos de atenção</span></div></div>
+    <section className={styles.section} id="como-funciona"><div className={styles.container}>
+      <p className={styles.eyebrow}>Como funciona</p><h2>Consultar. Entender. Aprofundar.</h2>
+      <p className={styles.intro}>Um processo simples para você ter mais clareza antes de avançar na negociação.</p>
+      <ol className={styles.journey}>{journey.map(([title,description],i)=><li key={title}><span className={styles.number}>{i+1}</span><div><h3>{title}</h3><p>{description}</p></div>{i<2&&<Icon name="arrow-right"/>}</li>)}</ol>
     </div></section>
-
-    <section className="section workflow" id="como-funciona"><div className="container"><div className="section-heading"><p className="kicker">Da consulta à decisão</p><h2>Uma jornada simples para uma decisão mais informada.</h2></div><div className="steps">{steps.map((s,i)=><div className="step" key={s}><span><b aria-hidden="true">{stepIcons[i]}</b><small>{String(i+1).padStart(2,"0")}</small></span><h3>{s}</h3><p>{["Dados básicos do vendedor iniciam a diligência.","Acessamos certidões e fontes disponíveis.","PDFs oficiais ficam centralizados.","Ocorrências são estruturadas e contextualizadas.","Um resultado objetivo apoia seus próximos passos."][i]}</p></div>)}</div><a className="btn centered" href={appUrl} onClick={(event)=>goToApp(event)}>Iniciar minha análise →</a></div></section>
-
-    <section className="section report" id="relatorio"><div className="container split report-split"><div className="report-copy"><p className="kicker">O que você recebe</p><h2>Um parecer que transforma documentos em <span>próximos passos.</span></h2><p>Veja os dados principais, documentos consultados, ocorrências encontradas e observações que merecem atenção — tudo em uma leitura objetiva.</p><ul><li>Resumo executivo da análise</li><li>Documentos oficiais centralizados</li><li>Pontos de atenção classificados</li><li>Observações e recomendações de verificação</li></ul></div><div className="report-ui" onMouseEnter={() => track("view_report_preview")}><div className="report-top"><Logo/><span>ANÁLISE DO VENDEDOR</span></div><div className="score"><div className="ring">A</div><div><small>VISÃO GERAL</small><strong>Análise concluída</strong><p>Documentos organizados para avaliação</p></div></div><div className="report-row"><span>✓ Dados validados</span><b className="tag ok">Verificado</b></div><div className="report-row"><span>⌕ Ocorrências</span><b className="tag attention">Atenção</b></div><div className="report-row"><span>▤ Certidões oficiais</span><b className="tag info">Organizado</b></div><p className="report-disclaimer">A classificação apoia a leitura e não representa garantia jurídica ou recomendação automática.</p></div></div></section>
-
-    <section className="section benefits"><div className="container"><div className="section-heading"><p className="kicker">Clareza que muda a conversa</p><h2>Mais controle antes de assumir um compromisso de alto valor.</h2></div><div className="benefit-grid">{benefits.map(([icon,b],i)=><article key={b}><div className="feature-icon" aria-hidden="true">{icon}</div><span>0{i+1}</span><h3>{b}</h3><p>{["Perceba situações relevantes antes da assinatura.","Evite buscas manuais e documentos espalhados.","Entre na negociação sabendo o que precisa perguntar.","Consulte os materiais em um único fluxo.","Compartilhe uma base clara com quem orienta você.","Avance com informações organizadas e contexto."][i]}</p></article>)}</div></div></section>
-
-    <section className="section comparison"><div className="container"><div className="section-heading"><p className="kicker">Uma diligência mais inteligente</p><h2>Da busca fragmentada à visão estruturada.</h2></div><div className="compare-grid"><article><span className="compare-label">PROCESSO CONVENCIONAL</span>{["Buscas manuais em diferentes fontes", "PDFs soltos e difíceis de acompanhar", "Termos técnicos sem contexto", "Dificuldade para priorizar pontos relevantes"].map(x=><p key={x}>× {x}</p>)}</article><article className="audita-way"><span className="compare-label">COM A IA AUDITA</span>{["Jornada centralizada de consulta", "Documentos oficiais organizados", "Leitura assistida por inteligência artificial", "Parecer objetivo para apoiar a decisão"].map(x=><p key={x}>✓ {x}</p>)}</article></div></div></section>
-
-    <section className="section pricing" id="planos" onMouseEnter={() => track("view_pricing_section")}><div className="container"><div className="section-heading"><p className="kicker">Planos de análise</p><h2>Escolha o nível de profundidade ideal para sua negociação.</h2><p>Da verificação inicial à análise mais completa, a IA Audita transforma documentos técnicos em informações mais claras para a sua decisão.</p><div className="one-time">Pagamento único por análise · Sem mensalidade</div></div>
-      <div className="pricing-grid">{plans.map((plan)=><article className={plan.featured ? "price-card featured" : "price-card"} key={plan.slug}>{plan.featured && <div className="popular">MAIS ESCOLHIDO</div>}<div className="plan-icon" aria-hidden="true">{plan.icon}</div><h3>{plan.name}</h3><p className="plan-description">{plan.description}</p><div className="price"><small>R$</small><strong>{plan.price}</strong><span>pagamento único</span></div><ul>{plan.features.map(feature=><li key={feature}>✓ {feature}</li>)}</ul><a className={plan.featured ? "btn plan-button" : "btn plan-button outline"} href={planUrl(plan.slug)} onClick={(event)=>{track(`select_${plan.slug.replace("-","_")}_plan`,{plan:plan.slug,value:Number(plan.price),position:"pricing"});goToApp(event,plan.slug);}}>{plan.cta} →</a><p className="plan-note">{plan.note}</p></article>)}</div>
-      <div className="plan-comparison"><div className="comparison-head"><b>Recurso</b><b>Essencial</b><b>Completa</b><b>Proteção 360</b></div>{comparison.map(([feature,...values])=><div className="comparison-row" key={feature}><strong>{feature}</strong>{values.map((value,i)=><span key={`${feature}-${i}`} data-plan={["Essencial","Completa","Proteção 360"][i]}>{value}</span>)}</div>)}</div>
-      <div className="pricing-help"><div><h3>Não sabe qual análise escolher?</h3><p>Para a maior parte das negociações, recomendamos a IA Audita Completa. Para múltiplos vendedores ou maior complexidade, escolha a Proteção 360.</p></div><a className="btn outline" href={appUrl} onClick={(event)=>{track("request_plan_help");goToApp(event);}}>Preciso de ajuda para escolher →</a></div>
-      <p className="pricing-legal">As consultas dependem da disponibilidade das fontes, dos órgãos responsáveis e das informações fornecidas. A análise apoia a decisão, mas não garante ausência integral de riscos nem substitui avaliação jurídica quando necessária.</p>
+    <section className={styles.section} id="certidoes-e-due-diligence"><div className={styles.container}>
+      <p className={styles.eyebrow}>Da consulta inicial à auditoria aprofundada</p>
+      <h2>Certidões no plano.<br/><span>Mais profundidade quando necessário.</span></h2>
+      <p className={styles.intro}>A consulta inicial reúne certidões de TJ, TRT e Receita Federal. O resultado orienta o próximo passo: entender os documentos ou investigar as ocorrências com uma Due Diligence Avançada.</p>
+      <div className={styles.scenarios}>
+        <article><h3>Sem processos identificados</h3><h4>Certidões inclusas no plano</h4><p>Você recebe as certidões disponíveis e as informações organizadas para avaliar a negociação. O resultado se refere às fontes, à abrangência e à data consultadas.</p><p className={styles.note}>Não encontrar processos não garante ausência de riscos. A documentação do imóvel e os demais cuidados da compra continuam importantes.</p></article>
+        <article><h3>Com processos identificados</h3><h4>Alerta da IA e solicitação de análise avançada</h4><p>A IA sinaliza as ocorrências para que o assinante possa solicitar a Due Diligence Avançada. Após a definição do escopo e o pagamento das taxas de cartório aplicáveis, são emitidos os documentos adicionais para uma auditoria mais profunda.</p><p className={styles.note}>Um alerta não é um impedimento automático à compra. A natureza e a fase de cada processo precisam ser avaliadas.</p></article>
+      </div>
+      <div className={styles.actions}><a className={styles.button} href={appUrl} onClick={event=>goToApp(event)}>Consultar meu plano <Icon name="arrow-right"/></a><a href="#cnpj-vinculado">E se o vendedor tiver uma empresa?</a></div>
     </div></section>
-
-    <section className="section profiles"><div className="container split"><div className="profiles-image"><Image src="/images/professionals.webp" fill sizes="(max-width: 800px) 100vw, 50vw" alt="Profissionais avaliando dados de uma negociação imobiliária" /></div><div><p className="kicker">Para quem decide e para quem orienta</p><h2>Uma base comum para conversas mais seguras.</h2><div className="profile-grid">{[["Compradores","Entenda melhor quem está do outro lado da negociação."],["Corretores e imobiliárias","Eleve o padrão de cuidado no atendimento."],["Advogados","Receba documentos organizados para aprofundar a avaliação."],["Investidores","Ganhe agilidade sem abrir mão de uma leitura criteriosa."]].map(([t,d])=><article key={t}><h3>{t}</h3><p>{d}</p></article>)}</div></div></div></section>
-
-    <section className="section trust"><div className="container trust-box"><div className="seal">A<span>✓</span></div><div><p className="kicker">Tecnologia com responsabilidade</p><h2>Inteligência artificial apoia a análise. <span>A decisão continua sendo humana.</span></h2><p>A IA Audita organiza informações oficiais e destaca pontos para avaliação. Não substitui advogado, não promete risco zero e não transforma uma ocorrência isolada em impedimento automático.</p></div></div></section>
-
-    <section className="section form-section" id="solicitar"><div className="container form-layout"><div><p className="kicker">Comece por quem está vendendo</p><h2>Solicite sua Análise de Vendedor.</h2><p>Conte brevemente sobre a negociação. Nossa equipe orientará os próximos passos e as informações necessárias.</p><div className="form-assurances"><span>✓ Tratamento responsável dos dados</span><span>✓ Retorno para orientar a solicitação</span><span>✓ Sem compromisso automático</span></div></div>
-      <form className="lead-form" onSubmit={submit} onFocus={() => track("start_lead_form")}><div className="form-grid"><label>Nome completo<input name="name" autoComplete="name" required minLength={3} placeholder="Como podemos chamar você?" /></label><label>WhatsApp<input name="phone" autoComplete="tel" required pattern="[0-9()+\-\s]{10,20}" placeholder="(00) 00000-0000" /></label><label>E-mail<input name="email" type="email" autoComplete="email" required placeholder="voce@email.com" /></label><label>Seu perfil<select name="profile" required defaultValue=""><option value="" disabled>Selecione</option><option>Comprador</option><option>Corretor ou imobiliária</option><option>Advogado</option><option>Investidor</option><option>Outro</option></select></label></div><label>Em que etapa está a negociação?<textarea name="context" rows={3} maxLength={600} placeholder="Ex.: visitei o imóvel e recebi as primeiras certidões." /></label><label className="honeypot" aria-hidden="true">Empresa<input name="company" tabIndex={-1} autoComplete="off" /></label><label className="consent"><input name="consent" type="checkbox" required /> <span>Concordo com o tratamento dos meus dados para retorno sobre esta solicitação, conforme a <Link href="/politica-de-privacidade">Política de Privacidade</Link>.</span></label><button className="btn submit" disabled={status === "loading" || status === "success"}>{status === "loading" ? "Enviando…" : status === "success" ? "Solicitação recebida ✓" : "Solicitar análise →"}</button>{status === "error" && <p className="form-message error" role="alert">Não foi possível enviar agora. Tente novamente ou entre em contato pelo WhatsApp.</p>}{status === "success" && <p className="form-message success" role="status"><b>Solicitação recebida.</b> Nossa equipe entrará em contato para orientar os próximos passos da análise.</p>}</form>
+    <section className={styles.section} id="cnpj-vinculado"><div className={styles.container}>
+      <p className={styles.eyebrow}>Pessoa física, vínculos empresariais</p>
+      <h2>O vendedor tem uma empresa?<br/><span>Esse vínculo também merece atenção.</span></h2>
+      <p className={styles.intro}>A checagem de CNPJ vinculado amplia o olhar sobre o vendedor pessoa física: identifica participações empresariais e organiza informações que podem exigir uma investigação adicional.</p>
+      <div className={styles.outputs}>
+        <article><Icon name="person"/><div><h3>1. Identificação de vínculos e quadro societário</h3><p>A checagem cruza os dados de identificação do vendedor com as informações cadastrais e do Quadro de Sócios e Administradores (QSA) disponíveis, buscando vínculos como sócio, administrador ou titular. A cobertura depende do tipo de empresa e do acesso às fontes; ausência de resultado não comprova ausência de vínculo.</p></div></article>
+        <article><Icon name="briefcase"/><div><h3>2. Levantamento das certidões da empresa</h3><p>Identificado um CNPJ, a investigação considera documentos e ocorrências da pessoa jurídica, conforme o escopo da análise:</p><ul className={styles.checklist}><li><strong>Trabalhista — CNDT e TRTs:</strong> débitos e processos trabalhistas que mereçam avaliação.</li><li><strong>Fiscal — Receita Federal, SEFAZ e Prefeitura:</strong> débitos e inscrições em dívida ativa nas esferas consultadas.</li><li><strong>Falência e recuperação judicial:</strong> registros de processos que ajudem a contextualizar a situação da empresa.</li></ul></div></article>
+        <article><Icon name="file-earmark-text"/><div><h3>3. Avaliação de possíveis reflexos sobre o patrimônio</h3><p>A análise organiza indícios de execuções, pedidos de responsabilização do sócio, constrições e decisões que possam afetar a negociação. Esses pontos orientam a revisão jurídica sobre restrições atuais ou possíveis questionamentos futuros da venda.</p></div></article>
+      </div>
+      <p className={styles.note}>Dívida da empresa não implica automaticamente penhora de bens do sócio. O art. 50 do Código Civil prevê a desconsideração em caso de abuso da personalidade jurídica, caracterizado por desvio de finalidade ou confusão patrimonial. Questões trabalhistas e fiscais também exigem avaliação das regras específicas e das decisões do caso. A IA sinaliza pontos de atenção; não decreta impedimentos nem prevê a anulação de uma venda.</p>
+      <a className={styles.textLink} href="https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#art50" target="_blank" rel="noopener noreferrer">Consultar o art. 50 do Código Civil</a>
     </div></section>
-
-    <section className="section faq" id="duvidas"><div className="container faq-layout"><div><p className="kicker">Dúvidas frequentes</p><h2>Informação clara antes do primeiro passo.</h2></div><div>{faqs.map(([q,a],i)=><article className="faq-item" key={q}><button onClick={() => { setOpenFaq(openFaq===i?null:i); track("open_faq_item", { question: q }); }} aria-expanded={openFaq===i}><span>{q}</span><b>{openFaq===i?"−":"+"}</b></button>{openFaq===i && <p>{a}</p>}</article>)}</div></div></section>
-
-    <section className="final-cta"><Image src="/images/buyer.webp" fill sizes="100vw" alt="Especialista em diligência imobiliária" /><div className="final-overlay"/><div className="container"><p className="kicker">Sua próxima decisão merece contexto</p><h2>Antes de avançar na compra, entenda quem está vendendo.</h2><p>Reúna documentos, antecipe perguntas e negocie com mais clareza.</p><a className="btn" href={appUrl} onClick={(event) => { track("click_final_cta", { position: "final" }); goToApp(event); }}>Analisar o vendedor agora →</a></div></section>
-
-    <footer><div className="container footer-grid"><div><Logo/><p>Inteligência aplicada à diligência imobiliária para decisões mais informadas.</p></div><div><b>Navegação</b><a href="#como-funciona">Como funciona</a><a href="#analise">O que analisamos</a><a href="#relatorio">O que você recebe</a></div><div><b>Institucional</b><Link href="/politica-de-privacidade">Política de Privacidade</Link><Link href="/termos-de-uso">Termos de Uso</Link><a href="mailto:contato@audita.com.br">Contato</a></div></div><div className="container copyright"><span>© {new Date().getFullYear()} IA Audita. Todos os direitos reservados.</span><span>Análise informativa. Não substitui assessoria jurídica.</span></div></footer>
+    <section className={styles.banner}><div className={`${styles.container} ${styles.bannerInner}`}>
+      <div><p className={styles.eyebrow}>Informação hoje. Decisões melhores amanhã.</p><h2>Analise o vendedor agora.</h2><p>Tenha uma visão mais completa antes de assinar.</p><div className={styles.actions}><a className={styles.button} href={appUrl} onClick={event=>goToApp(event)}>Analisar o vendedor <Icon name="arrow-right"/></a><a href="#documentos">Conhecer as verificações</a></div></div>
+      <div className={styles.assurances}>{[["file-earmark-text","Fontes oficiais"],["briefcase","Processo seguro"],["chat-left-text","Informação para decidir"]].map(([icon,label])=><div key={label}><Icon name={icon}/><span>{label}</span></div>)}</div>
+    </div></section>
+    <section className={styles.section} id="documentos"><div className={styles.container}>
+      <p className={styles.eyebrow}>Entenda o que está por trás da consulta</p><h2>Não basta reunir certidões.<br/><span>É preciso entender o que elas dizem.</span></h2>
+      <div className={styles.detailsGrid}>
+        <div><p className={styles.intro}>Um documento pode trazer uma ocorrência que exige contexto. Outro pode estar indisponível ou precisar de atualização. A análise organiza essas diferenças para ajudar você a fazer as perguntas certas.</p><a className={styles.textLink} href={appUrl} onClick={event=>goToApp(event)}>Consultar opções no aplicativo</a></div>
+        <div className={styles.accordions}>
+          <details open><summary>Certidões cíveis e processos judiciais</summary><p>Ajudam a localizar ações e ocorrências relacionadas ao vendedor. Quando há um processo, sua natureza, fase e possível relação com o patrimônio precisam ser avaliadas antes de tirar conclusões.</p></details>
+          <details><summary>Débitos fiscais e obrigações trabalhistas</summary><p>Reúnem informações das esferas federal, estadual e municipal e da Justiça do Trabalho, conforme a consulta. Uma pendência pode exigir esclarecimentos, comprovantes ou análise profissional adicional.</p></details>
+          <details><summary>Protestos, restrições e indisponibilidades</summary><p>Sinalizam registros que merecem atenção. A identificação correta da pessoa, a data da consulta e a abrangência da fonte são essenciais para interpretar o resultado.</p></details>
+          <details><summary>Matrícula, titularidade e ônus do imóvel</summary><p>Na diligência complementar do imóvel, a matrícula ajuda a verificar os titulares e os registros existentes. Compare os dados do documento com a negociação e esclareça eventuais gravames, restrições ou divergências.</p></details>
+        </div>
+      </div>
+    </div></section>
+    <section className={styles.section} id="tipo-de-imovel"><div className={styles.container}>
+      <p className={styles.eyebrow}>Cuidados conforme a negociação</p><h2>Cada imóvel tem <span>suas próprias perguntas.</span></h2><p className={styles.intro}>Além do vendedor, o tipo de bem orienta os documentos que podem ser necessários em uma diligência complementar.</p>
+      <div className={styles.scenarios}>{scenarios.map(([title,subtitle,description],i)=><article key={title}><span className={styles.index}>0{i+1}</span><h3>{title}</h3><h4>{subtitle}</h4><p>{description}</p></article>)}</div>
+    </div></section>
+    <section className={styles.section} id="relatorio"><div className={`${styles.container} ${styles.detailsGrid}`}>
+      <div><p className={styles.eyebrow}>Da informação ao próximo passo</p><h2>Um resultado para ler,<br/><span>compartilhar e avaliar.</span></h2><p className={styles.intro}>Use a análise para conversar com o vendedor, seu corretor ou advogado. A decisão continua sendo sua, apoiada por informações organizadas.</p></div>
+      <div className={styles.outputs}>{[["Documentos reunidos","Consulte as certidões e os materiais obtidos dentro do escopo da solicitação."],["Pontos de atenção em contexto","Entenda o que foi encontrado, o que falta esclarecer e quais verificações podem ser necessárias."],["Próximos passos mais claros","Avalie se é preciso atualizar documentos, aprofundar processos ou buscar uma revisão especializada."]].map(([title,description])=><article key={title}><Icon name="file-earmark-text"/><div><h3>{title}</h3><p>{description}</p></div></article>)}</div>
+    </div></section>
+    <section className={styles.section} id="duvidas"><div className={`${styles.container} ${styles.detailsGrid}`}>
+      <div><p className={styles.eyebrow}>Antes de começar</p><h2>Suas dúvidas,<br/><span>com clareza.</span></h2></div>
+      <div className={styles.accordions}>{faqs.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div>
+    </div></section>
+    <footer className={styles.footer}><div className={styles.container}><div className={styles.footerTop}><Link href="/" aria-label="IA Audita — início"><Logo/></Link><p>Mais informação para uma decisão imobiliária consciente.</p><Link href="/politica-de-privacidade">Política de Privacidade</Link><Link href="/termos-de-uso">Termos de Uso</Link></div><p>A IA Audita organiza informações para apoiar a tomada de decisão. A análise não substitui assessoria jurídica, vistoria ou verificações complementares.</p><small>© {new Date().getFullYear()} IA Audita. Todos os direitos reservados.</small></div></footer>
   </main>;
 }
