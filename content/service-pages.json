@@ -4,27 +4,27 @@
     "title": "Auditoria de dívidas bancárias",
     "category": "Seu dinheiro",
     "eyebrow": "Dívidas bancárias · análise documental",
-    "headline": "Sua dívida tem uma história.",
-    "accent": "Entenda os números antes de negociar.",
-    "description": "Reúna seus extratos. A IA Audita identifica juros e encargos, confere a evolução do saldo e organiza uma análise para apoiar sua conversa com o banco.",
+    "headline": "Sua dívida cresceu sem explicação?",
+    "accent": "Entenda os juros antes de negociar.",
+    "description": "Envie os extratos da conta para conferir como o saldo devedor evoluiu. A IA Audita organiza os lançamentos, identifica juros e encargos e prepara uma análise técnica para sua negociação com o banco.",
     "cta": "Analisar minha dívida",
     "appHash": "dividas-bancarias",
     "image": "/images/home-clara-cobrancas.png",
     "imageAlt": "Documento financeiro e lupa para conferir lançamentos",
-    "insight": "Negociar fica mais claro quando você sabe como o saldo foi formado.",
-    "intro": "Não é só olhar o valor final. É entender como ele chegou até ali.",
+    "insight": "O valor cobrado hoje é só o fim da história. Veja o caminho que levou até ele.",
+    "intro": "Extratos, juros e encargos: descubra como o banco chegou ao saldo atual.",
     "benefits": [
       {
-        "title": "O histórico em ordem",
-        "text": "Leitura dos documentos para reunir datas, movimentações, juros e saldos, com referência às informações encontradas nos extratos."
+        "title": "O caminho da dívida",
+        "text": "A análise organiza movimentações, juros, encargos e saldos dos extratos para mostrar como a cobrança evoluiu ao longo do tempo."
       },
       {
-        "title": "Uma comparação explicada",
-        "text": "Cenários comparativos com referências do Banco Central ajudam a entender os encargos. A referência não é um teto legal nem prova automática de abusividade."
+        "title": "Taxas em perspectiva",
+        "text": "A IA Audita compara os dados encontrados com referências do Banco Central e destaca diferenças para revisão. A comparação isolada não comprova abusividade."
       },
       {
-        "title": "Base para negociar",
-        "text": "Com documentação suficiente e contratação concluída, o relatório em PDF reúne a análise e orientações para você conduzir a negociação no canal oficial do cobrador."
+        "title": "Um relatório para agir",
+        "text": "Com extratos suficientes e contratação concluída, você recebe um relatório em PDF para discutir os valores pelos canais oficiais do banco ou cobrador."
       }
     ],
     "documents": [
@@ -61,28 +61,28 @@
     "title": "PIS/Pasep: cotas antigas",
     "category": "Benefícios e tributos",
     "eyebrow": "PIS/Pasep · Trabalhadores e herdeiros",
-    "headline": "Um direito antigo",
-    "accent": "merece uma nova conferência.",
-    "description": "Você ou alguém da sua família trabalhou com carteira assinada ou no serviço público entre 1971 e 1988? Pode haver cotas do antigo PIS/Pasep ainda não sacadas. Entenda por onde começar e quais documentos reunir.",
+    "headline": "Alguém da sua família trabalhou entre 1971 e 1988?",
+    "accent": "Confira as antigas cotas do PIS/Pasep.",
+    "description": "Trabalhadores e servidores daquele período, ou seus beneficiários legais, podem ter cotas não sacadas. Saiba como fazer a consulta gratuita nos canais oficiais e organizar a documentação para um eventual pedido de ressarcimento.",
     "status": "Assistência documental",
     "cta": "Conhecer a assistência",
     "appHash": "pis-pasep",
     "image": "/images/home-clara-marca.png",
     "imageAlt": "Composição institucional da IA Audita em azul e branco",
-    "insight": "A história de trabalho da sua família pode ter informações que vale a pena recuperar.",
-    "intro": "Um histórico de trabalho. Um caminho para conferir seus direitos.",
+    "insight": "O titular faleceu? Os beneficiários legais também podem verificar se existem cotas.",
+    "intro": "A consulta começa nos canais oficiais. A documentação certa ajuda a seguir adiante.",
     "benefits": [
       {
-        "title": "Saiba o que está sendo consultado",
-        "text": "Entenda a diferença entre as cotas do antigo fundo PIS/Pasep e o abono salarial pago anualmente. São direitos e procedimentos distintos."
+        "title": "Comece pela consulta gratuita",
+        "text": "Entenda como verificar as cotas do antigo fundo PIS/Pasep no REPIS Cidadão. Elas são diferentes do abono salarial anual."
       },
       {
-        "title": "Reúna os documentos certos",
-        "text": "Organize a identificação do titular, o número de inscrição e os registros disponíveis para acompanhar a consulta e eventual solicitação."
+        "title": "Prepare a documentação",
+        "text": "Organize a identificação do titular, o número de inscrição e os comprovantes exigidos para acompanhar a consulta e eventual solicitação."
       },
       {
-        "title": "Encontre o caminho para herdeiros",
-        "text": "Conheça a documentação exigida para beneficiários legais de uma pessoa falecida, sem confundir a consulta com uma confirmação de valor a receber."
+        "title": "Entenda o pedido de herdeiros",
+        "text": "Se o titular faleceu, veja quais documentos podem comprovar a condição de beneficiário legal e como seguir pelos canais oficiais da CAIXA."
       }
     ],
     "documents": [
@@ -127,28 +127,28 @@
     "title": "Imposto de Renda: isenção por doença grave",
     "category": "Benefícios e tributos",
     "eyebrow": "Imposto de Renda · Aposentados e pensionistas",
-    "headline": "Seu benefício merece",
-    "accent": "uma conferência cuidadosa.",
-    "description": "Quem recebe aposentadoria, pensão, reforma ou reserva e tem uma doença prevista em lei pode ter direito à isenção de Imposto de Renda sobre esses rendimentos. Entenda os requisitos e prepare os documentos para avaliar seu caso.",
+    "headline": "Aposentado ou pensionista com doença grave?",
+    "accent": "Veja se o IR do seu benefício pode ser revisto.",
+    "description": "A Lei nº 7.713/88 prevê isenção sobre determinados rendimentos de aposentadoria, pensão, reforma ou reserva para pessoas com doenças especificadas em lei. A data do diagnóstico e os documentos médicos também importam para avaliar eventual imposto pago a maior.",
     "status": "Temporariamente indisponível",
     "cta": "Consultar disponibilidade",
     "appHash": "isencao-ir",
     "image": "/images/home-clara-marca.png",
     "imageAlt": "Composição institucional da IA Audita em azul e branco",
-    "insight": "O desconto aparece todo mês. Entender se ele se aplica ao seu benefício faz diferença.",
-    "intro": "O direito começa com a conferência dos requisitos.",
+    "insight": "Mesmo quem já concluiu o tratamento pode precisar conferir seus direitos, conforme a doença e a documentação.",
+    "intro": "Rendimento, diagnóstico e datas: informações para avaliar o caso.",
     "benefits": [
       {
-        "title": "Entenda os requisitos",
-        "text": "Confira quais tipos de benefício podem ser alcançados pela isenção e por que o diagnóstico precisa se enquadrar nas condições previstas em lei."
+        "title": "Confira o tipo de rendimento",
+        "text": "A regra alcança rendimentos de aposentadoria, pensão, reforma ou reserva nas condições legais. Salário de quem continua na ativa não recebe essa isenção automaticamente."
       },
       {
-        "title": "Organize a comprovação",
-        "text": "Reúna os documentos médicos, a concessão do benefício e os informes de rendimentos para ter uma visão clara do que está disponível e do que falta."
+        "title": "Reúna laudos e informes",
+        "text": "Relatórios médicos, comprovantes do benefício e informes de rendimentos ajudam a avaliar o enquadramento e o período que precisa ser conferido."
       },
       {
-        "title": "Saiba o que pode ser revisado",
-        "text": "Compreenda a importância das datas e das declarações anteriores na avaliação de eventual imposto pago a maior, respeitando os requisitos e os prazos aplicáveis."
+        "title": "Investigue valores anteriores",
+        "text": "A data do diagnóstico e as declarações anteriores podem ser relevantes para avaliar eventual restituição, respeitados os requisitos e prazos aplicáveis."
       }
     ],
     "documents": [
@@ -193,28 +193,28 @@
     "title": "Conta de luz: revisão de cobranças",
     "category": "Energia",
     "eyebrow": "Energia · Clareza sobre sua fatura",
-    "headline": "Sua conta de luz",
-    "accent": "explicada além do total.",
-    "description": "Consumo, tarifas, tributos e outros lançamentos: cada parte da fatura conta uma história. Conheça a proposta de auditoria da IA Audita para organizar suas contas e identificar o que merece uma conferência.",
+    "headline": "Você sabe o que está pagando na conta de luz?",
+    "accent": "Confira cobranças, tributos e créditos.",
+    "description": "A fatura reúne consumo, tarifas, tributos e possíveis compensações. A IA Audita organiza o histórico das contas para mostrar o que mudou e quais lançamentos merecem uma verificação específica.",
     "status": "Em piloto",
     "cta": "Conhecer a auditoria",
     "appHash": "contas-de-luz",
     "image": "/images/home-clara-marca.png",
     "imageAlt": "Composição institucional da IA Audita em azul e branco",
-    "insight": "Uma conta alta é motivo para entender melhor. Sozinha, não comprova uma cobrança indevida.",
-    "intro": "Consumo, tarifas e lançamentos. Cada parte merece uma leitura.",
+    "insight": "Seu valor médio mensal ajuda a dimensionar a análise, mas não define sozinho um direito à restituição.",
+    "intro": "Leia sua fatura além do total: consumo, tarifas, tributos e eventuais créditos.",
     "benefits": [
       {
-        "title": "Veja a composição da conta",
-        "text": "Separe o valor do consumo dos demais componentes da fatura para compreender o que está sendo cobrado em cada período."
+        "title": "Entenda cada parcela",
+        "text": "Separe consumo, tarifas, tributos e outros lançamentos para identificar o que compõe o valor pago em cada período."
       },
       {
-        "title": "Compare o histórico",
-        "text": "Organize contas e comprovantes para observar mudanças de valor, consumo e identificação dos lançamentos que merecem atenção."
+        "title": "Compare as faturas",
+        "text": "Reúna contas e comprovantes de diferentes meses para observar mudanças de consumo, alíquotas, cobranças e eventuais créditos."
       },
       {
-        "title": "Prepare uma revisão fundamentada",
-        "text": "Reúna os registros relevantes para esclarecer dúvidas com a distribuidora e avaliar os próximos passos com apoio especializado, quando necessário."
+        "title": "Saiba o que questionar",
+        "text": "Com os registros organizados, fica mais fácil pedir esclarecimentos à distribuidora e avaliar se existe algum valor a revisar."
       }
     ],
     "documents": [
@@ -259,27 +259,27 @@
     "title": "Certidões estaduais",
     "category": "Certidões",
     "eyebrow": "DOCUMENTOS JUDICIAIS, COM MAIS CLAREZA",
-    "headline": "A certidão de que você precisa.",
-    "accent": "Um caminho mais organizado para consultar.",
-    "description": "Reunir certidões não precisa começar com uma busca sem direção. Escolha o estado, confira as opções disponíveis e siga o fluxo para consultar documentos de pessoas ou empresas nos tribunais estaduais.",
+    "headline": "Antes de assinar, confira o que as certidões mostram.",
+    "accent": "Comece pelos tribunais estaduais.",
+    "description": "Processos judiciais em nome de uma pessoa ou empresa podem exigir atenção antes de uma negociação. Escolha o estado, veja as opções de certidões disponíveis e consulte os canais do tribunal competente.",
     "cta": "Consultar certidões estaduais",
     "appHash": "consulta-tjdft-pf",
     "image": "/images/home-clara-marca.png",
     "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
-    "insight": "Cada tribunal tem suas regras. Saber onde consultar já faz diferença.",
-    "intro": "A documentação certa, para a finalidade certa.",
+    "insight": "O nome do vendedor também faz parte da análise de uma compra segura.",
+    "intro": "Certidões judiciais ajudam a entender o histórico de quem participa do negócio.",
     "benefits": [
       {
-        "title": "Consulta direcionada por estado",
-        "text": "Selecione a UF e encontre as opções de certidões judiciais disponíveis para aquela localidade, sem tratar todos os tribunais como se fossem iguais."
+        "title": "Comece pela UF correta",
+        "text": "Selecione o estado para ver as opções de certidões judiciais oferecidas pelo tribunal competente. A cobertura varia conforme a fonte."
       },
       {
-        "title": "Dados reunidos para o pedido",
-        "text": "Os formulários ajudam a organizar as informações exigidas em cada consulta, tanto para pessoa física quanto para pessoa jurídica, conforme o tribunal."
+        "title": "Consulte a pessoa ou empresa",
+        "text": "Organize os dados exigidos para pesquisar distribuições e processos em nome de pessoa física ou jurídica, conforme o tipo de certidão."
       },
       {
-        "title": "Acompanhamento da emissão",
-        "text": "Acompanhe o resultado pelos canais disponíveis e confira os documentos obtidos. Quando uma etapa depender de você, a validação humana continua fazendo parte do processo."
+        "title": "Entenda o resultado",
+        "text": "Confira o documento emitido e seus apontamentos. Uma consulta incompleta não deve ser tratada como certidão negativa."
       }
     ],
     "documents": [
@@ -310,28 +310,28 @@
     "title": "Indisponibilidade de bens",
     "category": "Certidões",
     "eyebrow": "ANTES DE AVANÇAR NA NEGOCIAÇÃO",
-    "headline": "O vendedor tem alguma restrição?",
-    "accent": "Comece conferindo os dados disponíveis.",
-    "description": "Possíveis registros de indisponibilidade de bens merecem atenção antes de uma negociação. A IA Audita reúne a consulta por CPF ou CNPJ e apresenta os indicadores retornados pelo provedor habilitado.",
+    "headline": "Vai comprar um imóvel?",
+    "accent": "Confira possíveis restrições no nome do vendedor.",
+    "description": "Quando o provedor estiver habilitado, a consulta por CPF ou CNPJ reúne indicadores de indisponibilidade de bens. Um apontamento merece confirmação na fonte e pode mudar seus próximos passos na negociação.",
     "status": "Consulta sujeita à disponibilidade do provedor",
     "cta": "Conhecer disponibilidade",
     "appHash": "consulta-cnib",
     "image": "/images/home-clara-marca.png",
     "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
-    "insight": "Um nome conhecido não dispensa uma conferência bem feita.",
-    "intro": "Uma restrição pode mudar a negociação. Confira antes de avançar.",
+    "insight": "Uma restrição no patrimônio do vendedor é um sinal para investigar antes de pagar ou assinar.",
+    "intro": "Uma pesquisa direcionada ajuda a saber o que precisa ser esclarecido.",
     "benefits": [
       {
-        "title": "Pesquisa por CPF ou CNPJ",
-        "text": "Direcione a consulta à pessoa ou empresa envolvida na negociação, usando o documento informado e o provedor integrado disponível."
+        "title": "Pesquise pelo documento certo",
+        "text": "A consulta usa CPF ou CNPJ da pessoa ou empresa envolvida na negociação, conforme a integração disponível."
       },
       {
-        "title": "Indicadores para conferir",
-        "text": "Veja se a fonte consultada retornou possíveis registros de indisponibilidade e quais informações foram disponibilizadas para análise."
+        "title": "Confira os indicadores",
+        "text": "Veja se a fonte retorna possíveis registros de indisponibilidade e quais informações precisam ser confirmadas."
       },
       {
-        "title": "Mais contexto para o próximo passo",
-        "text": "Use o resultado para decidir o que precisa ser esclarecido e se é necessário obter uma certidão oficial ou buscar orientação profissional antes de avançar."
+        "title": "Decida o próximo passo",
+        "text": "Um indicador pode justificar a obtenção de certidão oficial e orientação especializada antes de concluir a compra."
       }
     ],
     "documents": [
@@ -362,28 +362,28 @@
     "title": "Consulta de imóveis",
     "category": "Imóveis",
     "eyebrow": "INFORMAÇÃO IMOBILIÁRIA, NA FONTE CERTA",
-    "headline": "Antes de decidir sobre um imóvel,",
-    "accent": "conheça melhor os registros.",
-    "description": "A IA Audita reúne opções de pesquisa e documentos imobiliários pelos serviços do ONR / RI Digital. Conheça a proposta para localizar referências de matrículas, conferir vínculos e solicitar documentos conforme a cobertura disponível.",
+    "headline": "A escritura não conta a história toda.",
+    "accent": "Consulte os registros do imóvel antes de decidir.",
+    "description": "A consulta imobiliária prevista na IA Audita usa os serviços do ONR / RI Digital para buscar referências de matrículas, conferir vínculos e solicitar documentos conforme a cobertura e a habilitação disponíveis.",
     "status": "Integração em homologação",
     "cta": "Conhecer disponibilidade",
     "appHash": "consulta-imoveis",
     "image": "/images/home-clara-marca.png",
     "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
-    "insight": "Uma referência de imóvel é o começo da pesquisa, não a conclusão.",
-    "intro": "Pesquise referências. Confira vínculos. Entenda os documentos.",
+    "insight": "A matrícula e seus registros ajudam a enxergar informações que uma escritura isolada não explica.",
+    "intro": "Da referência da matrícula à certidão digital: saiba o que pesquisar.",
     "benefits": [
       {
-        "title": "Localize referências de matrículas",
-        "text": "A Pesquisa Prévia busca referências associadas a CPF ou CNPJ nas bases participantes. A cobertura depende do estado, dos registros disponíveis e da habilitação do serviço."
+        "title": "Localize referências de matrícula",
+        "text": "A Pesquisa Prévia procura registros associados ao CPF ou CNPJ nas bases participantes, conforme a cobertura disponível."
       },
       {
-        "title": "Aprofunde a conferência do vínculo",
-        "text": "A Pesquisa Qualificada permite encaminhar a conferência da relação atual do pesquisado com a matrícula ao cartório competente, quando o serviço estiver habilitado."
+        "title": "Confira o vínculo atual",
+        "text": "A Pesquisa Qualificada pode encaminhar a verificação da relação entre o pesquisado e a matrícula ao cartório competente, quando habilitada."
       },
       {
-        "title": "Direcione o pedido de certidão",
-        "text": "Com matrícula e cartório identificados, o módulo prevê a solicitação e o acompanhamento de certidão digital pelos serviços integrados disponíveis."
+        "title": "Solicite a certidão digital",
+        "text": "Com matrícula e cartório identificados, o serviço prevê o pedido do documento pelos canais integrados do ONR / RI Digital."
       }
     ],
     "documents": [
@@ -414,28 +414,28 @@
     "title": "Auditoria do Imposto de Importação",
     "category": "Imposto de Importação",
     "eyebrow": "MAIS CLAREZA PARA QUEM IMPORTA",
-    "headline": "Documentos de importação conferidos.",
-    "accent": "Decisões fiscais mais bem informadas.",
-    "description": "Invoice, Packing List, características do produto e enquadramento fiscal precisam conversar entre si. Conheça a auditoria assistida que organiza os documentos, destaca divergências e prepara a pesquisa de NCMs e a simulação de II e IPI para revisão humana.",
+    "headline": "Importar sem conferir a NCM pode custar caro.",
+    "accent": "Organize documentos e decisões fiscais.",
+    "description": "Invoice e Packing List precisam conversar com a descrição técnica e a classificação do produto. Conheça a proposta de auditoria assistida da IA Audita, com pesquisa de NCM e TIPI e simulação de II e IPI para revisão humana.",
     "status": "Recebimento de documentos ainda não habilitado",
     "cta": "Conhecer disponibilidade",
     "appHash": "auditoria-importacao",
     "image": "/images/home-clara-importacao.png",
     "imageAlt": "Ilustração de contêiner azul, documento e globo em fundo claro",
-    "insight": "Uma diferença nos documentos merece atenção antes de virar uma decisão fiscal.",
-    "intro": "Mais consistência nos documentos. Mais contexto na decisão fiscal.",
+    "insight": "Uma divergência na classificação ou nos documentos pode mudar a análise tributária da operação.",
+    "intro": "Confira a documentação antes de fechar o enquadramento fiscal.",
     "benefits": [
       {
-        "title": "Invoice e Packing List, lado a lado",
-        "text": "A leitura organiza os itens para que você confira vínculos, quantidades e informações divergentes. Os originais são preservados, e correções ou escolhas de origem ficam registradas à parte."
+        "title": "Invoice e Packing List lado a lado",
+        "text": "A proposta organiza itens, descrições e quantidades para que divergências sejam conferidas antes da revisão fiscal."
       },
       {
-        "title": "Pesquisa com fontes para revisar",
-        "text": "Sugestões de NCM são confrontadas com a tabela pública, e possíveis benefícios são pesquisados com referências oficiais. São subsídios para conferência, não uma classificação fiscal definitiva."
+        "title": "NCM e TIPI para revisão",
+        "text": "Sugestões de classificação e referências da TIPI ajudam o responsável técnico a conferir enquadramento e eventuais benefícios aplicáveis."
       },
       {
-        "title": "Simulação de II e IPI com revisão",
-        "text": "Após a revisão fiscal dos dados, alíquotas e condições, o módulo prepara uma simulação e um relatório com fontes e histórico para apoiar a decisão."
+        "title": "II e IPI simulados",
+        "text": "Com os dados e alíquotas revisados, o módulo prevê uma simulação desses tributos e um relatório com as fontes consultadas."
       }
     ],
     "documents": [
@@ -466,28 +466,28 @@
     "title": "Laudo para análise de exames",
     "category": "Laudos",
     "eyebrow": "UMA NOVA FRENTE DA IA AUDITA",
-    "headline": "Análise de exames.",
-    "accent": "Um serviço em desenvolvimento.",
-    "description": "A IA Audita está preparando um módulo dedicado à análise de exames. Esta página apresenta o serviço previsto no catálogo; os tipos de exame, o escopo e a forma de entrega serão informados quando ele estiver disponível.",
+    "headline": "Exames espalhados contam uma história difícil de acompanhar.",
+    "accent": "Estamos preparando uma forma de organizar essa história.",
+    "description": "A proposta do módulo é reunir informações de laudos e exames em uma linha do tempo e ajudar você a preparar perguntas para o médico. O serviço ainda está em desenvolvimento e não recebe documentos.",
     "status": "Em desenvolvimento",
     "cta": "Ver serviços disponíveis",
     "appHash": "central-servicos",
     "image": "/images/home-clara-marca.png",
     "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
-    "insight": "Informações de saúde pedem cuidado. Disponibilidade e limites precisam estar claros.",
-    "intro": "Um novo módulo, com disponibilidade e limites claros.",
+    "insight": "Uma cronologia organizada pode ajudar na conversa com profissionais de saúde.",
+    "intro": "Laudos e exames reunidos para dar contexto, quando o serviço estiver disponível.",
     "benefits": [
       {
-        "title": "Um espaço dedicado ao serviço",
-        "text": "Esta página reúne a apresentação do módulo previsto para que você saiba o que está em desenvolvimento, sem confundi-lo com uma análise já disponível."
+        "title": "Uma cronologia em estudo",
+        "text": "O serviço previsto pretende reunir informações de exames e laudos ao longo do tempo, sem realizar diagnóstico clínico."
       },
       {
-        "title": "Escopo a ser informado",
-        "text": "Os exames aceitos e o tipo de análise ainda serão definidos e comunicados. Nesta etapa, não há promessa de diagnóstico, avaliação clínica ou interpretação de um exame específico."
+        "title": "Perguntas para a consulta",
+        "text": "A proposta inclui ajudar a transformar informações dos documentos em dúvidas que você possa levar ao profissional de saúde."
       },
       {
-        "title": "Entrega com condições claras",
-        "text": "A forma de solicitação e de entrega será informada quando o serviço for disponibilizado. Nenhuma solicitação ou documento é recebido por esta página."
+        "title": "Disponibilidade informada antes do envio",
+        "text": "Tipos de exame aceitos, documentos necessários e forma de entrega serão apresentados quando o módulo estiver disponível."
       }
     ],
     "documents": [
@@ -518,28 +518,28 @@
     "title": "Laudo para atualização de processos judiciais",
     "category": "Laudos",
     "eyebrow": "UMA NOVA FRENTE DA IA AUDITA",
-    "headline": "Laudos para processos judiciais.",
-    "accent": "Conheça o que está em preparação.",
-    "description": "A IA Audita está preparando um serviço de laudos para atualização de processos judiciais. O módulo faz parte do catálogo futuro; o escopo, os documentos necessários e a forma de entrega serão informados quando estiver disponível.",
+    "headline": "Cansado de decifrar decisões judiciais?",
+    "accent": "Uma leitura mais clara está em preparação.",
+    "description": "A proposta da IA Audita Jurídica é organizar despachos, decisões e sentenças em linguagem compreensível para apoiar a conversa com o profissional responsável pelo caso. O módulo ainda não recebe documentos.",
     "status": "Em desenvolvimento",
     "cta": "Ver serviços disponíveis",
     "appHash": "central-servicos",
     "image": "/images/home-clara-marca.png",
     "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
-    "insight": "Cada processo tem um contexto. Um novo serviço precisa ter seu alcance bem definido.",
-    "intro": "Uma nova proposta para organizar informações processuais.",
+    "insight": "Entender o que uma decisão diz é o primeiro passo para formular as perguntas certas ao advogado.",
+    "intro": "Informação processual organizada, sem substituir a atuação jurídica.",
     "benefits": [
       {
-        "title": "Proposta identificada no catálogo",
-        "text": "O serviço está previsto entre os módulos da IA Audita. A apresentação separa essa proposta das consultas e análises que já têm um fluxo disponível no aplicativo."
+        "title": "Leitura de decisões em estudo",
+        "text": "A proposta é resumir despachos, decisões e sentenças em linguagem mais clara, com indicação do que precisa ser conferido."
       },
       {
-        "title": "Escopo antes da solicitação",
-        "text": "O tipo de laudo, as situações atendidas e os documentos necessários serão informados antes de qualquer disponibilização. Não há promessa de cobertura para um processo específico nesta etapa."
+        "title": "Contexto para o profissional",
+        "text": "Uma visão organizada do documento poderá apoiar perguntas e discussão com o advogado responsável pelo processo."
       },
       {
-        "title": "Condições de entrega a definir",
-        "text": "A forma de solicitar e receber o resultado será divulgada quando o serviço estiver disponível. Por enquanto, nenhuma entrega ou intervenção processual é realizada por este módulo."
+        "title": "Escopo antes de qualquer pedido",
+        "text": "Condições de uso e de entrega serão publicadas quando o módulo estiver disponível; hoje não há análise ou protocolo de documentos."
       }
     ],
     "documents": [
