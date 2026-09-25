@@ -23,11 +23,11 @@ const occurrences = [
 
 const faqs = [
   ["Este é o caso do acordo do Itaú com o MPMG e o Idec?", "Sim. O produto usa como contexto o acordo nacional relacionado a seguros cobrados sem consentimento ou mantidos após cancelamento. A análise da IA Audita ajuda a localizar e documentar cobranças, mas não confirma automaticamente que uma pessoa atende aos critérios do acordo."],
-  ["Quem pode pedir ressarcimento pelo acordo?", "O acordo possui requisitos próprios, como prova da cobrança, registro de reclamação até 18 de dezembro de 2025 e ausência de ressarcimento anterior. Quem descobrir agora uma possível cobrança nos últimos cinco anos ainda pode reclamar, pedir cancelamento e avaliar as medidas cabíveis."],
+  ["Quem pode pedir ressarcimento pelo acordo?", "O acordo possui requisitos próprios, como prova da cobrança, registro de reclamação até 18 de dezembro de 2025 e ausência de ressarcimento anterior. Quem descobrir agora uma possível cobrança desde 2011 ainda pode reclamar, pedir cancelamento e avaliar as medidas cabíveis."],
   ["Preciso ter todos os extratos?", "Você precisa enviar ao menos uma fatura, extrato ou print para começar. Quanto maior o período documentado, mais completa pode ser a análise. Com documentos parciais, o resultado também será parcial."],
   ["Quais arquivos posso enviar?", "A plataforma aceita PDF, PNG, JPG ou JPEG, CSV e TXT, com até 12 MB por arquivo. Você pode selecionar vários documentos na mesma análise."],
   ["O cálculo mostra quanto vou receber?", "Não. O cálculo soma somente valores encontrados nos documentos e confirmados por você como não reconhecidos. Juros, correção, eventual devolução em dobro e outros pedidos dependem do caso e de avaliação jurídica."],
-  ["A IA Audita entra com o processo para mim?", "Não. Quando aplicável, a IA Audita organiza o relatório, prepara uma minuta para revisão e indica os canais oficiais. A conferência e o protocolo final continuam sob responsabilidade da pessoa usuária ou de um profissional."],
+  ["A IA Audita entra com o processo para mim?", "Não. Quando aplicável, a IA Audita organiza o relatório, prepara um Requerimento de Atermação para revisão e indica os canais oficiais. A conferência e o protocolo final continuam sob responsabilidade da pessoa usuária ou de um profissional."],
   ["Quais cartões entram na análise?", "O fluxo atual é voltado a Itaú, Itaucard e referências de cartões emitidos para redes parceiras. O vínculo da marca com o banco e a existência de uma cobrança precisam ser confirmados nos documentos enviados."],
 ];
 
@@ -97,7 +97,7 @@ export function ChargeAnalysisPage() {
       <div className={`${styles.container} ${styles.caseLayout}`}>
         <div className={styles.caseLead}>
           <p className={styles.kicker}>O caso Itaú</p>
-          <h2>O banco assumiu obrigações de ressarcimento. Agora você precisa descobrir se foi cobrado.</h2>
+          <h2>O banco assumiu obrigações de ressarcimento. Acontece que devolve apenas o valor principal — sem juros, correção, devolução em dobro e sem perdas e danos.</h2>
           <p>O Procon-MPMG e o Idec firmaram um acordo nacional com o Itaú sobre seguros cobrados sem consentimento ou mantidos depois do cancelamento. O caso alcança também cartões emitidos em parceria com redes varejistas.</p>
           <a className={styles.sourceLink} href={officialCaseUrl} target="_blank" rel="noreferrer">Ver a informação oficial do MPMG ↗</a>
         </div>
@@ -203,19 +203,39 @@ export function ChargeAnalysisPage() {
       </div>
     </section>
 
-    <section className={styles.deliverables} id="o-que-voce-recebe">
-      <div className={`${styles.container} ${styles.deliverablesGrid}`}>
-        <div>
-          <p className={styles.kicker}>Tudo num só lugar</p>
-          <h2>Veja quanto foi cobrado, quando começou e onde aparece.</h2>
-          <p>A IA Audita organiza tudo e entrega uma análise completa e resumida do que você precisa saber para contestar com mais clareza e tranquilidade.</p>
+    <section className={`${styles.agreementSection} ${styles.atermacao}`} id="o-que-voce-recebe" aria-labelledby="atermacao-title">
+      <div className={styles.container}>
+        <p className={styles.kicker}>Após a geração no aplicativo</p>
+        <h2 id="atermacao-title">Requerimento de Atermação — Pronto para Uso</h2>
+        <p><strong>Seu documento foi gerado com sucesso!</strong> Essa é a etapa em que você recebe o requerimento elaborado automaticamente com base no seu Relatório Técnico de Análise Financeira, Indébito, Perdas e Danos, contendo a memória de cálculo e a fundamentação para apoiar o pedido de ressarcimento dos seus valores.</p>
+        <h3 className={styles.atermacaoOptions}>Escolha como deseja dar entrada no seu pedido:</h3>
+        <div className={styles.agreementGrid}>
+          <article>
+            <h3>1. Protocolar você mesmo<br/>Gratuito e sem advogado</h3>
+            <p>Para causas de até 20 salários mínimos que se enquadrem nas regras do Juizado Especial Cível, você pode ingressar por conta própria. O acesso em primeiro grau independe do pagamento de custas, taxas ou despesas, conforme a Lei nº 9.099/95.</p>
+            <p><strong>O que fazer:</strong></p>
+            <ol>
+              <li>Baixe o <strong>Requerimento de Atermação</strong> e o <strong>Relatório Técnico</strong> no aplicativo.</li>
+              <li>Reúna seus documentos pessoais — RG, CPF e comprovante de residência — e os extratos ou faturas analisados.</li>
+              <li>Entregue a documentação no Setor de Atermação do Fórum da sua cidade ou utilize o canal eletrônico disponibilizado pelo Tribunal de Justiça do seu estado. Consulte as regras locais de atendimento e protocolo.</li>
+            </ol>
+          </article>
+          <article>
+            <h3>2. Consultar um profissional do Direito</h3>
+            <p>Se você prefere que um especialista cuide dos prazos, das audiências e do acompanhamento do processo do início ao fim, escolha a opção mais adequada ao seu caso.</p>
+            <p><strong>O que fazer:</strong></p>
+            <ul>
+              <li><strong>Advogado de sua confiança:</strong> baixe o arquivo e envie o Relatório Técnico diretamente para o profissional de sua preferência.</li>
+              <li><strong>Defensoria Pública:</strong> caso não tenha condições financeiras de arcar com os custos, solicite atendimento na Defensoria Pública do seu estado, apresentando o relatório. O atendimento está sujeito aos critérios da instituição.</li>
+              <li><strong>Rede credenciada de parceiros:</strong> você também pode solicitar o encaminhamento dos seus dados e do relatório para a rede de advogados parceiros cadastrados, conforme disponibilidade e mediante sua autorização.</li>
+            </ul>
+          </article>
         </div>
-        <div className={styles.checkList}>
-          <div><b>✓</b><span><strong>Ocorrências por arquivo</strong><small>Descrição, data, valor e documento de origem</small></span></div>
-          <div><b>✓</b><span><strong>Histórico organizado</strong><small>Visão consolidada sem duplicar lançamentos</small></span></div>
-          <div><b>✓</b><span><strong>Cálculo do valor documentado</strong><small>Somente do que você marcou como não reconhecido</small></span></div>
-          <div><b>✓</b><span><strong>Relatório técnico em PDF</strong><small>Material para revisar, consultar e compartilhar</small></span></div>
-        </div>
+        <aside className={styles.agreementReport} aria-label="Informação importante sobre o Juizado Especial">
+          <h3>Informação importante sobre o Juizado Especial</h3>
+          <p>Nos termos do <strong>art. 9º da Lei nº 9.099/95</strong>, a assistência de advogado é facultativa em primeiro grau para causas de até 20 salários mínimos. Na fase de recurso, porém, <strong>as partes devem estar representadas por advogado</strong>, conforme o <strong>art. 41, § 2º</strong>, inclusive quando a instituição financeira recorrer. Você pode procurar um advogado habilitado ou a Defensoria Pública, conforme os critérios de atendimento, para atuar perante a Turma Recursal.</p>
+          <a className={styles.sourceLink} href="https://www.planalto.gov.br/ccivil_03/leis/l9099.htm" target="_blank" rel="noopener noreferrer">Consultar a Lei nº 9.099/95</a>
+        </aside>
       </div>
     </section>
 
@@ -279,6 +299,7 @@ export function ChargeAnalysisPage() {
               <li><strong>Obtenha os extratos e as faturas históricas.</strong> Solicite os documentos do período das cobranças e guarde protocolos de reclamação e cancelamento.</li>
               <li><strong>Organize a análise técnica.</strong> Confira os lançamentos, identifique o que não reconhece e reúna os documentos que sustentam a contestação.</li>
               <li><strong>Avalie as medidas cabíveis.</strong> Busque orientação de advogado ou da Defensoria Pública para analisar prazos, custos, riscos e a possibilidade de uma ação individual.</li>
+              <li><strong>Escolha a forma de atuação profissional.</strong> Caso opte por acompanhamento jurídico do início ao fim do processo, você pode consultar um advogado de sua confiança ou agendar atendimento na Defensoria Pública do seu estado. Também pode solicitar o encaminhamento para a Rede de Advogados Parceiros, que atuam na sua região com condições alinhadas à Tabela da OAB (honorários de êxito cobrados ao final, caso haja valores recuperados). A contratação e o envio de documentos são formalizados diretamente com o profissional selecionado.</li>
             </ol>
           </article>
           <article>
