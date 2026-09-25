@@ -128,6 +128,27 @@ export function SellerAnalysisPage() {
       <div><p className={styles.eyebrow}>Da informação ao próximo passo</p><h2>Um resultado para ler,<br/><span>compartilhar e avaliar.</span></h2><p className={styles.intro}>Use a análise para conversar com o vendedor, seu corretor ou advogado. A decisão continua sendo sua, apoiada por informações organizadas.</p></div>
       <div className={styles.outputs}>{[["Documentos reunidos","Consulte as certidões e os materiais obtidos dentro do escopo da solicitação."],["Pontos de atenção em contexto","Entenda o que foi encontrado, o que falta esclarecer e quais verificações podem ser necessárias."],["Próximos passos mais claros","Avalie se é preciso atualizar documentos, aprofundar processos ou buscar uma revisão especializada."]].map(([title,description])=><article key={title}><Icon name="file-earmark-text"/><div><h3>{title}</h3><p>{description}</p></div></article>)}</div>
     </div></section>
+    <section className={styles.section} id="exemplo-preventivo" aria-labelledby="example-title"><div className={styles.container}>
+      <div className={styles.detailsGrid}>
+        <div>
+          <p className={styles.eyebrow}>Um caso para entender o risco</p>
+          <h2 id="example-title">Uma compra milionária.<br/><span>Uma disputa pela posse.</span></h2>
+          <p className={styles.intro}>Uma negociação envolvendo uma mansão em uma ilha, avaliada em cerca de R$ 10 milhões, acabou em uma disputa judicial pela posse. O caso noticiado mostra por que o contrato e o investimento no imóvel não encerram a verificação de quem pode vender e quais direitos estão sendo adquiridos.</p>
+          <p className={styles.intro}>Uma compra de milhões merece uma análise antes da assinatura. Uma diligência prévia pode identificar pendências, inconsistências e processos relevantes antes do pagamento. A IA Audita ajuda a organizar essas informações para apoiar sua decisão.</p>
+        </div>
+        <div className={styles.outputs}>
+          <article><Icon name="file-earmark-text"/><div><h3>1. Entender o que está sendo vendido</h3><p>Conferir a matrícula, a titularidade e o instrumento apresentado. Uma cessão de direitos possessórios precisa ser compreendida no seu próprio contexto, sem ser confundida com a transferência de propriedade registrada.</p></div></article>
+          <article><Icon name="file-earmark-text"/><div><h3>2. Investigar o histórico da negociação</h3><p>Examinar contratos anteriores, certidões e processos dos envolvidos para identificar disputas pela posse, divergências entre documentos e possíveis direitos de terceiros.</p></div></article>
+          <article><Icon name="file-earmark-text"/><div><h3>3. Conferir as condições da área</h3><p>Em ilhas e áreas costeiras, a diligência pode exigir consultas à Secretaria do Patrimônio da União (SPU), análise do regime de ocupação e verificações ambientais, conforme a situação do imóvel.</p></div></article>
+        </div>
+      </div>
+      <div className={styles.scenarios}>
+        <article><h3>O alerta vem antes do sinal.</h3><p>Divergências de titularidade, disputas anteriores e documentos ausentes são motivos para esclarecer a negociação e buscar avaliação especializada antes de comprometer o dinheiro.</p></article>
+        <article><h3>Mais contexto para decidir.</h3><p>A IA Audita ajuda a organizar certidões e pontos de atenção do vendedor. Uma investigação completa do imóvel, da cadeia de contratos e de condições especiais exige escopo complementar e revisão profissional.</p></article>
+      </div>
+      <p className={styles.note}>Exemplo adaptado de caso noticiado, sem citar os nomes dos envolvidos. As verificações descritas são uma simulação de diligência preventiva, não uma auditoria realizada pela IA Audita nesse caso. Dependem do escopo contratado e das fontes disponíveis e não garantem evitar perdas.</p>
+      <a className={styles.textLink} href="#certidoes-e-due-diligence">Entenda a consulta de certidões e a análise avançada →</a>
+    </div></section>
     <section className={styles.section} id="duvidas"><div className={`${styles.container} ${styles.detailsGrid}`}>
       <div><p className={styles.eyebrow}>Antes de começar</p><h2>Suas dúvidas,<br/><span>com clareza.</span></h2></div>
       <div className={styles.accordions}>{faqs.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div>
