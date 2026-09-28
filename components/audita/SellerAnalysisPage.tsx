@@ -68,7 +68,7 @@ export function SellerAnalysisPage() {
     </section>
     <section className={styles.section} id="analise"><div className={styles.container}>
       <p className={styles.eyebrow}>Mais contexto para uma boa decisão</p>
-      <h2>Escritura assinada <span>não encerra a análise.</span></h2>
+      <h2>ANTES DE ASSINAR ESCRITURA <span>FAÇA ANÁLISE.</span></h2>
       <p className={styles.intro}>A compra de um imóvel envolve mais do que o bem. A situação de quem vende e a regularidade do imóvel fazem parte da decisão. A IA Audita organiza essas informações de forma clara, para você avaliar com tranquilidade.</p>
       <div className={styles.documentGrid}>{documents.map(doc=><article key={doc.title}>
         <div className={styles.documentTitle}><div className={styles.icon}><Icon name={doc.icon}/></div><div><h3>{doc.title}</h3><p>{doc.subtitle}</p></div></div>
