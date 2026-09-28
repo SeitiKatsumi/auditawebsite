@@ -4,6 +4,21 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { servicePages } from "../../../lib/service-pages";
 import styles from "./service.module.css";
+import { PisPasepPage } from "../../../components/services/PisPasepPage";
+import { IncomeTaxPage } from "../../../components/services/IncomeTaxPage";
+import { CertificatesPage } from "../../../components/services/CertificatesPage";
+import { ImportAuditPage } from "../../../components/services/ImportAuditPage";
+import { EnergyPage } from "../../../components/services/EnergyPage";
+import { FinancialReportPage } from "../../../components/services/FinancialReportPage";
+
+const customPages = {
+  "pis-pasep": PisPasepPage,
+  "isencao-imposto-de-renda": IncomeTaxPage,
+  "certidoes-estaduais": CertificatesPage,
+  "auditoria-de-importacao": ImportAuditPage,
+  "revisao-contas-de-luz": EnergyPage,
+  "laudos-de-processos-judiciais": FinancialReportPage,
+};
 
 export const dynamicParams = false;
 export function generateStaticParams() { return servicePages.map(({ slug }) => ({ slug })); }
@@ -17,6 +32,8 @@ export default async function ServiceLanding({ params }: { params: Promise<{ slu
   const { slug } = await params;
   const page = servicePages.find(page => page.slug === slug);
   if (!page) notFound();
+  const CustomPage = customPages[slug as keyof typeof customPages];
+  if (CustomPage) return <CustomPage page={page} />;
   const appUrl = `https://app.auditainteligente.com.br/#${page.appHash}`;
   return <main className={styles.page}>
     <section className={styles.hero}>

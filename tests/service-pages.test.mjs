@@ -3,6 +3,31 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 const pages = JSON.parse(readFileSync('content/service-pages.json', 'utf8'));
 
+test('six dedicated landings retain availability and use their own page compositions', () => {
+  const route = readFileSync('app/servicos/[slug]/page.tsx', 'utf8');
+  const expected = {
+    'pis-pasep': ['Assistência documental', 'pis-pasep', 'PisPasepPage'],
+    'isencao-imposto-de-renda': ['Temporariamente indisponível', 'isencao-ir', 'IncomeTaxPage'],
+    'certidoes-estaduais': [undefined, 'consulta-tjdft-pf', 'CertificatesPage'],
+    'auditoria-de-importacao': ['Recebimento de documentos ainda não habilitado', 'auditoria-importacao', 'ImportAuditPage'],
+    'revisao-contas-de-luz': ['Em piloto', 'contas-de-luz', 'EnergyPage'],
+    'laudos-de-processos-judiciais': ['Em desenvolvimento', 'central-servicos', 'FinancialReportPage'],
+  };
+  for (const [slug, [status, appHash, component]] of Object.entries(expected)) {
+    const page = pages.find(page => page.slug === slug);
+    const content = readFileSync(`components/services/${component}.tsx`, 'utf8');
+    assert.ok(route.includes(`"${slug}": ${component}`), slug);
+    assert.ok(content.includes(`data-service="${slug}"`), slug);
+    assert.equal(page.status, status, slug);
+    assert.equal(page.appHash, appHash, slug);
+    assert.ok(page.questions.length >= 6 && page.questions.length <= 8, slug);
+    assert.ok(content.includes('id="como-funciona"'), slug);
+    assert.ok(content.includes('id="exemplos"'), slug);
+    assert.ok((content.match(/Exemplo (?:fictício )?0[12]/g) || []).length >= 2, slug);
+    assert.ok(page.sources?.length, slug);
+  }
+});
+
 test('shared solutions menu links all twelve services and keeps the mobile menu accessible', () => {
   const header = readFileSync('components/audita/SiteHeader.tsx', 'utf8');
   for (const href of [...pages.map(page => '/servicos/' + page.slug), '/analise-de-vendedor', '/analise-cobrancas-indevidas']) assert.ok(header.includes(`"${href}"`), href);

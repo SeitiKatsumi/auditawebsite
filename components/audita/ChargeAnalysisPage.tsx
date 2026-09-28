@@ -97,7 +97,7 @@ export function ChargeAnalysisPage() {
       <div className={`${styles.container} ${styles.caseLayout}`}>
         <div className={styles.caseLead}>
           <p className={styles.kicker}>O caso Itaú</p>
-          <h2>O banco assumiu obrigações de ressarcimento. Acontece que devolve apenas o valor principal — sem juros, correção, devolução em dobro e sem perdas e danos.</h2>
+          <h2>O banco assumiu obrigações de ressarcimento. <span className={styles.caseHighlight}>Acontece que devolve apenas o valor principal — sem juros, correção, devolução em dobro e sem perdas e danos.</span></h2>
           <p>O Procon-MPMG e o Idec firmaram um acordo nacional com o Itaú sobre seguros cobrados sem consentimento ou mantidos depois do cancelamento. O caso alcança também cartões emitidos em parceria com redes varejistas.</p>
           <a className={styles.sourceLink} href={officialCaseUrl} target="_blank" rel="noreferrer">Ver a informação oficial do MPMG ↗</a>
         </div>

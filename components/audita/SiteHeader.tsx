@@ -36,7 +36,8 @@ export function SiteHeader() {
     document.addEventListener("pointerdown", closeOutside);
     return () => document.removeEventListener("pointerdown", closeOutside);
   }, []);
-  const light = pathname === "/" || pathname === "/home-clara" || pathname.startsWith("/servicos/");
+  const photoService = ["pis-pasep", "isencao-imposto-de-renda", "auditoria-de-importacao", "revisao-contas-de-luz", "laudos-de-processos-judiciais"].some(slug => pathname === `/servicos/${slug}`);
+  const light = pathname === "/" || pathname === "/home-clara" || (pathname.startsWith("/servicos/") && !photoService);
   return <header className={`${styles.header} ${light ? styles.light : ""}`} onKeyDown={(event) => {
     if (event.key !== "Escape") return;
     if (solutionsRef.current?.open) {
