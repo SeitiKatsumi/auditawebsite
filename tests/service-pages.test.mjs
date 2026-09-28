@@ -6,12 +6,12 @@ const pages = JSON.parse(readFileSync('content/service-pages.json', 'utf8'));
 test('six dedicated landings retain availability and use their own page compositions', () => {
   const route = readFileSync('app/servicos/[slug]/page.tsx', 'utf8');
   const expected = {
-    'pis-pasep': ['Assistência documental', 'pis-pasep', 'PisPasepPage'],
-    'isencao-imposto-de-renda': ['Temporariamente indisponível', 'isencao-ir', 'IncomeTaxPage'],
+    'pis-pasep': [undefined, 'pis-pasep', 'PisPasepPage'],
+    'isencao-imposto-de-renda': [undefined, 'isencao-ir', 'IncomeTaxPage'],
     'certidoes-estaduais': [undefined, 'consulta-tjdft-pf', 'CertificatesPage'],
     'auditoria-de-importacao': ['Recebimento de documentos ainda não habilitado', 'auditoria-importacao', 'ImportAuditPage'],
-    'revisao-contas-de-luz': ['Em piloto', 'contas-de-luz', 'EnergyPage'],
-    'laudos-de-processos-judiciais': ['Em desenvolvimento', 'central-servicos', 'FinancialReportPage'],
+    'revisao-contas-de-luz': [undefined, 'contas-de-luz', 'EnergyPage'],
+    'laudos-de-processos-judiciais': [undefined, 'central-servicos', 'FinancialReportPage'],
   };
   for (const [slug, [status, appHash, component]] of Object.entries(expected)) {
     const page = pages.find(page => page.slug === slug);
@@ -50,7 +50,7 @@ test('service landing pages have distinct content, valid assets and honest desti
     assert.ok(page.documents.length >= 3);
     assert.ok(page.questions.length >= 3);
     if (page.slug.startsWith('laudos-')) {
-      assert.equal(page.status, 'Em desenvolvimento');
+      assert.equal(page.status, page.slug === 'laudos-de-processos-judiciais' ? undefined : 'Em desenvolvimento');
       assert.equal(page.appHash, 'central-servicos');
       assert.ok(!/enviar|contratar/i.test(page.cta));
     }

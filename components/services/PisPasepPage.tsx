@@ -5,7 +5,7 @@ import s from "./services.module.css";
 export function PisPasepPage({ page }: { page: ServicePage }) {
   return <main className={s.page} data-service="pis-pasep">
     <section className={`${s.pisHero} ${s.photoHero}`}><div className={`${s.wrap} ${s.split}`}>
-      <div><p className={s.kicker}>PIS/Pasep · Cotas do antigo fundo</p><p className={s.status}>{page.status}</p><h1>O trabalho de uma vida<br/><em>merece uma nova consulta.</em></h1><p className={s.lead}>Você, seus pais ou seus avós trabalharam entre 1971 e 1988? A história profissional da família pode ajudar a localizar cotas ainda não sacadas. Entenda quem pode consultar e como preparar o pedido.</p><div className={s.actions}><ServiceAction page={page}/><a className={s.textLink} href="#titular-ou-herdeiro">Encontre o seu caminho ↓</a></div><p className={s.note}>Assistência documental privada e opcional. A consulta oficial é gratuita.</p></div>
+      <div><p className={s.kicker}>PIS/Pasep · Cotas do antigo fundo</p><h1>O trabalho de uma vida<br/><em>merece uma nova consulta.</em></h1><p className={s.lead}>Você, seus pais ou seus avós trabalharam entre 1971 e 1988? A história profissional da família pode ajudar a localizar cotas ainda não sacadas. Entenda quem pode consultar e como preparar o pedido.</p><div className={s.actions}><ServiceAction page={page}/><a className={s.textLink} href="#titular-ou-herdeiro">Encontre o seu caminho ↓</a></div><p className={s.note}>Assistência documental privada e opcional. A consulta oficial é gratuita.</p></div>
       <ServiceHeroPhoto name="pis" alt="Cena ilustrativa de uma família reunida à mesa para conferir documentos antigos." title="Uma história de trabalho. Um cuidado de família."/>
     </div></section>
 

@@ -64,7 +64,6 @@
     "headline": "Sua história de trabalho",
     "accent": "pode ter valores a conferir.",
     "description": "Trabalhou entre 1971 e 1988? Entenda a consulta de cotas antigas, os documentos para titulares e herdeiros e o caminho oficial gratuito para verificar valores.",
-    "status": "Assistência documental",
     "cta": "Conhecer a assistência",
     "appHash": "pis-pasep",
     "image": "/images/home-clara-marca.png",
@@ -146,7 +145,6 @@
     "headline": "Aposentado ou pensionista com doença grave?",
     "accent": "Veja se o IR do seu benefício pode ser revisto.",
     "description": "Entenda os requisitos da isenção de IR para aposentados e pensionistas, a documentação médica e a conferência de retenções, com exemplos e orientações oficiais.",
-    "status": "Temporariamente indisponível",
     "cta": "Consultar disponibilidade",
     "appHash": "isencao-ir",
     "image": "/images/home-clara-marca.png",
@@ -173,7 +171,7 @@
       "Informes de rendimentos e comprovantes de Imposto de Renda retido na fonte.",
       "Declarações de Imposto de Renda e recibos dos períodos que se pretende avaliar."
     ],
-    "delivery": "O módulo está temporariamente indisponível. Esta página apresenta sua proposta e os documentos relevantes; consulte a disponibilidade antes de encaminhar dados ou contratar qualquer análise.",
+    "delivery": "Esta página apresenta sua proposta e os documentos relevantes; consulte a disponibilidade antes de encaminhar dados ou contratar qualquer análise.",
     "limit": "A isenção não alcança automaticamente salários, trabalho autônomo, aluguel ou todos os rendimentos do contribuinte. O reconhecimento depende do enquadramento e da documentação. A IA Audita não emite laudo médico oficial, não concede isenção e não garante restituição. Questões médicas e tributárias exigem avaliação dos profissionais e órgãos competentes.",
     "questions": [
       {
@@ -206,7 +204,7 @@
       },
       {
         "question": "Posso enviar meus laudos médicos agora?",
-        "answer": "O módulo está temporariamente indisponível. Consulte a disponibilidade na plataforma e mantenha os documentos em local seguro; esta landing page não recebe dados de saúde nem solicita arquivos."
+        "answer": "Consulte a disponibilidade na plataforma e mantenha os documentos em local seguro; esta landing page não recebe dados de saúde nem solicita arquivos."
       }
     ],
     "sources": [
@@ -232,7 +230,6 @@
     "headline": "Você sabe o que está pagando na conta de luz?",
     "accent": "Confira cobranças, tributos e créditos.",
     "description": "Leia a fatura por partes, compare consumo e dias faturados e entenda o que merece revisão. Exemplos para residências e empresas e informações sobre o piloto.",
-    "status": "Em piloto",
     "cta": "Conhecer a auditoria",
     "appHash": "contas-de-luz",
     "image": "/images/home-clara-marca.png",
@@ -259,7 +256,7 @@
       "Identificação do titular e da unidade consumidora indicada nas faturas.",
       "Protocolos, respostas da distribuidora e documentos de revisões anteriores, se houver."
     ],
-    "delivery": "O serviço está em piloto. Consulte o escopo disponível para sua unidade consumidora antes de contratar. A proposta é organizar as faturas e os pontos a esclarecer; eventuais pedidos de revisão ou devolução dependem de apuração específica.",
+    "delivery": "Consulte o escopo disponível para sua unidade consumidora antes de contratar. A proposta é organizar as faturas e os pontos a esclarecer; eventuais pedidos de revisão ou devolução dependem de apuração específica.",
     "limit": "Não há restituição automática de ICMS nem garantia de recuperação de valores por um período fixo. O montante da conta, por si só, não comprova direito a devolução. O alcance de qualquer revisão depende das faturas, da regra aplicável, da distribuidora e da análise do caso.",
     "questions": [
       {
@@ -629,7 +626,6 @@
     "headline": "Do valor original",
     "accent": "a uma conta que você consegue conferir.",
     "description": "Principal, correção, juros e abatimentos explicados. Conheça a proposta do relatório judicial e extrajudicial com exemplos e critérios para revisar a conta.",
-    "status": "Em desenvolvimento",
     "cta": "Ver serviços disponíveis",
     "appHash": "central-servicos",
     "image": "/images/home-clara-marca.png",

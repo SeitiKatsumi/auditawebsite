@@ -15,7 +15,7 @@ test('institutional home lists published services and shares a single header', (
 
 test('home covers Eduardo service proposals without offering unavailable modules', () => {
   const home = readFileSync('app/home-anterior/page.tsx', 'utf8');
-  for (const text of ['Distrito Federal', 'quatro certidões', 'Disponível em piloto', 'Em homologação', 'Isenção e restituição de IR', 'Laudo para análise de exames', 'Laudo para atualização de processos judiciais', 'O que você recebe']) assert.ok(home.includes(text), text);
+  for (const text of ['Distrito Federal', 'quatro certidões', 'Em homologação', 'Isenção e restituição de IR', 'Laudo para análise de exames', 'Laudo para atualização de processos judiciais', 'O que você recebe']) assert.ok(home.includes(text), text);
   for (const text of ['id="importacao"', 'Invoice', 'Packing List', 'Ex-Tarifários', 'id="assistente-ia"', 'Certidões do imóvel urbano ou rural', 'Inventarium', 'Relatório Técnico de Auditoria Financeira', 'Central de atendimento e plataforma']) assert.ok(home.includes(text), text);
   assert.ok(home.indexOf('id="importacao"') < home.indexOf('id="assistente-ia"'), 'Importation is the first service');
   const upcoming = home.slice(home.indexOf('upcomingServices.map'), home.indexOf('className={styles.central}'));

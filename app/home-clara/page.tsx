@@ -16,7 +16,7 @@ const groups = [
   ] },
   { title: "Benefícios e tributos", label: "PIS/PASEP · Isenção e restituição de IR", icon: "file-earmark-text", services: [
     { name: "Cotas antigas do PIS/PASEP", text: "Apoio a titulares e herdeiros na consulta de cotas do antigo fundo, de 1971 a 1988. Orientação para a consulta pública gratuita no REPIS, organização de documentos e acompanhamento assistido. Não se trata do abono salarial anual.", href: "/servicos/pis-pasep", action: "Conhecer a assistência" },
-    { name: "Isenção e restituição de IR", text: "Organização de laudos e comprovantes para avaliar a possibilidade de isenção por moléstia grave para aposentados, pensionistas e militares na reserva ou reforma. Requisitos e períodos de restituição dependem de análise profissional.", status: "Temporariamente indisponível", href: "/servicos/isencao-imposto-de-renda", action: "Conhecer o serviço" },
+    { name: "Isenção e restituição de IR", text: "Organização de laudos e comprovantes para avaliar a possibilidade de isenção por moléstia grave para aposentados, pensionistas e militares na reserva ou reforma. Requisitos e períodos de restituição dependem de análise profissional.", href: "/servicos/isencao-imposto-de-renda", action: "Conhecer o serviço" },
   ] },
   { title: "Certidões", label: "Certidões estaduais · Indisponibilidade de bens · Certidões do vendedor", icon: "file-earmark-text", services: [
     { name: "Certidões estaduais", text: "Selecione o estado e consulte as opções de certidões judiciais para pessoas e empresas. A disponibilidade varia por tribunal, e algumas etapas exigem validação humana.", href: "/servicos/certidoes-estaduais", action: "Conhecer as certidões estaduais" },
@@ -27,14 +27,14 @@ const groups = [
     { name: "Auditoria do Imposto de Importação", text: "Conferência de Invoice, Packing List e fichas técnicas, sugestões de NCM/TIPI e pesquisa de possíveis benefícios. Simulação de II e IPI com revisão humana, sem registro de DI/Duimp nem garantia de economia.", status: "Recebimento de documentos ainda não habilitado", href: "/servicos/auditoria-de-importacao", action: "Conhecer a auditoria de importação" },
   ] },
   { title: "Energia", label: "Conta de luz: revisão de cobranças", icon: "file-earmark-text", services: [
-    { name: "Auditoria de contas de luz", text: "Conferência de consumo, tarifas, tributos e somas das faturas de residências e empresas. Histórico organizado e requerimento para avaliação pela distribuidora, sem envio automático ou garantia de restituição.", status: "Disponível em piloto", href: "/servicos/revisao-contas-de-luz", action: "Conhecer a auditoria de contas de luz" },
+    { name: "Auditoria de contas de luz", text: "Conferência de consumo, tarifas, tributos e somas das faturas de residências e empresas. Histórico organizado e requerimento para avaliação pela distribuidora, sem envio automático ou garantia de restituição.", href: "/servicos/revisao-contas-de-luz", action: "Conhecer a auditoria de contas de luz" },
   ] },
   { title: "Imóveis", label: "Consulta de imóveis", icon: "house", services: [
     { name: "Consulta de imóveis", text: "Um ponto de partida para acessar informações imobiliárias. Canais e cobertura estão em validação; conheça as opções de pesquisa e as condições de disponibilidade.", status: "Em homologação", href: "/servicos/consulta-de-imoveis", action: "Conhecer a consulta de imóveis" },
   ] },
   { title: "Laudos", label: "Análise de exames · Atualização de processos judiciais", icon: "file-earmark-text", services: [
     { name: "Laudo para análise de exames", text: "Informações sobre o serviço de análise de exames. O módulo ainda não recebe arquivos ou solicitações.", status: "Em desenvolvimento", href: "/servicos/laudos-de-exames", action: "Conhecer o serviço" },
-    { name: "Laudo para atualização de processos judiciais", text: "Informações sobre laudos para processos judiciais. O módulo ainda não recebe arquivos ou solicitações.", status: "Em desenvolvimento", href: "/servicos/laudos-de-processos-judiciais", action: "Conhecer o serviço" },
+    { name: "Laudo para atualização de processos judiciais", text: "Informações sobre laudos para processos judiciais. O módulo ainda não recebe arquivos ou solicitações.", status: "", href: "/servicos/laudos-de-processos-judiciais", action: "Conhecer o serviço" },
   ] },
 ];
 // CNC/Peic, agosto de 2026: percentual entre famílias endividadas, não entre todas as famílias.

@@ -4,15 +4,7 @@ import type { ServicePage } from "../../lib/service-pages";
 import s from "./services.module.css";
 
 export function ServiceHeroPhoto({ name, alt, title }: { name: string; alt: string; title: string }) {
-  const documents: Record<string, { title: string; items: string[] }> = {
-    pis: { title: "Organização documental", items: ["Titular e beneficiários", "Histórico profissional", "Documentos a reunir"] },
-    ir: { title: "Conferência de requisitos", items: ["Origem dos rendimentos", "Documentação médica", "Datas e retenções"] },
-    importacao: { title: "Revisão de importação", items: ["Invoice e packing list", "Classificação fiscal", "Tributos e premissas"] },
-    energia: { title: "Leitura da conta de luz", items: ["Consumo e histórico", "Tarifas e lançamentos", "Pontos para conferir"] },
-    laudos: { title: "Memória de cálculo", items: ["Principal e datas", "Correção e juros", "Composição do total"] },
-  };
-  const document = documents[name];
-  return <figure className={s.heroPhoto} aria-label={title}><Image src={`/images/services/${name}-hero.webp`} alt={alt} width={1440} height={960} priority sizes="(max-width: 760px) 100vw, 70vw"/><div className={s.heroDocument}><small>Modelo ilustrativo</small><strong>{document.title}</strong><ul>{document.items.map((item, index) => <li key={item}><span aria-hidden="true">0{index + 1}</span><div>{item}<i aria-hidden="true"/></div></li>)}</ul><p>IA Audita <span>Informação com clareza.</span></p></div><figcaption><small>Imagem ilustrativa gerada por IA</small></figcaption></figure>;
+  return <figure className={s.heroPhoto} aria-label={title}><Image src={`/images/services/${name}-hero.webp`} alt={alt} width={1440} height={960} priority sizes="(max-width: 760px) 100vw, 70vw"/><figcaption><small>Imagem ilustrativa gerada por IA</small></figcaption></figure>;
 }
 
 export function ServiceAction({ page }: { page: ServicePage }) {

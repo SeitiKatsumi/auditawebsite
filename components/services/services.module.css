@@ -165,16 +165,16 @@
 .heroPhoto,.dark .heroPhoto{position:absolute;inset:0 0 0 auto;width:72%;margin:0;border:0;border-radius:0;box-shadow:none;z-index:0;overflow:hidden;background:#02172b}
 .heroPhoto img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .heroPhoto:after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#02172b 0%,rgba(2,23,43,.94) 12%,rgba(2,23,43,.56) 35%,rgba(2,23,43,.08) 65%),linear-gradient(0deg,rgba(2,23,43,.5),transparent 35%);pointer-events:none}
-.heroDocument{position:absolute;z-index:2;right:6%;top:22%;width:260px;min-height:335px;padding:26px 24px;background:#fff;color:#102740;border-radius:7px;transform:rotate(5deg);box-shadow:12px 12px 0 #eef3f0bb,0 25px 55px #0004}
-.heroDocument>small{display:block;font-size:12px;color:#6e8090;font-style:italic;margin-bottom:14px}
-.heroDocument>strong{display:block;font-size:24px;line-height:1.2;font-weight:650;letter-spacing:-.035em}
-.heroDocument ul{list-style:none;margin:25px 0;padding:0}
-.heroDocument li{display:flex;align-items:center;gap:12px;margin:17px 0}
-.heroDocument li>span{display:grid;place-items:center;flex:none;width:28px;height:32px;background:#e8f9ff;color:#0498cc;font-size:12px;border-radius:5px;font-weight:700}
-.heroDocument li>div{flex:1;font-size:11px;font-weight:650;color:#486176}
-.heroDocument i{display:block;height:4px;background:#dce5eb;border-radius:4px;margin-top:6px;width:85%}
-.heroDocument>p{font-size:12px;font-weight:750;border-top:1px solid #e0e8ee;padding-top:14px;color:#193b54}
-.heroDocument>p span{display:block;font-size:9px;color:#7f909d;font-weight:400}
+
+
+
+
+
+
+
+
+
+
 .heroPhoto figcaption{position:absolute;bottom:15px;right:25px;z-index:2;color:#d2e1ed;font-size:9px}
 .heroPhoto figcaption small{font-size:9px}
 .heroSupport{padding:0 0 35px}
@@ -188,5 +188,5 @@
 .historyStrip dt{font-size:14px;font-weight:750;color:var(--accent);margin-bottom:7px}
 .historyStrip dd{margin:0;font-size:13px;color:var(--muted);line-height:1.7}
 
-@media(max-width:1050px){.photoHero .wrap{width:calc(100% - 48px)}.photoHero h1{font-size:46px}.heroDocument{width:215px;padding:22px;right:5%;top:30%}.heroDocument>strong{font-size:21px}.historyStrip{grid-template-columns:1fr;gap:25px}.historyStrip dl{grid-column:auto;grid-row:auto}}
-@media(max-width:760px){.page:has(>.photoHero){padding-top:70px}.photoHero{display:block;padding:355px 0 45px;min-height:0}.photoHero .wrap{width:calc(100% - 40px)}.photoHero .split>div:first-child,.photoGrid>div:first-child{width:100%;max-width:none}.photoHero h1{font-size:38px}.photoHero .lead{font-size:17px}.photoHero .kicker{font-size:10px}.heroPhoto,.dark .heroPhoto{inset:0 0 auto;width:100%;height:350px}.heroPhoto img{object-position:center 35%}.heroPhoto:after{background:linear-gradient(0deg,#02172b 0%,rgba(2,23,43,.3) 45%,rgba(2,23,43,.05) 80%)}.heroDocument{width:160px;min-height:0;padding:17px;top:30px;right:25px;transform:rotate(5deg);box-shadow:7px 7px 0 #eef3f0bb,0 15px 35px #0003}.heroDocument>small{font-size:9px;margin-bottom:10px}.heroDocument>strong{font-size:17px}.heroDocument ul{margin:15px 0}.heroDocument li{gap:8px;margin:12px 0}.heroDocument li>span{width:21px;height:25px;font-size:9px}.heroDocument li>div{font-size:9px}.heroDocument>p{font-size:10px;padding-top:10px}.heroDocument>p span{font-size:8px}.heroPhoto figcaption{bottom:4px;left:20px;right:auto}.historyStrip dl{grid-template-columns:1fr;gap:20px}.timelineBand{padding:0 0 35px}.historyStrip .yearRange{font-size:38px}}
+@media(max-width:1050px){.photoHero .wrap{width:calc(100% - 48px)}.photoHero h1{font-size:46px}.historyStrip{grid-template-columns:1fr;gap:25px}.historyStrip dl{grid-column:auto;grid-row:auto}}
+@media(max-width:760px){.page:has(>.photoHero){padding-top:70px}.photoHero{display:block;padding:355px 0 45px;min-height:0}.photoHero .wrap{width:calc(100% - 40px)}.photoHero .split>div:first-child,.photoGrid>div:first-child{width:100%;max-width:none}.photoHero h1{font-size:38px}.photoHero .lead{font-size:17px}.photoHero .kicker{font-size:10px}.heroPhoto,.dark .heroPhoto{inset:0 0 auto;width:100%;height:350px}.heroPhoto img{object-position:center 35%}.heroPhoto:after{background:linear-gradient(0deg,#02172b 0%,rgba(2,23,43,.3) 45%,rgba(2,23,43,.05) 80%)}.heroPhoto figcaption{bottom:4px;left:20px;right:auto}.historyStrip dl{grid-template-columns:1fr;gap:20px}.timelineBand{padding:0 0 35px}.historyStrip .yearRange{font-size:38px}}
