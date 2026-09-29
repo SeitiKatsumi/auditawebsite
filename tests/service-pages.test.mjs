@@ -9,7 +9,7 @@ test('six dedicated landings retain availability and use their own page composit
     'pis-pasep': [undefined, 'pis-pasep', 'PisPasepPage'],
     'isencao-imposto-de-renda': [undefined, 'isencao-ir', 'IncomeTaxPage'],
     'certidoes-estaduais': [undefined, 'consulta-tjdft-pf', 'CertificatesPage'],
-    'auditoria-de-importacao': ['Recebimento de documentos ainda não habilitado', 'auditoria-importacao', 'ImportAuditPage'],
+    'auditoria-de-importacao': [undefined, 'auditoria-importacao', 'ImportAuditPage'],
     'revisao-contas-de-luz': [undefined, 'contas-de-luz', 'EnergyPage'],
     'laudos-de-processos-judiciais': [undefined, 'central-servicos', 'FinancialReportPage'],
   };
