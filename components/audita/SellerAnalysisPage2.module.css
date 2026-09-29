@@ -18,4 +18,6 @@
 .guideStepsLayout{display:grid;gap:48px;margin-top:48px}.guideSteps{padding:40px;background:#0a203b;border:1px solid #285575;border-radius:16px}.guideSteps h3{font-size:clamp(28px,3vw,38px);margin-bottom:30px}.guideSteps ol{list-style:decimal;margin:0;padding-left:30px}.guideSteps li{font-size:18px;padding:22px 0 22px 12px;margin:0;border-top:1px solid var(--line)}.guideSteps li::marker{color:#60d4ff;font-weight:800;font-size:22px}.guideSteps strong{display:block;font-size:21px;margin-bottom:8px}@media(max-width:600px){.guideSteps{padding:24px 20px}.guideSteps li{font-size:16px;padding-left:6px}.guideSteps strong{font-size:19px}}
 
 .atermacao{background:#082440}.atermacao .atermacaoOptions{margin:36px 0 28px}.atermacao ol{list-style:decimal}.atermacao ul{list-style:disc}
-.caseLead h2 .caseHighlight{color:#ffd166}
+.caseLead h2 .caseHighlight{color:#ff8a1f}
+
+.caseItauTitle{font-size:clamp(20px,2vw,28px);font-weight:800}

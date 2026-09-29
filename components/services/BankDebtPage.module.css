@@ -1,0 +1,14 @@
+.page{background:#041122}
+.hero{padding:90px 0;background:linear-gradient(90deg,#06192c 0%,rgba(6,25,44,.94) 35%,rgba(6,25,44,.6) 70%,rgba(6,25,44,.35)),url("/images/services/laudos-hero.webp") center/cover no-repeat}
+.hero>div{align-items:center}
+.report{padding:38px;border:1px solid #2b5875;border-radius:18px;background:linear-gradient(135deg,rgba(16,53,80,.88),rgba(7,27,48,.92));box-shadow:0 24px 65px #0003}
+.report h2{font-size:42px}
+.report dl{margin:28px 0 0}
+.report dl>div{border-top:1px solid #2b4b65;padding:16px 0}
+.report dt{color:#47d2ff;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.report dd{margin:6px 0 0;font-size:17px}
+.band{background:#081f36}
+.casePanel{border:1px solid #2b4b65;border-radius:14px;padding:34px;background:#0b2942}
+.casePanel>p{color:#b5ccdf}
+.page>section:nth-last-of-type(1){background:radial-gradient(ellipse at top,#10466b,#06192c 80%)}
+@media(max-width:760px){.hero{padding:48px 0}.report,.casePanel{padding:25px}.report h2{font-size:32px}}

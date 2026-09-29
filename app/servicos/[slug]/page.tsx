@@ -5,16 +5,18 @@ import { notFound } from "next/navigation";
 import { servicePages } from "../../../lib/service-pages";
 import styles from "./service.module.css";
 import { PisPasepPage } from "../../../components/services/PisPasepPage";
-import { IncomeTaxPage } from "../../../components/services/IncomeTaxPage";
+import { BankDebtPage } from "../../../components/services/BankDebtPage";
 import { CertificatesPage } from "../../../components/services/CertificatesPage";
+import { IncomeTaxPage } from "../../../components/services/IncomeTaxPage";
 import { ImportAuditPage } from "../../../components/services/ImportAuditPage";
 import { EnergyPage } from "../../../components/services/EnergyPage";
 import { FinancialReportPage } from "../../../components/services/FinancialReportPage";
 
 const customPages = {
+  "dividas-bancarias": BankDebtPage,
+  "certidoes-estaduais": CertificatesPage,
   "pis-pasep": PisPasepPage,
   "isencao-imposto-de-renda": IncomeTaxPage,
-  "certidoes-estaduais": CertificatesPage,
   "auditoria-de-importacao": ImportAuditPage,
   "revisao-contas-de-luz": EnergyPage,
   "laudos-de-processos-judiciais": FinancialReportPage,
@@ -35,13 +37,15 @@ export default async function ServiceLanding({ params }: { params: Promise<{ slu
   const CustomPage = customPages[slug as keyof typeof customPages];
   if (CustomPage) return <CustomPage page={page} />;
   const appUrl = `https://app.auditainteligente.com.br/#${page.appHash}`;
-  return <main className={styles.page}>
+  const isExam = slug === "laudos-de-exames";
+  return <main className={`${styles.page} ${isExam ? styles.examDark : ""}`}>
     <section className={styles.hero}>
+      {isExam && <Image className={styles.examPhoto} src="/images/services/ir-hero.webp" alt="Cena ilustrativa de uma mulher idosa conversando com uma familiar." fill priority sizes="100vw"/>}
       <div className={styles.wrap}>
         <nav className={styles.breadcrumb} aria-label="Você está aqui"><Link href="/">Início</Link><span aria-hidden="true">/</span><Link href="/#servicos">Soluções</Link><span aria-hidden="true">/</span><span>{page.category}</span></nav>
         <div className={styles.heroGrid}>
           <div><p className={styles.eyebrow}>{page.eyebrow}</p>{page.status && <p className={styles.status}>{page.status}</p>}<h1>{page.headline}<br/><em>{page.accent}</em></h1><p className={styles.lead}>{page.description}</p><div className={styles.actions}><a className={styles.button} href={appUrl}>{page.cta}<span aria-hidden="true">↗</span></a><a className={styles.textLink} href="#como-funciona">Entenda como funciona ↓</a></div><p className={styles.micro}>Informação organizada. Próximos passos mais claros.</p></div>
-          <div className={styles.heroVisual}><Image src={page.image} alt={page.imageAlt} width={800} height={800} priority sizes="(max-width: 760px) 90vw, 42vw"/><p>{page.insight}</p></div>
+          {!isExam && <div className={styles.heroVisual}><Image src={page.image} alt={page.imageAlt} width={800} height={800} priority sizes="(max-width: 760px) 90vw, 42vw"/><p>{page.insight}</p></div>}
         </div>
       </div>
     </section>

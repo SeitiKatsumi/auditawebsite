@@ -58,7 +58,7 @@ export function ChargeAnalysisPage() {
       <Image src="/images/hero-cobrancas-indevidas.png" fill priority sizes="100vw" alt="Consumidora conferindo faturas e extratos em casa" className={styles.heroImage} />
       <div className={styles.heroShade}/>
       <div className={`${styles.container} ${styles.heroContent}`}>
-        <p className={styles.eyebrow}>Caso Itaú · cobranças de seguros sem consentimento</p>
+        <p className={styles.eyebrow}><span className={styles.caseItauTitle}>Caso Itaú · cobranças de seguros sem consentimento</span></p>
         <h1 className={styles.chargeQuestion}>O Itaú cobrou um seguro que você não contratou?</h1>
         <h2 className={styles.chargeAlert}>A inclusão de seguros sem sua autorização é ILEGAL</h2>
         <div className={styles.chargeLegal}>
