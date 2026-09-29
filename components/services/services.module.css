@@ -194,3 +194,5 @@
 
 .photoHero .pisTitle{display:block;font-size:clamp(54px,6vw,86px);font-weight:800;letter-spacing:-.04em;margin-bottom:18px}.pisHero.photoHero h1{font-size:clamp(32px,3.2vw,46px)}.pisCallout{font-size:20px;font-weight:750;margin-top:24px}.pisDeadline{display:inline-block;color:#ffd166;font-size:18px;font-weight:750;border-left:3px solid #ffd166;padding-left:12px;margin-top:16px}
 .irHero.photoHero .kicker{font-size:16px}
+
+.pisAmount{color:#ffd166;font-size:clamp(26px,3vw,34px);font-weight:800;white-space:nowrap}
