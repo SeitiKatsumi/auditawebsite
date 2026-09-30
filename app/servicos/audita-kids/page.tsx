@@ -35,23 +35,17 @@ const questions = [
 export default function AuditaKidsPage() {
   return <main className={s.page} data-service="audita-kids">
     <section className={s.hero}>
+      <Image className={s.heroBackground} src="/images/services/audita-kids-hero.png" alt="" fill priority sizes="100vw"/>
       <div className={`${s.wrap} ${s.heroGrid}`}>
         <div>
           <p className={s.eyebrow}>Audita <span>Kids</span> · A jornada dos detetives</p>
           <p className={s.status}>Em desenvolvimento</p>
           <h1>O mundo inteiro<br/>é uma <em>missão.</em></h1>
-          <p className={s.lead}>Uma nova aventura da IA Audita para crianças curiosas. Jogos, descobertas pelo mundo e figurinhas para colecionar — com a natureza e a família fazendo parte da jornada.</p>
-          <div className={s.actions}><a className={s.button} href="#jornada">Conheça a aventura <span aria-hidden="true">↓</span></a><a href="#familia">Para mães, pais e responsáveis →</a></div>
+          <p className={s.lead}>Uma nova aventura da IA Audita para crianças curiosas. Jogos, descobertas pelo mundo e um álbum digital de 500 figurinhas para colecionar — com a natureza e a família fazendo parte da jornada.</p>
+          <div className={s.actions}><a className={s.button} href="#jornada">Conheça a aventura <span aria-hidden="true">↓</span></a><a href="#album">Conheça o álbum de figurinhas →</a><a href="#familia">Para mães, pais e responsáveis →</a></div>
           <p className={s.note}>Ainda não disponível no aplicativo. Conheça o que estamos preparando.</p>
         </div>
-        <div className={s.expedition} aria-label="Ilustração conceitual da aventura: explorar o mundo, cumprir missões ambientais e colecionar figurinhas.">
-          <span className={s.orbit} aria-hidden="true"/>
-          <div className={s.planet} aria-hidden="true">🌎</div>
-          <div className={`${s.sticker} ${s.nature}`}><span aria-hidden="true">🌱</span><small>MISSÃO ESPECIAL</small><strong>Guardião<br/>da Natureza</strong></div>
-          <div className={`${s.sticker} ${s.space}`}><span aria-hidden="true">🚀</span><small>PRÓXIMA DESCOBERTA</small><strong>Até o espaço!</strong></div>
-          <div className={s.passport}><span aria-hidden="true">✦</span><div><small>SEU PASSAPORTE PARA A CURIOSIDADE</small><strong>Jogue. Descubra.<br/>Colecione. Evolua.</strong></div></div>
-          <p className={s.visualNote}>Representação conceitual da proposta</p>
-        </div>
+
       </div>
     </section>
     <div className={`${s.wrap} ${s.stats}`} aria-label="Dimensão planejada da primeira jornada"><div><strong>10</strong><span>grandes mundos</span></div><div><strong>100</strong><span>fases na proposta inicial</span></div><div><strong>500</strong><span>figurinhas para descobrir</span></div><p>Uma jornada planejada para crescer.<br/>Conteúdo e etapas sujeitos ao desenvolvimento.</p></div>
@@ -78,9 +72,16 @@ export default function AuditaKidsPage() {
       <div><p className={s.eyebrow}>Missão Guardião da Natureza</p><h2>Conhecer o mundo.<br/><em>Aprender a cuidar dele.</em></h2><p className={s.intro}>Água, florestas, oceanos e biodiversidade farão parte das missões. A descoberta continua fora da tela, com atividades apropriadas à idade e participação da família.</p></div>
       <div className={s.mission}><p className={s.eyebrow}>Uma ideia de missão em família</p><h3>Detetives da natureza</h3><ol><li>Observe uma planta perto de você, com um responsável.</li><li>Desenhe o que encontrou e pesquise do que ela precisa para viver.</li><li>Compartilhe a descoberta com sua família.</li></ol><p>No jogo planejado, o responsável poderá validar atividades do mundo real para liberar conquistas.</p></div>
     </div></section>
-    <section className={`${s.wrap} ${s.section} ${s.split}`}>
-      <div className={s.legendary}><span aria-hidden="true">✦</span><small>A GRANDE CONQUISTA PLANEJADA</small><strong>500</strong><h3>Família Super-Auditora</h3><p>Um álbum de descobertas.<br/>Uma conquista para compartilhar.</p></div>
-      <div><p className={s.eyebrow}>Cada figurinha conta uma história</p><h2>Uma coleção.<br/><em>Muitas memórias.</em></h2><p className={s.intro}>A primeira coleção foi pensada com 500 figurinhas, entre comuns, especiais e lendárias. Cada uma poderá trazer informações educativas e registrar um momento da aventura.</p><p className={s.intro}>Após as 499 primeiras, a proposta prevê a figurinha Família Super-Auditora: uma representação artística da família, criada com autorização dos responsáveis. Esta página não coleta imagens.</p></div>
+    <section className={`${s.wrap} ${s.section}`} id="album">
+      <div className={s.split}>
+        <figure className={s.albumVisual}><Image src="/images/services/audita-kids-album.png" alt="Ilustração de um álbum Audita Kids aberto, com espaços numerados e figurinhas de animais, natureza, espaço e Auditron." width={1254} height={1254} sizes="(max-width: 760px) calc(100vw - 40px), 550px"/><figcaption>Ilustração conceitual do álbum digital. O visual final do aplicativo poderá ser diferente.</figcaption></figure>
+        <div><p className={s.eyebrow}>O álbum de figurinhas Audita Kids</p><h2>500 figurinhas.<br/><em>Um mundo de descobertas.</em></h2><p className={s.intro}>Um álbum digital e interativo para registrar a jornada de cada detetive. A proposta é transformar missões, desafios e descobertas em uma coleção que cresce junto com a criança.</p><p className={s.intro}>Cada figurinha terá seu número, categoria, mundo e fase de origem, além de uma descrição educativa. Animais, culturas, paisagens, ciência e invenções ganham um lugar nessa história.</p><p className={s.note}>Coleção prevista para a primeira temporada. O álbum está em desenvolvimento; não se trata de um produto impresso à venda.</p></div>
+      </div>
+      <div className={s.steps}>
+        <article><h3>Conquiste nas missões</h3><p>A criança poderá receber figurinhas ao concluir fases e desafios. No álbum, acompanhará os itens conquistados e os espaços que ainda faltam completar.</p></article>
+        <article><h3>Descubra e evolua</h3><p>Estão previstas figurinhas comuns, especiais, brilhantes, holográficas, animadas, sonoras e lendárias. Alguns itens poderão evoluir conforme a progressão e as conquistas.</p></article>
+        <article><h3>Complete em família</h3><p>Após as 499 primeiras, a proposta prevê a figurinha lendária nº 500: Família Super-Auditora. Com autorização dos responsáveis, uma imagem da família poderá dar origem a uma representação artística no universo Audita Kids.</p></article>
+      </div>
     </section>
     <section className={s.band} id="familia"><div className={s.wrap}>
       <p className={s.eyebrow}>A família faz parte da equipe</p><h2>Descobertas para as crianças.<br/><em>Participação para os responsáveis.</em></h2>
