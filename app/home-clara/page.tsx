@@ -7,6 +7,9 @@ import ProductBanner from "./ProductBanner";
 export const metadata: Metadata = { title: "Uma nova visão | IA Audita", robots: { index: false, follow: false }, alternates: { canonical: "/home-clara" } };
 const app = "https://app.auditainteligente.com.br/";
 const groups = [
+  { title: "Audita Kids", label: "Aventura · Aprendizado · Família", icon: "house", services: [
+    { name: "Audita Kids — A jornada dos detetives", text: "Um universo planejado de jogos, descobertas pelo mundo, missões ambientais e figurinhas para aprender em família com Auditron.", status: "Em desenvolvimento", href: "/servicos/audita-kids", action: "Conhecer o Audita Kids" },
+  ] },
   { title: "Assistente IA", label: "Conversas · Documentos · Resumos", icon: "chat-left-text", services: [
     { name: "Assistente IA Audita", text: "Converse, organize ideias e trabalhe com documentos. Apoio à leitura de PDFs e imagens, resumos, traduções, textos e identificação de cláusulas, datas e valores. Confira sempre as respostas geradas.", href: `${app}chat`, action: "Conhecer o assistente" },
   ] },
