@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MouseEvent, useEffect, useMemo } from "react";
 import sellerApproaches from "../../content/seller-approaches.json";
+import { DocumentaryAnalysisContent } from "./DocumentaryAnalysisContent";
 import styles from "./SellerAnalysisPage.module.css";
 
 type SellerApproach = (typeof sellerApproaches)[number];
@@ -69,6 +70,7 @@ export function SellerAnalysisPage({ approach }: { approach?: SellerApproach } =
         <small>{approach?.note ?? "Mais segurança na negociação, com informação."}</small>
       </div></div>
     </section>
+    {approach ? <DocumentaryAnalysisContent approach={approach} /> : <>
     <section className={styles.section} id="analise"><div className={styles.container}>
       <p className={styles.eyebrow}>Mais contexto para uma boa decisão</p>
       <h2>ANTES DE ASSINAR ESCRITURA <span>FAÇA ANÁLISE DAS CERTIDÕES.</span></h2>
@@ -154,6 +156,8 @@ export function SellerAnalysisPage({ approach }: { approach?: SellerApproach } =
       <div><p className={styles.eyebrow}>Antes de começar</p><h2>Suas dúvidas,<br/><span>com clareza.</span></h2></div>
       <div className={styles.accordions}>{faqs.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div>
     </div></section>
-    <footer className={styles.footer}><div className={styles.container}><div className={styles.footerTop}><Link href="/" aria-label="IA Audita — início"><Logo/></Link><p>Mais informação para uma decisão imobiliária consciente.</p><Link href="/politica-de-privacidade">Política de Privacidade</Link><Link href="/termos-de-uso">Termos de Uso</Link></div><p>A IA Audita organiza informações para apoiar a tomada de decisão. A análise não substitui assessoria jurídica, vistoria ou verificações complementares.</p><small>© {new Date().getFullYear()} IA Audita. Todos os direitos reservados.</small></div></footer>
+    </>}
+    {approach && <section className={styles.banner}><div className={styles.container}><h2>{approach.closingTitle}</h2><p className={styles.intro}>{approach.closingDescription}</p><div className={styles.actions}><a className={styles.button} href={appUrl} onClick={event => goToApp(event)}>{approach.cta} <Icon name="arrow-right" /></a></div></div></section>}
+    <footer className={styles.footer}><div className={styles.container}><div className={styles.footerTop}><Link href="/" aria-label="IA Audita — início"><Logo/></Link><p>{approach ? "Documentos e contexto para decisões mais informadas." : "Mais informação para uma decisão imobiliária consciente."}</p><Link href="/politica-de-privacidade">Política de Privacidade</Link><Link href="/termos-de-uso">Termos de Uso</Link></div><p>A IA Audita organiza informações para apoiar a tomada de decisão. A análise não substitui assessoria jurídica{approach ? " ou verificações complementares." : ", vistoria ou verificações complementares."}</p><small>© {new Date().getFullYear()} IA Audita. Todos os direitos reservados.</small></div></footer>
   </main>;
 }

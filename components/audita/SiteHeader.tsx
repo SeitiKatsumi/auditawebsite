@@ -13,8 +13,6 @@ const solutions = [
   ["Dívidas bancárias", "/servicos/dividas-bancarias"],
   ["PIS/PASEP", "/servicos/pis-pasep"],
   ["Isenção de Imposto de Renda", "/servicos/isencao-imposto-de-renda"],
-  ["Certidões estaduais", "/servicos/certidoes-estaduais"],
-  ["Indisponibilidade de bens", "/servicos/indisponibilidade-de-bens"],
   ["Certidões do vendedor", "/analise-de-vendedor"],
   ["Auditoria de importação", "/servicos/auditoria-de-importacao"],
   ["Revisão de contas de luz", "/servicos/revisao-contas-de-luz"],

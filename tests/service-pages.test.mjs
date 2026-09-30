@@ -24,12 +24,21 @@ test('eight commercial approaches reuse the seller landing and current app desti
   assert.ok(landing.includes('approach?.cta ?? "Analisar o vendedor"'));
 });
 
-test('six dedicated landings retain availability and use their own page compositions', () => {
+test('retired services are absent from the catalog and navigation', () => {
+  const header = readFileSync('components/audita/SiteHeader.tsx', 'utf8');
+  const home = readFileSync('app/home-clara/page.tsx', 'utf8');
+  for (const slug of ['certidoes-estaduais', 'indisponibilidade-de-bens']) {
+    assert.ok(!pages.some(page => page.slug === slug));
+    assert.ok(!header.includes(slug));
+    assert.ok(!home.includes(slug));
+  }
+});
+
+test('five dedicated landings retain availability and use their own page compositions', () => {
   const route = readFileSync('app/servicos/[slug]/page.tsx', 'utf8');
   const expected = {
     'pis-pasep': [undefined, 'pis-pasep', 'PisPasepPage'],
     'isencao-imposto-de-renda': [undefined, 'isencao-ir', 'IncomeTaxPage'],
-    'certidoes-estaduais': [undefined, 'consulta-tjdft-pf', 'CertificatesPage'],
     'auditoria-de-importacao': [undefined, 'auditoria-importacao', 'ImportAuditPage'],
     'revisao-contas-de-luz': [undefined, 'contas-de-luz', 'EnergyPage'],
     'laudos-de-processos-judiciais': [undefined, 'central-servicos', 'FinancialReportPage'],
@@ -49,7 +58,7 @@ test('six dedicated landings retain availability and use their own page composit
   }
 });
 
-test('shared solutions menu links all twelve services and keeps the mobile menu accessible', () => {
+test('shared solutions menu links all active services and keeps the mobile menu accessible', () => {
   const header = readFileSync('components/audita/SiteHeader.tsx', 'utf8');
   for (const href of [...pages.map(page => '/servicos/' + page.slug), '/analise-de-vendedor', '/analise-cobrancas-indevidas']) assert.ok(header.includes(`"${href}"`), href);
   assert.ok(header.includes('<summary>Soluções'));

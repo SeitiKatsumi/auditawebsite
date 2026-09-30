@@ -6,8 +6,81 @@
     "headline": "Conheça seu futuro sócio",
     "accent": "antes de abrir uma sociedade.",
     "description": "Reúna registros e documentos para avaliar vínculos empresariais, apontamentos e inconsistências antes de iniciar uma sociedade ou admitir um novo sócio.",
-    "cta": "Conhecer a análise disponível",
-    "note": "A consulta disponível hoje é documental; não substitui uma auditoria societária completa."
+    "cta": "Conhecer a análise de sócios",
+    "note": "A consulta disponível hoje é documental; não substitui uma auditoria societária completa.",
+    "introTitle": "Antes de dividir uma empresa, conheça os vínculos de quem vai estar ao seu lado.",
+    "intro": "Entrar em sociedade envolve capital, administração e decisões compartilhadas. A análise documental ajuda a organizar o histórico do futuro sócio e as perguntas que precisam ser respondidas antes de definir participações e responsabilidades.",
+    "documents": [
+      {
+        "title": "O futuro sócio",
+        "description": "Identifique corretamente a pessoa e contextualize os registros encontrados. Um processo isolado não resume o histórico de um empreendedor.",
+        "items": [
+          "Identificação e CPF do interessado",
+          "Certidões disponíveis e datas de emissão",
+          "Empresas em que atua ou já atuou",
+          "Esclarecimentos sobre ocorrências encontradas"
+        ]
+      },
+      {
+        "title": "A sociedade proposta",
+        "description": "Compare os vínculos do interessado com o papel que ele pretende assumir na nova empresa.",
+        "items": [
+          "Minuta do contrato social e participação de cada sócio",
+          "Poderes de administração e representação",
+          "Aportes previstos e comprovação acordada",
+          "Outras atividades e possíveis conflitos de interesse"
+        ]
+      }
+    ],
+    "journeyTitle": "Da identificação do sócio ao acordo entre as partes.",
+    "journey": [
+      [
+        "Identifique os envolvidos.",
+        "Reúna os dados de quem entrará na sociedade e defina se a entrada será como investidor, administrador ou ambos."
+      ],
+      [
+        "Contextualize os registros.",
+        "Relacione certidões e vínculos encontrados às informações apresentadas pelo futuro sócio."
+      ],
+      [
+        "Esclareça antes de assinar.",
+        "Leve divergências e documentos pendentes à conversa sobre aportes, poderes e regras de saída, com revisão profissional."
+      ]
+    ],
+    "example": {
+      "title": "Um novo sócio, outras empresas em atividade.",
+      "situation": "Uma pessoa pretende administrar a nova sociedade, mas também aparece vinculada a um negócio que atua no mesmo mercado.",
+      "attention": "O vínculo pede uma conversa sobre dedicação, clientes e possíveis conflitos de interesse. Ele não prova uma irregularidade.",
+      "nextStep": "Confirmar a função exercida na outra empresa e discutir regras de atuação antes de concluir o contrato social."
+    },
+    "resultTitle": "Mais clareza para construir a sociedade.",
+    "results": [
+      [
+        "Histórico para discutir",
+        "Use os registros reunidos para perguntar sobre participações empresariais e ocorrências relevantes."
+      ],
+      [
+        "Pendências antes do aporte",
+        "Separe o que foi esclarecido do que ainda exige documentação ou revisão jurídica e contábil."
+      ]
+    ],
+    "faqTitle": "futuros sócios.",
+    "questions": [
+      [
+        "A análise diz se alguém será um bom sócio?",
+        "Não. Ela apoia a avaliação documental. Afinidade, capacidade de gestão, referências e compatibilidade de objetivos precisam ser avaliadas pelas partes."
+      ],
+      [
+        "Ter uma empresa com dívidas impede a sociedade?",
+        "Não há uma conclusão automática. É preciso examinar a ocorrência, o vínculo e seus possíveis efeitos com um profissional."
+      ],
+      [
+        "O contrato social está incluído?",
+        "A elaboração e revisão do contrato social não fazem parte da consulta documental inicial. Confirme serviços complementares antes de contratar."
+      ]
+    ],
+    "closingTitle": "Prepare a conversa antes de dividir a sociedade.",
+    "closingDescription": "Reúna os dados do futuro sócio e as condições da participação proposta. Consulte no aplicativo as verificações disponíveis para apoiar essa decisão."
   },
   {
     "slug": "analise-de-fornecedores",
@@ -16,8 +89,81 @@
     "headline": "Conheça quem sua empresa",
     "accent": "vai contratar.",
     "description": "Organize documentos e registros de fornecedores e prestadores para identificar pontos que precisam ser esclarecidos antes de fechar um contrato.",
-    "cta": "Conhecer a análise disponível",
-    "note": "A consulta documental não aprova automaticamente um fornecedor ou prestador."
+    "cta": "Conhecer a análise de fornecedores",
+    "note": "A consulta documental não aprova automaticamente um fornecedor ou prestador.",
+    "introTitle": "Preço e prazo importam. Saber quem assume a entrega também.",
+    "intro": "Antes de antecipar pagamentos ou depender de um prestador, confira quem está na proposta, quem assina e quem receberá. A documentação ajuda a esclarecer inconsistências na contratação e a definir verificações adicionais.",
+    "documents": [
+      {
+        "title": "Quem será contratado",
+        "description": "Cruze os dados apresentados pelo fornecedor com a identificação dos responsáveis e os registros disponíveis.",
+        "items": [
+          "Identificação do responsável e vínculos empresariais",
+          "Dados cadastrais informados na proposta",
+          "Documentos de representação de quem assina",
+          "Certidões disponíveis dentro do escopo da consulta"
+        ]
+      },
+      {
+        "title": "O que será entregue",
+        "description": "A análise documental deve acompanhar uma avaliação comercial e técnica do fornecimento.",
+        "items": [
+          "Proposta com escopo, quantidades e prazos",
+          "Contrato e critérios de aceite",
+          "Dados do beneficiário dos pagamentos",
+          "Referências, licenças ou qualificações pertinentes ao serviço"
+        ]
+      }
+    ],
+    "journeyTitle": "Conferir a identidade. Esclarecer a proposta. Contratar com contexto.",
+    "journey": [
+      [
+        "Defina a contratação.",
+        "Registre o serviço, o prazo e a exposição financeira, especialmente quando houver antecipação."
+      ],
+      [
+        "Compare os documentos.",
+        "Confira a coerência entre proposta, identificação do contratado, representação e dados de pagamento."
+      ],
+      [
+        "Resolva as divergências.",
+        "Peça documentos e explicações antes de liberar valores ou tornar a operação dependente do fornecedor."
+      ]
+    ],
+    "example": {
+      "title": "A proposta vem de uma empresa. A cobrança, de outra.",
+      "situation": "Um prestador pede um adiantamento, mas o beneficiário informado não corresponde à empresa que aparece no orçamento.",
+      "attention": "Pode existir uma explicação contratual, mas a diferença precisa ser documentada antes do pagamento.",
+      "nextStep": "Confirmar quem assume a entrega, quem pode receber e como essa relação aparece no contrato."
+    },
+    "resultTitle": "Uma contratação com responsabilidades mais claras.",
+    "results": [
+      [
+        "Identificação consistente",
+        "Confronte as informações reunidas com proposta, contrato e beneficiário informado."
+      ],
+      [
+        "Perguntas antes do pagamento",
+        "Use as pendências identificadas para pedir esclarecimentos e definir marcos de entrega com o fornecedor."
+      ]
+    ],
+    "faqTitle": "fornecedores e prestadores.",
+    "questions": [
+      [
+        "A consulta comprova capacidade de entrega?",
+        "Não. Capacidade operacional, qualidade, estoque e referências exigem avaliação técnica e comercial própria."
+      ],
+      [
+        "Um apontamento elimina o fornecedor?",
+        "Não automaticamente. Considere a natureza, a data e o contexto da ocorrência, além dos esclarecimentos recebidos."
+      ],
+      [
+        "A IA Audita faz homologação completa?",
+        "A consulta documental é uma etapa de apoio. Visitas, certificações, licenças específicas e avaliação financeira dependem de verificações complementares."
+      ]
+    ],
+    "closingTitle": "Confira a contratação antes do primeiro pagamento.",
+    "closingDescription": "Tenha em mãos os dados do fornecedor, a proposta e as condições de entrega. Consulte as opções de análise documental antes de assumir o compromisso."
   },
   {
     "slug": "analise-de-parceiros",
@@ -26,8 +172,81 @@
     "headline": "Mais informação antes de fechar",
     "accent": "uma parceria.",
     "description": "Conheça os registros e vínculos empresariais de quem propõe uma parceria, representação ou distribuição, com análise documental e recomendações.",
-    "cta": "Conhecer a análise disponível",
-    "note": "Os registros consultados apoiam sua avaliação; não garantem o resultado da parceria."
+    "cta": "Conhecer a análise de parceiros",
+    "note": "Os registros consultados apoiam sua avaliação; não garantem o resultado da parceria.",
+    "introTitle": "Antes de associar sua marca, entenda quem representa a parceria.",
+    "intro": "Representação, distribuição e ações conjuntas podem envolver clientes, informações e reputação. A diligência documental ajuda a conferir os envolvidos e a esclarecer quem tem poderes para assumir os compromissos apresentados.",
+    "documents": [
+      {
+        "title": "O parceiro e seus vínculos",
+        "description": "Conheça a pessoa que conduz a negociação e sua relação com a empresa apresentada.",
+        "items": [
+          "Identificação do interlocutor e vínculos empresariais",
+          "Documentos de representação e procurações",
+          "Certidões e ocorrências disponíveis",
+          "Empresas que participarão efetivamente da operação"
+        ]
+      },
+      {
+        "title": "Os termos da parceria",
+        "description": "Compare a proposta comercial com os limites e responsabilidades que serão formalizados.",
+        "items": [
+          "Minuta do acordo de parceria",
+          "Regras de uso da marca e de materiais",
+          "Território, exclusividade e duração propostos",
+          "Comissões, responsabilidades e encerramento"
+        ]
+      }
+    ],
+    "journeyTitle": "Conheça o interlocutor antes de vincular sua marca.",
+    "journey": [
+      [
+        "Delimite a parceria.",
+        "Identifique se a proposta envolve indicação, representação, distribuição ou outra atuação conjunta."
+      ],
+      [
+        "Confira a representação.",
+        "Compare os documentos apresentados com o papel de quem negocia e assina."
+      ],
+      [
+        "Formalize os esclarecimentos.",
+        "Resolva dúvidas sobre vínculos e poderes antes de conceder acesso a clientes, dados ou materiais da marca."
+      ]
+    ],
+    "example": {
+      "title": "Uma proposta de exclusividade sem representação comprovada.",
+      "situation": "Um interlocutor oferece distribuição exclusiva em uma região, mas ainda não apresentou documentos que confirmem seus poderes para assumir o acordo.",
+      "attention": "A proposta comercial, sozinha, não esclarece quem ficará obrigado pelo contrato.",
+      "nextStep": "Solicitar os documentos de representação e submeter limites, prazo e responsabilidades do acordo à revisão apropriada."
+    },
+    "resultTitle": "Contexto para proteger a relação comercial.",
+    "results": [
+      [
+        "Vínculos esclarecidos",
+        "Organize quem negocia, quem representa a empresa e quais documentos sustentam essa atuação."
+      ],
+      [
+        "Condições a confirmar",
+        "Leve as pendências à negociação de território, uso da marca e responsabilidades de cada parte."
+      ]
+    ],
+    "faqTitle": "parcerias comerciais.",
+    "questions": [
+      [
+        "Essa análise é igual à de fornecedores?",
+        "O foco aqui é uma relação comercial conjunta, como representação ou distribuição. Além da identidade, importam poderes de representação e compromissos ligados à marca."
+      ],
+      [
+        "A consulta garante a reputação do parceiro?",
+        "Não. Os documentos oferecem um recorte das fontes consultadas. Referências comerciais e histórico de atuação precisam de avaliação própria."
+      ],
+      [
+        "O acordo de exclusividade é revisado automaticamente?",
+        "Não. A consulta documental ajuda a levantar questões, mas a revisão das cláusulas exige um trabalho complementar."
+      ]
+    ],
+    "closingTitle": "Comece a parceria com responsabilidades claras.",
+    "closingDescription": "Organize quem participa, quem pode assinar e o que será compartilhado. Conheça as consultas disponíveis para esclarecer os documentos da parceria."
   },
   {
     "slug": "analise-compra-de-empresa",
@@ -36,8 +255,81 @@
     "headline": "Investigue os documentos",
     "accent": "antes de comprar uma empresa.",
     "description": "Organize um levantamento documental inicial da empresa e dos envolvidos para identificar questões que precisam ser esclarecidas antes da aquisição.",
-    "cta": "Conhecer a análise disponível",
-    "note": "Esta etapa preliminar não substitui auditoria contábil nem avaliação completa de passivos."
+    "cta": "Conhecer a análise para aquisição",
+    "note": "Esta etapa preliminar não substitui auditoria contábil nem avaliação completa de passivos.",
+    "introTitle": "O que você está comprando: participação, operação ou ativos?",
+    "intro": "Cada formato de aquisição pede documentos diferentes. Um levantamento inicial ajuda a identificar quem participa da negociação, o que está sendo oferecido e quais questões precisam de auditoria especializada antes da proposta vinculante.",
+    "documents": [
+      {
+        "title": "Empresa e envolvidos",
+        "description": "Comece pela estrutura apresentada e pelos poderes de quem pretende negociar a operação.",
+        "items": [
+          "Contrato social e alterações disponibilizadas",
+          "Participações e administradores informados",
+          "Documentos de representação dos vendedores",
+          "Certidões e registros incluídos no levantamento"
+        ]
+      },
+      {
+        "title": "O perímetro da compra",
+        "description": "Reúna o material que permitirá aos especialistas examinar ativos, obrigações e condições da operação.",
+        "items": [
+          "Relação de quotas, ativos ou estabelecimentos oferecidos",
+          "Demonstrações financeiras e informações contábeis",
+          "Contratos relevantes e dívidas informadas",
+          "Documentos trabalhistas, fiscais e licenças aplicáveis"
+        ]
+      }
+    ],
+    "journeyTitle": "Um primeiro filtro antes de aprofundar a aquisição.",
+    "journey": [
+      [
+        "Defina o objeto.",
+        "Descreva exatamente o que será adquirido e quem são os envolvidos na venda."
+      ],
+      [
+        "Organize o levantamento.",
+        "Compare os registros disponíveis com os documentos apresentados e registre o que ainda falta."
+      ],
+      [
+        "Direcione a auditoria.",
+        "Encaminhe questões contábeis, fiscais, trabalhistas e contratuais para investigação especializada antes de fechar."
+      ]
+    ],
+    "example": {
+      "title": "Comprar a operação não é apenas comprar o nome da empresa.",
+      "situation": "Um comprador recebe uma proposta que inclui equipamentos e carteira de clientes, mas o documento não esclarece quais contratos podem acompanhar a operação.",
+      "attention": "O preço pode estar baseado em receitas e ativos cuja transferência ainda precisa ser confirmada.",
+      "nextStep": "Definir o perímetro da aquisição, reunir os contratos e verificar as condições de transferência com os profissionais da operação."
+    },
+    "resultTitle": "Uma pauta concreta para a due diligence da aquisição.",
+    "results": [
+      [
+        "Documentação inicial organizada",
+        "Separe o que foi apresentado, o que está pendente e quais informações precisam de confirmação."
+      ],
+      [
+        "Questões para aprofundamento",
+        "Use o levantamento para orientar a auditoria completa e a discussão de condições para o fechamento."
+      ]
+    ],
+    "faqTitle": "compra de empresa.",
+    "questions": [
+      [
+        "A análise calcula o valor da empresa?",
+        "Não. Valuation exige avaliação financeira própria, com premissas e dados que não fazem parte da consulta documental inicial."
+      ],
+      [
+        "Todos os passivos serão identificados?",
+        "Não. Certidões e registros não revelam necessariamente todas as obrigações. A aquisição exige auditoria adequada ao seu porte e estrutura."
+      ],
+      [
+        "Posso dispensar contador e advogado?",
+        "Não é essa a proposta. O levantamento inicial organiza questões para esses profissionais e não substitui a auditoria completa da aquisição."
+      ]
+    ],
+    "closingTitle": "Entenda o que está incluído na compra.",
+    "closingDescription": "Reúna a proposta de aquisição e os documentos da empresa. Use o levantamento inicial para direcionar as verificações contábeis, jurídicas e operacionais necessárias."
   },
   {
     "slug": "diagnostico-cpf-cnpj",
@@ -46,8 +338,81 @@
     "headline": "Entenda o que consta",
     "accent": "nos seus registros e documentos.",
     "description": "Pelo CPF, organize os apontamentos encontrados nas fontes consultadas e as providências sugeridas para esclarecer sua situação e seus vínculos empresariais.",
-    "cta": "Conhecer a análise disponível",
-    "note": "A entrada atual usa CPF; consulta direta por CNPJ e análise completa de crédito não estão disponíveis neste fluxo."
+    "cta": "Conhecer o diagnóstico documental",
+    "note": "A entrada atual usa CPF; consulta direta por CNPJ e análise completa de crédito não estão disponíveis neste fluxo.",
+    "introTitle": "Veja seus registros com contexto antes de buscar uma regularização.",
+    "intro": "Um apontamento pode exigir atualização, esclarecimento ou confirmação de identidade. O diagnóstico reúne informações disponíveis a partir do CPF e ajuda a organizar perguntas sobre os registros encontrados e os vínculos empresariais identificados.",
+    "documents": [
+      {
+        "title": "Seu CPF",
+        "description": "A identificação correta é o primeiro passo para interpretar ocorrências e evitar conclusões baseadas apenas em nomes semelhantes.",
+        "items": [
+          "CPF e dados de identificação conferidos",
+          "Certidões obtidas e respectivas datas",
+          "Referências dos processos ou registros encontrados",
+          "Comprovantes relacionados a questões já resolvidas"
+        ]
+      },
+      {
+        "title": "Seus vínculos empresariais",
+        "description": "Confira se as participações encontradas correspondem ao seu histórico e quais documentos podem esclarecer diferenças.",
+        "items": [
+          "Empresas e funções identificadas nas fontes disponíveis",
+          "Alterações contratuais ou comprovantes de saída",
+          "Datas de entrada e desligamento informadas",
+          "Pedidos anteriores de atualização cadastral, se houver"
+        ]
+      }
+    ],
+    "journeyTitle": "Localize o registro. Entenda a origem. Defina a providência.",
+    "journey": [
+      [
+        "Confira seus dados.",
+        "Comece pelo CPF e confirme que os documentos se referem à pessoa correta."
+      ],
+      [
+        "Leia cada ocorrência.",
+        "Verifique a fonte, a data e o conteúdo antes de associar o registro a uma pendência atual."
+      ],
+      [
+        "Procure o canal responsável.",
+        "Com os documentos reunidos, solicite esclarecimento ou correção ao órgão competente, quando necessário."
+      ]
+    ],
+    "example": {
+      "title": "Você saiu da empresa, mas encontrou um vínculo antigo.",
+      "situation": "Ao organizar seus registros, uma pessoa identifica uma participação empresarial que acredita já ter encerrado.",
+      "attention": "É necessário comparar a data da fonte com a alteração contratual e os registros correspondentes.",
+      "nextStep": "Reunir o documento de saída e consultar o órgão responsável para entender se há necessidade de atualização."
+    },
+    "resultTitle": "Organize o que precisa ser esclarecido sobre seus dados.",
+    "results": [
+      [
+        "Origem dos apontamentos",
+        "Mantenha a referência das fontes e datas para discutir cada ocorrência com o responsável adequado."
+      ],
+      [
+        "Documentos para providências",
+        "Reúna comprovantes e dúvidas antes de solicitar atualização, esclarecimento ou orientação profissional."
+      ]
+    ],
+    "faqTitle": "diagnóstico de CPF e vínculos CNPJ.",
+    "questions": [
+      [
+        "Posso consultar diretamente um CNPJ?",
+        "O fluxo atual começa pelo CPF e pode identificar vínculos empresariais conforme as fontes disponíveis. A consulta direta por CNPJ não está disponível nesse fluxo."
+      ],
+      [
+        "Isso mostra meu score ou toda a minha situação de crédito?",
+        "Não. O diagnóstico documental não é um relatório completo de crédito e não deve ser interpretado como uma avaliação de capacidade financeira."
+      ],
+      [
+        "A plataforma retira ou corrige apontamentos?",
+        "Não automaticamente. Uma correção depende da análise e dos procedimentos do órgão ou entidade responsável pelo registro."
+      ]
+    ],
+    "closingTitle": "Organize seus registros e vínculos empresariais.",
+    "closingDescription": "Comece pelos seus dados de identificação e documentos anteriores. Confira as consultas disponíveis e reúna as referências necessárias para esclarecer cada registro."
   },
   {
     "slug": "analise-para-locacao",
@@ -56,8 +421,81 @@
     "headline": "Mais informação antes de assinar",
     "accent": "uma locação.",
     "description": "Apoie a conferência documental dos envolvidos na locação com registros, evidências e pontos de atenção para avaliação da imobiliária ou do proprietário.",
-    "cta": "Conhecer a análise disponível",
-    "note": "Não há aprovação automática de locação nem avaliação de capacidade financeira neste fluxo."
+    "cta": "Conhecer a análise para locação",
+    "note": "Não há aprovação automática de locação nem avaliação de capacidade financeira neste fluxo.",
+    "introTitle": "Antes de entregar as chaves, confira quem participa da locação.",
+    "intro": "Locador, locatário, representante e eventual fiador têm papéis diferentes. Organizar os documentos de cada um ajuda a esclarecer a identificação, os poderes de assinatura e as pendências antes de formalizar o contrato.",
+    "documents": [
+      {
+        "title": "Pessoas e representação",
+        "description": "Confirme quem assina em nome próprio e quem atua por outra pessoa ou empresa.",
+        "items": [
+          "Identificação dos envolvidos na locação",
+          "Procurações ou documentos de representação",
+          "Certidões disponíveis conforme o escopo",
+          "Documentos do fiador, quando essa garantia for proposta"
+        ]
+      },
+      {
+        "title": "Contrato e imóvel",
+        "description": "Os registros dos envolvidos devem ser acompanhados da conferência própria do imóvel e das condições de ocupação.",
+        "items": [
+          "Minuta do contrato e modalidade de garantia",
+          "Documentação que sustente os poderes do locador",
+          "Vistoria e descrição das condições de entrega",
+          "Regras de uso, encargos e documentos complementares"
+        ]
+      }
+    ],
+    "journeyTitle": "Uma conferência documental antes da assinatura.",
+    "journey": [
+      [
+        "Identifique cada papel.",
+        "Relacione locador, locatário, representantes e eventual fiador."
+      ],
+      [
+        "Confira os documentos.",
+        "Compare identificação, representação e registros encontrados com os nomes previstos no contrato."
+      ],
+      [
+        "Esclareça as pendências.",
+        "Encaminhe dúvidas à imobiliária ou ao profissional responsável antes de assinar e entregar as chaves."
+      ]
+    ],
+    "example": {
+      "title": "Quem oferece o imóvel está autorizado a alugá-lo?",
+      "situation": "Uma negociação é conduzida por um familiar do proprietário, que pretende assinar o contrato em seu nome.",
+      "attention": "A relação familiar não esclarece, por si só, quais poderes essa pessoa possui para representar o locador.",
+      "nextStep": "Solicitar a documentação de representação e conferir sua adequação ao contrato com a imobiliária ou assessoria responsável."
+    },
+    "resultTitle": "Mais clareza para proprietário, imobiliária e locatário.",
+    "results": [
+      [
+        "Papéis e documentos alinhados",
+        "Organize quem assume cada obrigação e quais documentos sustentam a participação no contrato."
+      ],
+      [
+        "Pendências antes das chaves",
+        "Separe questões de identificação e representação das avaliações de renda, garantia e condições do imóvel."
+      ]
+    ],
+    "faqTitle": "análise para locação.",
+    "questions": [
+      [
+        "O resultado aprova ou reprova o inquilino?",
+        "Não. A decisão cabe ao responsável pela locação, considerando critérios adequados e as demais verificações necessárias."
+      ],
+      [
+        "A análise comprova renda ou capacidade de pagamento?",
+        "Não neste fluxo. Renda, capacidade financeira e adequação das garantias precisam de avaliação específica."
+      ],
+      [
+        "A vistoria do imóvel está incluída?",
+        "Não. Vistoria e conferência das condições físicas são etapas próprias, complementares à análise documental dos envolvidos."
+      ]
+    ],
+    "closingTitle": "Esclareça os documentos antes de receber as chaves.",
+    "closingDescription": "Identifique as partes, os representantes e a garantia proposta. Confira o escopo disponível para apoiar a conferência documental da locação."
   },
   {
     "slug": "documentos-para-licitacoes",
@@ -66,8 +504,81 @@
     "headline": "Organize sua documentação",
     "accent": "antes de participar de uma licitação.",
     "description": "Reúna e compreenda certidões e registros disponíveis para identificar providências documentais antes de participar de processos de contratação pública.",
-    "cta": "Conhecer a análise disponível",
-    "note": "A consulta não verifica editais ou SICAF, nem garante habilitação em licitações."
+    "cta": "Conhecer as consultas disponíveis",
+    "note": "A consulta não verifica editais ou SICAF, nem garante habilitação em licitações.",
+    "introTitle": "Prepare os documentos antes de correr contra o prazo.",
+    "intro": "Participar de uma licitação exige atenção ao conjunto de documentos solicitado para aquela contratação. O levantamento documental ajuda a organizar certidões disponíveis, identificar pendências e preparar a conferência pela equipe responsável.",
+    "documents": [
+      {
+        "title": "Identificação e certidões",
+        "description": "Mantenha os documentos legíveis, atualizados e vinculados à pessoa ou empresa correta.",
+        "items": [
+          "Documentos cadastrais e societários apresentados",
+          "Representação de quem participará do procedimento",
+          "Certidões fiscais e trabalhistas pertinentes",
+          "Emissores, datas e validade indicados nos documentos"
+        ]
+      },
+      {
+        "title": "Pasta da participação",
+        "description": "A equipe deve definir a lista exigida para o procedimento concreto e complementar o levantamento inicial.",
+        "items": [
+          "Lista de documentos exigidos no edital",
+          "Comprovações técnicas solicitadas",
+          "Informações econômico-financeiras exigidas",
+          "Declarações e arquivos na forma solicitada"
+        ]
+      }
+    ],
+    "journeyTitle": "Reúna. Confira a validade. Complete a pasta.",
+    "journey": [
+      [
+        "Monte a lista do procedimento.",
+        "A equipe responsável lê o edital e identifica os documentos e os prazos aplicáveis."
+      ],
+      [
+        "Organize o que está disponível.",
+        "Separe certidões obtidas, documentos fornecidos e itens que ainda precisam ser providenciados."
+      ],
+      [
+        "Faça a conferência final.",
+        "Revise validade, identificação, formato e atendimento às exigências antes do envio pela equipe."
+      ]
+    ],
+    "example": {
+      "title": "A certidão está na pasta, mas vence antes da entrega.",
+      "situation": "Ao preparar uma participação, a equipe encontra um documento cuja validade termina antes da data prevista para apresentação.",
+      "attention": "Ter um arquivo salvo não significa que ele atenderá à exigência do procedimento na data necessária.",
+      "nextStep": "Conferir a regra aplicável, providenciar a atualização e revisar os demais documentos antes da apresentação."
+    },
+    "resultTitle": "Menos improviso na preparação documental.",
+    "results": [
+      [
+        "Pasta com referências claras",
+        "Organize documentos, fontes e datas para facilitar a conferência de quem prepara a participação."
+      ],
+      [
+        "Pendências com responsável",
+        "Separe os itens faltantes ou que precisam de atualização para que a equipe encaminhe cada providência."
+      ]
+    ],
+    "faqTitle": "documentos para licitações.",
+    "questions": [
+      [
+        "A IA Audita verifica o edital automaticamente?",
+        "Não. A leitura e conferência das exigências do edital são feitas pela equipe responsável. A consulta atual oferece apoio documental."
+      ],
+      [
+        "O serviço cadastra a empresa no SICAF?",
+        "Não. Cadastro, atualização no SICAF e envio de documentos aos portais não fazem parte deste fluxo."
+      ],
+      [
+        "A consulta garante a habilitação?",
+        "Não. O atendimento às exigências depende do procedimento, da documentação apresentada e da avaliação competente."
+      ]
+    ],
+    "closingTitle": "Prepare a documentação antes do prazo.",
+    "closingDescription": "Tenha o edital e a lista de exigências em mãos. Consulte os documentos disponíveis e organize o que ainda precisa ser obtido, atualizado ou conferido pela sua equipe."
   },
   {
     "slug": "reavaliacao-de-parceiros",
@@ -76,7 +587,80 @@
     "headline": "Reavalie a documentação",
     "accent": "antes de renovar uma parceria.",
     "description": "Atualize o levantamento documental dos seus parceiros para apoiar revisões periódicas e novas decisões comerciais.",
-    "cta": "Conhecer a análise disponível",
-    "note": "Cada revisão exige uma nova consulta; não há monitoramento ou alertas automáticos."
+    "cta": "Conhecer a reavaliação documental",
+    "note": "Cada revisão exige uma nova consulta; não há monitoramento ou alertas automáticos.",
+    "introTitle": "A parceria continua. A documentação precisa acompanhar.",
+    "intro": "Renovações, ampliação de limites e novos projetos são momentos para rever informações. Uma nova consulta documental ajuda a atualizar o contexto do parceiro e a identificar questões que surgiram desde a última avaliação.",
+    "documents": [
+      {
+        "title": "A avaliação anterior",
+        "description": "Preserve a base de comparação para entender o que já era conhecido e quais pendências ficaram abertas.",
+        "items": [
+          "Relatório e certidões da consulta anterior",
+          "Data e abrangência daquela avaliação",
+          "Esclarecimentos fornecidos pelo parceiro",
+          "Condições e pendências registradas na contratação"
+        ]
+      },
+      {
+        "title": "O momento atual",
+        "description": "Peça documentos recentes e confira mudanças na representação e na relação comercial.",
+        "items": [
+          "Nova consulta e certidões disponíveis",
+          "Alterações cadastrais ou societárias apresentadas",
+          "Representantes que assinarão a renovação",
+          "Novo escopo, valores e compromissos propostos"
+        ]
+      }
+    ],
+    "journeyTitle": "Use a renovação como ponto de revisão.",
+    "journey": [
+      [
+        "Escolha o momento.",
+        "Programe uma nova consulta antes de renovar, ampliar a relação ou assumir um novo compromisso."
+      ],
+      [
+        "Compare as referências.",
+        "Coloque a documentação anterior ao lado dos registros atuais, observando fontes e datas."
+      ],
+      [
+        "Registre a decisão.",
+        "Peça esclarecimentos sobre mudanças e documente o que foi considerado para renovar ou renegociar."
+      ]
+    ],
+    "example": {
+      "title": "O parceiro é o mesmo. Quem assina mudou.",
+      "situation": "Na renovação de um contrato, uma nova pessoa se apresenta como responsável e solicita alteração dos dados de pagamento.",
+      "attention": "A relação anterior não dispensa confirmar a representação atual e a justificativa da mudança solicitada.",
+      "nextStep": "Solicitar documentos atualizados, confirmar as informações pelos canais conhecidos e esclarecer as alterações antes de renovar."
+    },
+    "resultTitle": "Uma revisão baseada no momento da decisão.",
+    "results": [
+      [
+        "Histórico e atualização",
+        "Compare os documentos de cada período para reconhecer mudanças e evitar o uso de informações vencidas."
+      ],
+      [
+        "Pendências de renovação",
+        "Leve ao parceiro as questões ainda abertas antes de ampliar valores, prazo ou responsabilidades."
+      ]
+    ],
+    "faqTitle": "reavaliação de parceiros.",
+    "questions": [
+      [
+        "A plataforma monitora o parceiro continuamente?",
+        "Não. Cada revisão exige uma nova consulta. Não há acompanhamento contínuo nem alertas automáticos neste fluxo."
+      ],
+      [
+        "Com que frequência devo reavaliar?",
+        "A frequência depende da relação e da política da sua empresa. Renovação, aumento de exposição e mudanças informadas pelo parceiro são momentos úteis para considerar uma revisão."
+      ],
+      [
+        "A comparação com o relatório anterior é automática?",
+        "Não há comparação automática prometida neste fluxo. Guarde os materiais anteriores e compare as referências com apoio da equipe responsável."
+      ]
+    ],
+    "closingTitle": "Antes de renovar, confira o que mudou.",
+    "closingDescription": "Reúna o levantamento anterior e as condições da renovação. Solicite uma nova consulta para apoiar a conferência dos documentos atuais do parceiro."
   }
 ]

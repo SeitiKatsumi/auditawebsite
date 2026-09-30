@@ -6,7 +6,6 @@ import { servicePages } from "../../../lib/service-pages";
 import styles from "./service.module.css";
 import { PisPasepPage } from "../../../components/services/PisPasepPage";
 import { BankDebtPage } from "../../../components/services/BankDebtPage";
-import { CertificatesPage } from "../../../components/services/CertificatesPage";
 import { IncomeTaxPage } from "../../../components/services/IncomeTaxPage";
 import { ImportAuditPage } from "../../../components/services/ImportAuditPage";
 import { EnergyPage } from "../../../components/services/EnergyPage";
@@ -16,7 +15,6 @@ import sellerApproaches from "../../../content/seller-approaches.json";
 
 const customPages = {
   "dividas-bancarias": BankDebtPage,
-  "certidoes-estaduais": CertificatesPage,
   "pis-pasep": PisPasepPage,
   "isencao-imposto-de-renda": IncomeTaxPage,
   "auditoria-de-importacao": ImportAuditPage,

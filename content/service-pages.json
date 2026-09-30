@@ -47,12 +47,28 @@
       {
         "question": "A IA Audita negocia diretamente com o banco?",
         "answer": "Não. Você recebe uma base documental para conduzir a negociação pelos canais oficiais. Eventual atuação de advogado depende de solicitação, análise e condições próprias."
+      },
+      {
+        "question": "A análise garante redução ou devolução em dobro?",
+        "answer": "Não. A revisão depende do contrato, dos documentos, dos pagamentos e das regras aplicáveis. A devolução em dobro exige os requisitos legais e não incide automaticamente sobre todo o saldo da dívida."
+      },
+      {
+        "question": "Quais documentos devo reunir?",
+        "answer": "Separe extratos completos, contratos e aditivos, faturas e comprovantes dos pagamentos. Preserve a sequência dos períodos e mantenha documentos de contas e modalidades diferentes identificados."
       }
     ],
     "sources": [
       {
         "label": "STJ · avaliação de juros bancários",
         "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2023/24032023-Para-Terceira-Turma--contrato-de-mutuo-com-juros-acima-de-niveis-predefinidos--por-si-so--nao-e-abusivo.aspx"
+      },
+      {
+        "label": "CDC · arts. 39 e 42",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+      },
+      {
+        "label": "Código Civil · arts. 186 e 927",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
       }
     ]
   },
@@ -304,135 +320,6 @@
       {
         "label": "STJ · Tema 986 sobre TUST e TUSD",
         "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/13032024-TUSD-e-TUST-integram-base-de-calculo-do-ICMS-sobre-energia--define-Primeira-Secao.aspx"
-      }
-    ]
-  },
-  {
-    "slug": "certidoes-estaduais",
-    "title": "Certidões estaduais: emissão, abrangência e resultados",
-    "category": "Certidões",
-    "eyebrow": "DOCUMENTOS JUDICIAIS, COM MAIS CLAREZA",
-    "headline": "Antes de assinar, confira o que as certidões mostram.",
-    "accent": "Comece pelos tribunais estaduais.",
-    "description": "Escolha a certidão para sua finalidade. Aprenda a conferir identidade, abrangência, autenticidade e apontamentos em documentos judiciais de pessoas e empresas.",
-    "cta": "Consultar certidões estaduais",
-    "appHash": "consulta-tjdft-pf",
-    "image": "/images/home-clara-marca.png",
-    "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
-    "insight": "O nome do vendedor também faz parte da análise de uma compra segura.",
-    "intro": "Certidões judiciais ajudam a entender o histórico de quem participa do negócio.",
-    "benefits": [
-      {
-        "title": "Comece pela UF correta",
-        "text": "Selecione o estado para ver as opções de certidões judiciais oferecidas pelo tribunal competente. A cobertura varia conforme a fonte."
-      },
-      {
-        "title": "Consulte a pessoa ou empresa",
-        "text": "Organize os dados exigidos para pesquisar distribuições e processos em nome de pessoa física ou jurídica, conforme o tipo de certidão."
-      },
-      {
-        "title": "Entenda o resultado",
-        "text": "Confira o documento emitido e seus apontamentos. Uma consulta incompleta não deve ser tratada como certidão negativa."
-      }
-    ],
-    "documents": [
-      "CPF ou CNPJ da pessoa ou empresa pesquisada.",
-      "Nome completo ou razão social correspondente ao documento.",
-      "Estado da consulta e tipo de certidão necessário.",
-      "Informações complementares pedidas pelo tribunal, como filiação, data de nascimento ou contato."
-    ],
-    "delivery": "Você acompanha o andamento e confere os resultados ou documentos disponibilizados pela fonte consultada. A emissão e o formato da certidão dependem do tribunal e do tipo de consulta.",
-    "limit": "A disponibilidade varia por tribunal. Alguns fluxos exigem login, CAPTCHA ou outra validação humana. Uma consulta indisponível ou incompleta não equivale a uma certidão negativa, e o serviço não garante emissão imediata em todos os estados.",
-    "questions": [
-      {
-        "question": "Uma certidão estadual cobre todo o Brasil?",
-        "answer": "Não. A abrangência depende do tribunal e da modalidade emitida. Confira território, bases e graus de jurisdição no próprio documento; outras localidades podem exigir pedidos separados."
-      },
-      {
-        "question": "Qual é a diferença entre certidão cível e criminal?",
-        "answer": "Elas têm objetos de pesquisa distintos, definidos pelo emissor. Escolha a modalidade exigida para sua finalidade e leia as regras do tribunal; uma não substitui automaticamente a outra."
-      },
-      {
-        "question": "Certidão negativa significa que não existe nenhum risco?",
-        "answer": "Não. Ela informa um resultado dentro de critérios e bases específicos. Não substitui análise de outros documentos, da situação do imóvel ou de fatos fora de sua abrangência."
-      },
-      {
-        "question": "O que fazer se aparecer alguém com o mesmo nome?",
-        "answer": "Confira CPF, filiação e demais identificadores pertinentes e siga o procedimento do tribunal para esclarecimento. Não atribua um processo a alguém apenas pela semelhança do nome."
-      },
-      {
-        "question": "Todas as certidões têm a mesma validade e o mesmo custo?",
-        "answer": "Não. As condições variam por emissor, modalidade e finalidade. Confira tanto as regras do documento quanto a exigência de quem o receberá. Eventuais custos da assistência são distintos das condições do serviço público."
-      },
-      {
-        "question": "Posso pesquisar uma empresa do vendedor?",
-        "answer": "As modalidades para pessoa jurídica dependem da disponibilidade. Em uma análise mais ampla, vínculos empresariais podem justificar consultas adicionais, sem presumir responsabilidade pessoal por toda obrigação da empresa."
-      },
-      {
-        "question": "A certidão inclui a matrícula e os ônus do imóvel?",
-        "answer": "Não. Esses documentos pertencem ao registro imobiliário. A análise de uma compra pode exigir ambos, além de outras informações, conforme o caso."
-      },
-      {
-        "question": "Como conferir se o documento é autêntico?",
-        "answer": "Use o endereço e o código de validação informados pelo emissor. Confira se os dados retornados correspondem ao arquivo recebido e preserve o documento original."
-      }
-    ],
-    "sources": [
-      {
-        "label": "TJDFT · Certidão Nada Consta e regras de emissão",
-        "url": "https://www.tjdft.jus.br/informacoes/perguntas-mais-frequentes/certidao-nada-consta"
-      }
-    ]
-  },
-  {
-    "slug": "indisponibilidade-de-bens",
-    "title": "Indisponibilidade de bens",
-    "category": "Certidões",
-    "eyebrow": "ANTES DE AVANÇAR NA NEGOCIAÇÃO",
-    "headline": "Vai comprar um imóvel?",
-    "accent": "Confira possíveis restrições no nome do vendedor.",
-    "description": "Quando o provedor estiver habilitado, a consulta por CPF ou CNPJ reúne indicadores de indisponibilidade de bens. Um apontamento merece confirmação na fonte e pode mudar seus próximos passos na negociação.",
-    "status": "Consulta sujeita à disponibilidade do provedor",
-    "cta": "Conhecer disponibilidade",
-    "appHash": "consulta-cnib",
-    "image": "/images/home-clara-marca.png",
-    "imageAlt": "Ilustração da identidade IA Audita em azul sobre fundo claro",
-    "insight": "Uma restrição no patrimônio do vendedor é um sinal para investigar antes de pagar ou assinar.",
-    "intro": "Uma pesquisa direcionada ajuda a saber o que precisa ser esclarecido.",
-    "benefits": [
-      {
-        "title": "Pesquise pelo documento certo",
-        "text": "A consulta usa CPF ou CNPJ da pessoa ou empresa envolvida na negociação, conforme a integração disponível."
-      },
-      {
-        "title": "Confira os indicadores",
-        "text": "Veja se a fonte retorna possíveis registros de indisponibilidade e quais informações precisam ser confirmadas."
-      },
-      {
-        "title": "Decida o próximo passo",
-        "text": "Um indicador pode justificar a obtenção de certidão oficial e orientação especializada antes de concluir a compra."
-      }
-    ],
-    "documents": [
-      "CPF ou CNPJ correto do vendedor ou da pessoa pesquisada.",
-      "Nome completo ou razão social, quando disponível.",
-      "Finalidade da consulta e relação com a negociação em análise.",
-      "Confirmação de autorização ou base legal para consultar os dados."
-    ],
-    "delivery": "Quando o provedor estiver habilitado, o resultado da pesquisa aparece na plataforma com os indicadores e as informações retornadas pela fonte. A ausência de retorno ou uma falha de consulta é diferente de um resultado sem ocorrências.",
-    "limit": "A consulta depende de provedor habilitado e da cobertura da fonte. O resultado não é uma avaliação completa do patrimônio e não substitui automaticamente uma certidão oficial da CNIB. A análise de uma negociação pode exigir outros documentos.",
-    "questions": [
-      {
-        "question": "Este resultado é uma certidão oficial da CNIB?",
-        "answer": "Não automaticamente. O módulo consulta indicadores por meio de um provedor de dados. Confira se o resultado atende à sua finalidade e se você precisa solicitar uma certidão oficial pelos canais competentes."
-      },
-      {
-        "question": "A pesquisa encontra todos os bens de uma pessoa?",
-        "answer": "Não. O objetivo deste módulo é consultar possíveis indicadores de indisponibilidade, conforme a fonte habilitada. Ele não realiza um levantamento completo de imóveis ou do patrimônio da pessoa pesquisada."
-      },
-      {
-        "question": "E se a consulta não estiver disponível?",
-        "answer": "A execução depende da habilitação e da disponibilidade do provedor. Uma consulta indisponível não autoriza concluir que a pessoa está sem restrições; nesse caso, será necessário verificar os canais oficiais ou a disponibilidade do serviço."
       }
     ]
   },
