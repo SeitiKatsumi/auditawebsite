@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "analise-de-socios",
+    "title": "Análise de futuros sócios",
+    "eyebrow": "Diligência documental para sociedades",
+    "headline": "Conheça seu futuro sócio",
+    "accent": "antes de abrir uma sociedade.",
+    "description": "Reúna registros e documentos para avaliar vínculos empresariais, apontamentos e inconsistências antes de iniciar uma sociedade ou admitir um novo sócio.",
+    "cta": "Conhecer a análise disponível",
+    "note": "A consulta disponível hoje é documental; não substitui uma auditoria societária completa."
+  },
+  {
+    "slug": "analise-de-fornecedores",
+    "title": "Análise de fornecedores e prestadores",
+    "eyebrow": "Diligência documental para contratações",
+    "headline": "Conheça quem sua empresa",
+    "accent": "vai contratar.",
+    "description": "Organize documentos e registros de fornecedores e prestadores para identificar pontos que precisam ser esclarecidos antes de fechar um contrato.",
+    "cta": "Conhecer a análise disponível",
+    "note": "A consulta documental não aprova automaticamente um fornecedor ou prestador."
+  },
+  {
+    "slug": "analise-de-parceiros",
+    "title": "Análise de parceiros comerciais",
+    "eyebrow": "Diligência documental para parcerias",
+    "headline": "Mais informação antes de fechar",
+    "accent": "uma parceria.",
+    "description": "Conheça os registros e vínculos empresariais de quem propõe uma parceria, representação ou distribuição, com análise documental e recomendações.",
+    "cta": "Conhecer a análise disponível",
+    "note": "Os registros consultados apoiam sua avaliação; não garantem o resultado da parceria."
+  },
+  {
+    "slug": "analise-compra-de-empresa",
+    "title": "Análise preliminar para compra de empresa",
+    "eyebrow": "Primeira análise documental para aquisições",
+    "headline": "Investigue os documentos",
+    "accent": "antes de comprar uma empresa.",
+    "description": "Organize um levantamento documental inicial da empresa e dos envolvidos para identificar questões que precisam ser esclarecidas antes da aquisição.",
+    "cta": "Conhecer a análise disponível",
+    "note": "Esta etapa preliminar não substitui auditoria contábil nem avaliação completa de passivos."
+  },
+  {
+    "slug": "diagnostico-cpf-cnpj",
+    "title": "Diagnóstico documental do próprio CPF e vínculos empresariais",
+    "eyebrow": "Seus registros, com mais clareza",
+    "headline": "Entenda o que consta",
+    "accent": "nos seus registros e documentos.",
+    "description": "Pelo CPF, organize os apontamentos encontrados nas fontes consultadas e as providências sugeridas para esclarecer sua situação e seus vínculos empresariais.",
+    "cta": "Conhecer a análise disponível",
+    "note": "A entrada atual usa CPF; consulta direta por CNPJ e análise completa de crédito não estão disponíveis neste fluxo."
+  },
+  {
+    "slug": "analise-para-locacao",
+    "title": "Análise documental para locação",
+    "eyebrow": "Mais contexto para imobiliárias e proprietários",
+    "headline": "Mais informação antes de assinar",
+    "accent": "uma locação.",
+    "description": "Apoie a conferência documental dos envolvidos na locação com registros, evidências e pontos de atenção para avaliação da imobiliária ou do proprietário.",
+    "cta": "Conhecer a análise disponível",
+    "note": "Não há aprovação automática de locação nem avaliação de capacidade financeira neste fluxo."
+  },
+  {
+    "slug": "documentos-para-licitacoes",
+    "title": "Preparação documental para licitações",
+    "eyebrow": "Documentos antes da contratação pública",
+    "headline": "Organize sua documentação",
+    "accent": "antes de participar de uma licitação.",
+    "description": "Reúna e compreenda certidões e registros disponíveis para identificar providências documentais antes de participar de processos de contratação pública.",
+    "cta": "Conhecer a análise disponível",
+    "note": "A consulta não verifica editais ou SICAF, nem garante habilitação em licitações."
+  },
+  {
+    "slug": "reavaliacao-de-parceiros",
+    "title": "Reavaliação periódica de parceiros",
+    "eyebrow": "Documentos atualizados para novas decisões",
+    "headline": "Reavalie a documentação",
+    "accent": "antes de renovar uma parceria.",
+    "description": "Atualize o levantamento documental dos seus parceiros para apoiar revisões periódicas e novas decisões comerciais.",
+    "cta": "Conhecer a análise disponível",
+    "note": "Cada revisão exige uma nova consulta; não há monitoramento ou alertas automáticos."
+  }
+]

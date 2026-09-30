@@ -11,6 +11,8 @@ import { IncomeTaxPage } from "../../../components/services/IncomeTaxPage";
 import { ImportAuditPage } from "../../../components/services/ImportAuditPage";
 import { EnergyPage } from "../../../components/services/EnergyPage";
 import { FinancialReportPage } from "../../../components/services/FinancialReportPage";
+import { SellerAnalysisPage } from "../../../components/audita/SellerAnalysisPage";
+import sellerApproaches from "../../../content/seller-approaches.json";
 
 const customPages = {
   "dividas-bancarias": BankDebtPage,
@@ -23,15 +25,17 @@ const customPages = {
 };
 
 export const dynamicParams = false;
-export function generateStaticParams() { return servicePages.map(({ slug }) => ({ slug })); }
+export function generateStaticParams() { return [...servicePages, ...sellerApproaches].map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const page = servicePages.find(page => page.slug === slug);
+  const page = servicePages.find(page => page.slug === slug) ?? sellerApproaches.find(page => page.slug === slug);
   if (!page) notFound();
   return { title: page.title, description: page.description, alternates: { canonical: `https://auditainteligente.com.br/servicos/${slug}` }, openGraph: { title: `${page.title} | IA Audita`, description: page.description, url: `https://auditainteligente.com.br/servicos/${slug}` }, twitter: { title: `${page.title} | IA Audita`, description: page.description } };
 }
 export default async function ServiceLanding({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  const approach = sellerApproaches.find(page => page.slug === slug);
+  if (approach) return <SellerAnalysisPage approach={approach} />;
   const page = servicePages.find(page => page.slug === slug);
   if (!page) notFound();
   const CustomPage = customPages[slug as keyof typeof customPages];

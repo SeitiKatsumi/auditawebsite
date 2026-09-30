@@ -2,7 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MouseEvent, useEffect, useMemo } from "react";
+import sellerApproaches from "../../content/seller-approaches.json";
 import styles from "./SellerAnalysisPage.module.css";
+
+type SellerApproach = (typeof sellerApproaches)[number];
 
 const documents = [
   { title: "Vendedor", icon: "person", subtitle: "A situação de quem vende também importa.", description: "Consultamos certidões e documentos do vendedor para identificar possíveis ocorrências que podem impactar a negociação, como ações cíveis, fiscais, trabalhistas, protestos e outras informações públicas.", items: ["Certidões cíveis e distribuição de ações", "Débitos fiscais: federal, estadual e municipal", "Ações trabalhistas e outras obrigações", "Protestos e restrições em cadastros públicos", "Outros pontos de atenção, conforme o caso"] },
@@ -41,7 +44,7 @@ function track(event: string, params: Record<string, unknown> = {}) {
 
 function Logo() { return <Image src="/images/audita-oficial-branca.png" width={800} height={600} alt="IA Audita" className="brand-logo" priority />; }
 
-export function SellerAnalysisPage() {
+export function SellerAnalysisPage({ approach }: { approach?: SellerApproach } = {}) {
   const utms = useMemo(() => typeof window === "undefined" ? {} : Object.fromEntries(new URLSearchParams(window.location.search).entries()), []);
   const appUrl = "https://app.auditainteligente.com.br/";
   const goToApp = (event: MouseEvent<HTMLAnchorElement>, plan?: string) => {
@@ -50,20 +53,20 @@ export function SellerAnalysisPage() {
     if (plan) query.set("plano", plan);
     window.location.href = `${appUrl}${query.size ? `?${query}` : ""}`;
   };
-  useEffect(() => { track("view_seller_analysis_lp", { ...utms }); }, [utms]);
+  useEffect(() => { track("view_seller_analysis_lp", { ...utms, approach: approach?.slug ?? "vendedor" }); }, [utms, approach?.slug]);
 
-  const schema = { "@context":"https://schema.org", "@graph":[{ "@type":"Service", name:"Análise de Vendedor de Imóvel", provider:{"@type":"Organization",name:"IA Audita"}, areaServed:"BR", serviceType:"Diligência imobiliária com inteligência artificial", description:"Consulta e organização de certidões e documentos para apoiar a análise de riscos relacionados ao vendedor de um imóvel." },{ "@type":"FAQPage", mainEntity:faqs.map(([name,text])=>({"@type":"Question",name,acceptedAnswer:{"@type":"Answer",text}})) }] };
+  const schema = { "@context":"https://schema.org", "@graph":[{ "@type":"Service", name:approach?.title ?? "Análise de Vendedor de Imóvel", provider:{"@type":"Organization",name:"IA Audita"}, areaServed:"BR", serviceType:approach ? "Análise documental com inteligência artificial" : "Diligência imobiliária com inteligência artificial", description:approach?.description ?? "Consulta e organização de certidões e documentos para apoiar a análise de riscos relacionados ao vendedor de um imóvel." }, ...(!approach ? [{ "@type":"FAQPage", mainEntity:faqs.map(([name,text])=>({"@type":"Question",name,acceptedAnswer:{"@type":"Answer",text}})) }] : [])] };
 
   return <main className={styles.page}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     <section className={styles.hero}>
-      <Image src="/images/seller-diligence-hero.webp" alt="Casa contemporânea ao entardecer e exemplo ilustrativo de relatório de análise do vendedor" fill priority sizes="100vw" className={styles.heroImage} />
+      <Image src={approach ? "/images/professionals.webp" : "/images/seller-diligence-hero.webp"} alt={approach ? "Profissionais avaliando documentos e informações em uma plataforma digital" : "Casa contemporânea ao entardecer e exemplo ilustrativo de relatório de análise do vendedor"} fill priority sizes="100vw" className={styles.heroImage} />
       <div className={styles.container}><div className={styles.heroCopy}>
-        <p className={styles.eyebrow}>Diligência imobiliária com inteligência artificial</p>
-        <h1>Antes de comprar um imóvel, conheça <span>quem está vendendo.</span></h1>
-        <p>Certidões, documentos e pontos de atenção organizados para você decidir com mais clareza.</p>
-        <div className={styles.actions}><a className={styles.button} href={appUrl} onClick={(event)=>{track("click_hero_cta");goToApp(event);}}>Analisar o vendedor <Icon name="arrow-right" /></a><a href="#analise">O que será consultado</a></div>
-        <small>Mais segurança na negociação, com informação.</small>
+        <p className={styles.eyebrow}>{approach?.eyebrow ?? "Diligência imobiliária com inteligência artificial"}</p>
+        <h1>{approach ? <>{approach.headline} <span>{approach.accent}</span></> : <>Antes de comprar um imóvel, conheça <span>quem está vendendo.</span></>}</h1>
+        <p>{approach?.description ?? "Certidões, documentos e pontos de atenção organizados para você decidir com mais clareza."}</p>
+        <div className={styles.actions}><a className={styles.button} href={appUrl} onClick={(event)=>{track("click_hero_cta", { approach: approach?.slug ?? "vendedor" });goToApp(event);}}>{approach?.cta ?? "Analisar o vendedor"} <Icon name="arrow-right" /></a><a href="#analise">O que será consultado</a></div>
+        <small>{approach?.note ?? "Mais segurança na negociação, com informação."}</small>
       </div></div>
     </section>
     <section className={styles.section} id="analise"><div className={styles.container}>

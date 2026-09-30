@@ -2,6 +2,27 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 const pages = JSON.parse(readFileSync('content/service-pages.json', 'utf8'));
+const sellerApproaches = JSON.parse(readFileSync('content/seller-approaches.json', 'utf8'));
+
+test('eight commercial approaches reuse the seller landing and current app destination', () => {
+  const route = readFileSync('app/servicos/[slug]/page.tsx', 'utf8');
+  const landing = readFileSync('components/audita/SellerAnalysisPage.tsx', 'utf8');
+  const home = readFileSync('app/home-clara/page.tsx', 'utf8');
+  const header = readFileSync('components/audita/SiteHeader.tsx', 'utf8');
+  assert.equal(sellerApproaches.length, 8);
+  assert.equal(new Set(sellerApproaches.map(page => page.slug)).size, 8);
+  for (const page of sellerApproaches) {
+    assert.match(page.slug, /^[a-z0-9-]+$/);
+    assert.ok(!pages.some(existing => existing.slug === page.slug), page.slug);
+    assert.ok(!home.includes(`/servicos/${page.slug}`), `${page.slug}: home`);
+    assert.ok(!header.includes(`"/servicos/${page.slug}"`), `${page.slug}: menu`);
+    for (const key of ['title', 'eyebrow', 'headline', 'accent', 'description', 'cta', 'note']) assert.ok(page[key]?.length, `${page.slug}: ${key}`);
+  }
+  assert.ok(route.includes('...sellerApproaches'));
+  assert.ok(route.includes('<SellerAnalysisPage approach={approach} />'));
+  assert.ok(landing.includes('const appUrl = "https://app.auditainteligente.com.br/"'));
+  assert.ok(landing.includes('approach?.cta ?? "Analisar o vendedor"'));
+});
 
 test('six dedicated landings retain availability and use their own page compositions', () => {
   const route = readFileSync('app/servicos/[slug]/page.tsx', 'utf8');
