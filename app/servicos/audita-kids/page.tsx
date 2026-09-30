@@ -89,6 +89,6 @@ export default function AuditaKidsPage() {
     </div></section>
     <section className={`${s.wrap} ${s.section} ${s.split}`} id="duvidas"><div><p className={s.eyebrow}>Antes da primeira missão</p><h2>O que sua família<br/><em>precisa saber.</em></h2></div><div className={s.faq}>{questions.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
     <section className={s.closing}><div className={s.wrap}><p className={s.eyebrow}>Audita Kids · Em desenvolvimento</p><h2>A próxima grande descoberta<br/>começa com <em>curiosidade.</em></h2><p>Estamos preparando a jornada dos detetives.<br/>O lançamento e as condições de acesso serão divulgados futuramente.</p><Link className={s.button} href="/#servicos">Conheça as soluções da IA Audita <span aria-hidden="true">→</span></Link></div></section>
-    <footer className={`${s.wrap} ${s.footer}`}><Link href="/">IA Audita <span>Kids</span></Link><p>O mundo inteiro é uma missão.</p><nav aria-label="Links institucionais"><Link href="/politica-de-privacidade">Privacidade</Link><Link href="/termos-de-uso">Termos de uso</Link></nav></footer>
+    <footer className={s.footer}><div className={`${s.wrap} ${s.footerInner}`}><Link href="/">IA Audita <span>Kids</span></Link><p>O mundo inteiro é uma missão.</p><nav aria-label="Links institucionais"><Link href="/politica-de-privacidade">Privacidade</Link><Link href="/termos-de-uso">Termos de uso</Link></nav></div></footer>
   </main>;
 }
