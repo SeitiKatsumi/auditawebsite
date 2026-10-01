@@ -61,7 +61,7 @@ export function SellerAnalysisPage({ approach }: { approach?: SellerApproach } =
   return <main className={styles.page}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     <section className={styles.hero}>
-      <Image src={approach ? "/images/professionals.webp" : "/images/seller-diligence-hero.webp"} alt={approach ? "Profissionais avaliando documentos e informações em uma plataforma digital" : "Casa contemporânea ao entardecer e exemplo ilustrativo de relatório de análise do vendedor"} fill priority sizes="100vw" className={styles.heroImage} />
+      <Image src={approach?.heroImage ?? "/images/seller-diligence-hero.webp"} alt={approach?.heroAlt ?? "Casa contemporânea ao entardecer e exemplo ilustrativo de relatório de análise do vendedor"} fill priority sizes="100vw" className={styles.heroImage} />
       <div className={styles.container}><div className={styles.heroCopy}>
         <p className={styles.eyebrow}>{approach?.eyebrow ?? "Diligência imobiliária com inteligência artificial"}</p>
         <h1>{approach ? <>{approach.headline} <span>{approach.accent}</span></> : <>Antes de comprar um imóvel, conheça <span>quem está vendendo.</span></>}</h1>

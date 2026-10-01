@@ -80,7 +80,9 @@
       ]
     ],
     "closingTitle": "Prepare a conversa antes de dividir a sociedade.",
-    "closingDescription": "Reúna os dados do futuro sócio e as condições da participação proposta. Consulte no aplicativo as verificações disponíveis para apoiar essa decisão."
+    "closingDescription": "Reúna os dados do futuro sócio e as condições da participação proposta. Consulte no aplicativo as verificações disponíveis para apoiar essa decisão.",
+    "heroImage": "/images/services/analise-de-socios-hero.webp",
+    "heroAlt": "Futuros sócios conversando sobre documentos de uma sociedade."
   },
   {
     "slug": "analise-de-fornecedores",
@@ -163,7 +165,9 @@
       ]
     ],
     "closingTitle": "Confira a contratação antes do primeiro pagamento.",
-    "closingDescription": "Tenha em mãos os dados do fornecedor, a proposta e as condições de entrega. Consulte as opções de análise documental antes de assumir o compromisso."
+    "closingDescription": "Tenha em mãos os dados do fornecedor, a proposta e as condições de entrega. Consulte as opções de análise documental antes de assumir o compromisso.",
+    "heroImage": "/images/services/analise-de-fornecedores-hero.webp",
+    "heroAlt": "Profissional conferindo documentos de fornecimento em um centro de distribuição."
   },
   {
     "slug": "analise-de-parceiros",
@@ -246,7 +250,9 @@
       ]
     ],
     "closingTitle": "Comece a parceria com responsabilidades claras.",
-    "closingDescription": "Organize quem participa, quem pode assinar e o que será compartilhado. Conheça as consultas disponíveis para esclarecer os documentos da parceria."
+    "closingDescription": "Organize quem participa, quem pode assinar e o que será compartilhado. Conheça as consultas disponíveis para esclarecer os documentos da parceria.",
+    "heroImage": "/images/services/analise-de-parceiros-hero.webp",
+    "heroAlt": "Representantes de empresas discutindo uma parceria comercial."
   },
   {
     "slug": "analise-compra-de-empresa",
@@ -329,7 +335,9 @@
       ]
     ],
     "closingTitle": "Entenda o que está incluído na compra.",
-    "closingDescription": "Reúna a proposta de aquisição e os documentos da empresa. Use o levantamento inicial para direcionar as verificações contábeis, jurídicas e operacionais necessárias."
+    "closingDescription": "Reúna a proposta de aquisição e os documentos da empresa. Use o levantamento inicial para direcionar as verificações contábeis, jurídicas e operacionais necessárias.",
+    "heroImage": "/images/services/analise-compra-de-empresa-hero.webp",
+    "heroAlt": "Empresário e assessoria avaliando documentos para aquisição de uma empresa."
   },
   {
     "slug": "diagnostico-cpf-cnpj",
@@ -412,7 +420,9 @@
       ]
     ],
     "closingTitle": "Organize seus registros e vínculos empresariais.",
-    "closingDescription": "Comece pelos seus dados de identificação e documentos anteriores. Confira as consultas disponíveis e reúna as referências necessárias para esclarecer cada registro."
+    "closingDescription": "Comece pelos seus dados de identificação e documentos anteriores. Confira as consultas disponíveis e reúna as referências necessárias para esclarecer cada registro.",
+    "heroImage": "/images/services/diagnostico-cpf-cnpj-hero.webp",
+    "heroAlt": "Profissional organizando seus documentos pessoais e vínculos empresariais."
   },
   {
     "slug": "analise-para-locacao",
@@ -495,7 +505,9 @@
       ]
     ],
     "closingTitle": "Esclareça os documentos antes de receber as chaves.",
-    "closingDescription": "Identifique as partes, os representantes e a garantia proposta. Confira o escopo disponível para apoiar a conferência documental da locação."
+    "closingDescription": "Identifique as partes, os representantes e a garantia proposta. Confira o escopo disponível para apoiar a conferência documental da locação.",
+    "heroImage": "/images/services/analise-para-locacao-hero.webp",
+    "heroAlt": "Representante e futuro inquilino conferindo documentos de locação em um apartamento."
   },
   {
     "slug": "documentos-para-licitacoes",
@@ -578,7 +590,9 @@
       ]
     ],
     "closingTitle": "Prepare a documentação antes do prazo.",
-    "closingDescription": "Tenha o edital e a lista de exigências em mãos. Consulte os documentos disponíveis e organize o que ainda precisa ser obtido, atualizado ou conferido pela sua equipe."
+    "closingDescription": "Tenha o edital e a lista de exigências em mãos. Consulte os documentos disponíveis e organize o que ainda precisa ser obtido, atualizado ou conferido pela sua equipe.",
+    "heroImage": "/images/services/documentos-para-licitacoes-hero.webp",
+    "heroAlt": "Profissional organizando documentos e prazos para participação em licitações."
   },
   {
     "slug": "reavaliacao-de-parceiros",
@@ -661,6 +675,8 @@
       ]
     ],
     "closingTitle": "Antes de renovar, confira o que mudou.",
-    "closingDescription": "Reúna o levantamento anterior e as condições da renovação. Solicite uma nova consulta para apoiar a conferência dos documentos atuais do parceiro."
+    "closingDescription": "Reúna o levantamento anterior e as condições da renovação. Solicite uma nova consulta para apoiar a conferência dos documentos atuais do parceiro.",
+    "heroImage": "/images/services/reavaliacao-de-parceiros-hero.webp",
+    "heroAlt": "Analistas comparando documentos anteriores e atuais antes de renovar uma parceria."
   }
 ]
