@@ -59,3 +59,5 @@ h2+.detailsGrid{margin-top:30px}
 @media(min-width:701px) and (max-width:1000px){.container{width:calc(100% - 100px)}.hero{min-height:480px}.heroCopy{width:52%;padding:45px 0}.page h2{font-size:36px}.section{padding:44px 0}.heroCopy>p:not(.eyebrow){font-size:16px}}
 
 .caseImage{margin:28px 0 0;max-width:520px}.caseImage img{display:block;width:100%;height:auto;border-radius:12px}.caseImage figcaption{margin-top:12px;color:#b1c7da;font-size:12px;line-height:1.6}
+
+.page .intro.notaryAlert{font-size:clamp(18px,1.7vw,20px);color:#ffb366;line-height:1.65}
