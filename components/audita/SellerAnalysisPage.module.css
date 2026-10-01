@@ -61,3 +61,5 @@ h2+.detailsGrid{margin-top:30px}
 .caseImage{margin:28px 0 0;max-width:520px}.caseImage img{display:block;width:100%;height:auto;border-radius:12px}.caseImage figcaption{margin-top:12px;color:#b1c7da;font-size:12px;line-height:1.6}
 
 .page .intro.notaryAlert{font-size:clamp(18px,1.7vw,20px);color:#ffb366;line-height:1.65}
+
+.scenarios .declarationDetails{grid-column:1/-1}.declarationDetails h4{font-size:18px;margin:26px 0 12px}.declarationDetails strong{color:#ffb366}.declarationDetails h3+p,.declarationDetails p+p{margin-top:16px}
