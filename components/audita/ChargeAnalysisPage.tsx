@@ -245,6 +245,7 @@ export function ChargeAnalysisPage() {
         <h2 id="jurisprudence-title">Jurisprudência consolidada e milhares de julgados nos Tribunais de todo Brasil</h2>
         <p>O contexto é o de ações sobre cobranças e descontos realizados pelo Banco Itaú sem autorização dos clientes, discutidas nos Tribunais e nas Turmas Recursais. Os pedidos podem envolver a restituição em dobro dos valores pagos, acrescida de juros e correção monetária, além de indenização por danos morais.</p>
         <p>Cada decisão deve ser analisada conforme os fatos, as provas e o entendimento aplicado ao processo. A devolução em dobro e a indenização por danos morais não são automáticas, e decisões anteriores não garantem o mesmo resultado em outros casos.</p>
+        <a className={styles.sourceLink} href="/jurisprudencia/index.html">Consultar acervo de jurisprudência por tribunal →</a>
       </div>
     </section>
 
