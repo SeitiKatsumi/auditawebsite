@@ -33,13 +33,36 @@ export default function AccidentBenefitPage() {
           <span className={s.badge}><span aria-hidden="true">●</span> Em desenvolvimento</span>
           <h1>Ficou com sequelas?<br/><em>Você pode ter direito ao auxílio-acidente.</em></h1>
           <p className={s.lead}>Uma limitação permanente após um acidente pode dar direito a uma indenização mensal do INSS, conforme os requisitos do benefício.</p>
-          <p>A IA Audita está preparando uma análise do seu histórico previdenciário e documentos médicos para identificar pontos de atenção e estimar possíveis valores e atrasados. Ter pinos, placas ou parafusos, sozinho, não garante o direito.</p>
-          <div className={s.actions}><a href="#proposta" className={s.button}>Conheça a análise <span aria-hidden="true">↗</span></a><a href="#beneficio">Entenda o benefício ↓</a></div>
+          <p>A IA Audita está preparando uma análise do seu histórico previdenciário e documentos médicos para identificar pontos de atenção e estimar possíveis valores e atrasados.</p>
+          <div className={s.actions}><a href="#proposta" className={s.button}>Conheça a análise <span aria-hidden="true">↗</span></a><a href="#sequelas">Veja exemplos de sequelas ↓</a></div>
           <p className={s.micro}>Em breve na plataforma. Ainda não recebemos documentos ou solicitações deste serviço.</p>
         </div>
       </div>
       <small className={s.imageCaption}>Imagem ilustrativa gerada por IA.</small>
     </section>
+
+    <section className={s.section} id="sequelas"><div className={s.wrap}>
+      <p className={s.kicker}>Reconheça os sinais</p>
+      <h2>Quais sequelas podem<br/><em>dar direito ao auxílio-acidente?</em></h2>
+      <p className={s.intro}>Os exemplos abaixo podem justificar uma avaliação quando, após a consolidação das lesões, deixam uma limitação permanente que reduz a capacidade para o trabalho habitual. Não existe uma lista fechada nem concessão automática: também é necessário atender aos requisitos previdenciários.</p>
+      <div className={s.facts}>{[
+        ["Pinos, placas e parafusos", "Limitações permanentes após cirurgias com pinos, placas ou parafusos, como perda de força, rigidez ou redução de movimento que afete o trabalho habitual."],
+        ["Mãos, dedos e punhos", "Perda de força para segurar objetos, redução do movimento dos dedos, rigidez ou perda de sensibilidade após lesões."],
+        ["Braços, cotovelos e ombros", "Dificuldade permanente para levantar ou girar o braço, dobrar o cotovelo ou exercer força após fraturas e lesões."],
+        ["Joelhos", "Instabilidade ou limitação de movimento que dificulte agachar, subir escadas ou permanecer em pé."],
+        ["Tornozelos e pés", "Rigidez, perda de mobilidade, instabilidade ou alteração permanente da marcha após fraturas ou outras lesões."],
+        ["Quadril e pernas", "Encurtamento da perna, deformidade após fratura ou limitação persistente para caminhar e ficar em pé."],
+        ["Coluna", "Limitação permanente após trauma para movimentar o tronco ou carregar peso. Uma hérnia de disco, isoladamente, não garante o benefício."],
+        ["Visão", "Perda ou redução permanente da visão decorrente de acidente, com repercussão nas tarefas habituais."],
+        ["Audição", "Perda auditiva relacionada ao acidente ou ao trabalho, com nexo comprovado e redução da capacidade para a atividade habitual."],
+        ["Face e mandíbula", "Sequelas de trauma que prejudiquem de forma permanente a mastigação, a abertura da boca ou outras funções."],
+        ["Lesões de nervos", "Redução persistente de força, sensibilidade, coordenação ou movimento causada por lesão nervosa."],
+        ["Amputações", "Perda parcial ou total de dedos, mão, pé ou parte de um membro, considerando o impacto na atividade profissional."],
+        ["Queimaduras e cicatrizes", "Cicatrizes que repuxam a pele e limitam movimentos ou outras sequelas de queimaduras com prejuízo funcional permanente."],
+      ].map(([heading, text]) => <article key={heading}><h3>{heading}</h3><p>{text}</p></article>)}</div>
+      <p className={s.intro}>Não é preciso estar totalmente incapaz de trabalhar. O que importa é a redução da capacidade para sua atividade habitual: a mesma limitação pode ter impactos diferentes conforme a profissão.</p>
+      <a className={s.textLink} href="https://www.planalto.gov.br/ccivil_03/decreto/d3048compilado.htm#art104" target="_blank" rel="noopener noreferrer">Consultar os critérios legais e exemplos do Anexo III ↗</a>
+    </div></section>
 
     <section className={s.section} id="beneficio"><div className={s.wrap}>
       <p className={s.kicker}>O que realmente importa</p><div className={s.split}><h2>Não é só a cirurgia.<br/><em>É o que mudou no seu trabalho.</em></h2><div><p>O auxílio-acidente é uma indenização previdenciária para situações em que uma sequela permanente reduz a capacidade de exercer o trabalho habitual.</p><p>A presença de um implante não comprova essa redução. É preciso olhar para a função exercida, a limitação e a situação previdenciária na época do acidente.</p><a className={s.textLink} href={inss} target="_blank" rel="noopener noreferrer">Consultar requisitos no INSS ↗</a></div></div>

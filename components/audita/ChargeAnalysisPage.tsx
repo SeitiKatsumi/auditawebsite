@@ -245,27 +245,11 @@ export function ChargeAnalysisPage() {
         <h2 id="jurisprudence-title">Jurisprudência consolidada e milhares de julgados nos Tribunais de todo Brasil</h2>
         <p>O contexto é o de ações sobre cobranças e descontos realizados pelo Banco Itaú sem autorização dos clientes, discutidas nos Tribunais e nas Turmas Recursais. Os pedidos podem envolver a restituição em dobro dos valores pagos, acrescida de juros e correção monetária, além de indenização por danos morais.</p>
         <p>Cada decisão deve ser analisada conforme os fatos, as provas e o entendimento aplicado ao processo. A devolução em dobro e a indenização por danos morais não são automáticas, e decisões anteriores não garantem o mesmo resultado em outros casos.</p>
-        <a className={styles.sourceLink} href="/jurisprudencia/index.html">Consultar acervo de jurisprudência por tribunal →</a>
-      </div>
-    </section>
-
-    <section className={styles.faq} id="duvidas">
-      <div className={`${styles.container} ${styles.faqGrid}`}>
-        <div><p className={styles.kicker}>Antes de começar</p><h2>Perguntas comuns sobre a análise.</h2></div>
-        <div>{faqs.map(([question, answer], index) => <article key={question}>
-          <button onClick={() => setOpenFaq(openFaq === index ? null : index)} aria-expanded={openFaq === index}><span>{question}</span><b>{openFaq === index ? "−" : "+"}</b></button>
-          {openFaq === index && <p>{answer}</p>}
-        </article>)}</div>
-      </div>
-    </section>
-
-    <section className={styles.finalCta}>
-      <div className={styles.container}>
-        <Logo />
-        <p>Seu histórico pode ter a resposta</p>
-        <h2>VEJA SE VOCÊ TEM VALORES A RECEBER.<br/>14 ANOS DE COBRANÇAS INDEVIDAS ITAÚ</h2>
-        <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "final")}>Verificar minhas faturas agora →</a>
-        <small>O resultado depende dos documentos enviados e da sua confirmação.</small>
+        <div className={styles.agreementReport}>
+          <h3>MILHARES DE JURISPRUDÊNCIAS CONTRÁRIAS AO BANCO!</h3>
+          <p>Conheça as decisões e os fundamentos contra cobranças indevidas. <strong>Acesso exclusivo para assinantes da IA Audita, diretamente no aplicativo.</strong></p>
+          <a className={styles.button} href="https://app.auditainteligente.com.br/">Quero acessar as jurisprudências como assinante →</a>
+        </div>
       </div>
     </section>
 
@@ -314,6 +298,26 @@ export function ChargeAnalysisPage() {
           </article>
         </div>
         <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "practical_guide")}>Iniciar a análise dos meus extratos →</a>
+      </div>
+    </section>
+
+    <section className={styles.faq} id="duvidas">
+      <div className={`${styles.container} ${styles.faqGrid}`}>
+        <div><p className={styles.kicker}>Antes de começar</p><h2>Perguntas comuns sobre a análise.</h2></div>
+        <div>{faqs.map(([question, answer], index) => <article key={question}>
+          <button onClick={() => setOpenFaq(openFaq === index ? null : index)} aria-expanded={openFaq === index}><span>{question}</span><b>{openFaq === index ? "−" : "+"}</b></button>
+          {openFaq === index && <p>{answer}</p>}
+        </article>)}</div>
+      </div>
+    </section>
+
+    <section className={styles.finalCta}>
+      <div className={styles.container}>
+        <Logo />
+        <p>Seu histórico pode ter a resposta</p>
+        <h2>VEJA SE VOCÊ TEM VALORES A RECEBER.<br/>14 ANOS DE COBRANÇAS INDEVIDAS ITAÚ</h2>
+        <a className={styles.button} href={appUrl} onClick={(event) => goToApp(event, "final")}>Verificar minhas faturas agora →</a>
+        <small>O resultado depende dos documentos enviados e da sua confirmação.</small>
       </div>
     </section>
 
