@@ -34,6 +34,9 @@ const groups = [
   { title: "Imóveis", label: "Consulta de imóveis", icon: "house", services: [
     { name: "Consulta de imóveis", text: "Um ponto de partida para acessar informações imobiliárias. Canais e cobertura estão em validação; conheça as opções de pesquisa e as condições de disponibilidade.", status: "Em homologação", href: "/servicos/consulta-de-imoveis", action: "Conhecer a consulta de imóveis" },
   ] },
+  { title: "Saúde e faturamento", label: "Auditoria de glosas", icon: "file-earmark-text", services: [
+    { name: "Auditoria de glosas com IA", text: "Conferência de demonstrativos, faturamento, contratos e autorizações para entender divergências, organizar evidências e preparar relatórios e minutas de contestação para revisão.", status: "Em desenvolvimento", href: "/servicos/auditoria-de-glosas", action: "Conhecer a auditoria de glosas" },
+  ] },
   { title: "Laudos", label: "Análise de exames · Atualização de processos judiciais", icon: "file-earmark-text", services: [
     { name: "Laudo para análise de exames", text: "Informações sobre o serviço de análise de exames. O módulo ainda não recebe arquivos ou solicitações.", status: "Em desenvolvimento", href: "/servicos/laudos-de-exames", action: "Conhecer o serviço" },
     { name: "Laudo para atualização de processos judiciais", text: "Informações sobre laudos para processos judiciais. O módulo ainda não recebe arquivos ou solicitações.", status: "", href: "/servicos/laudos-de-processos-judiciais", action: "Conhecer o serviço" },
