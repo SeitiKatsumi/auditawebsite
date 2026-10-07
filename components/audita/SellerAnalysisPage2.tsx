@@ -9,7 +9,7 @@ declare global {
   interface Window { dataLayer?: Record<string, unknown>[]; }
 }
 
-const appUrl = "https://app.auditainteligente.com.br/";
+const appUrl = "https://app.auditainteligente.com.br/#analise-vendedor";
 
 const risks = [
   ["Documentação", "Casa ou terreno sem registro claro", "Posse, cessão de direitos ou documentação incompleta podem mudar toda a segurança da compra."],
@@ -45,7 +45,8 @@ export function SellerAnalysisPage2() {
     const query = new URLSearchParams(window.location.search);
     query.set("origem", "landing-popular");
     track("click_v2_cta", { placement });
-    window.location.href = `${appUrl}?${query.toString()}`;
+    const destination = new URL(appUrl);destination.search = query.toString();
+    window.location.href = destination.href;
   }
 
   return <main className={styles.page}>

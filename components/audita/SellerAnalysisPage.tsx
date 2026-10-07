@@ -47,12 +47,13 @@ function Logo() { return <Image src="/images/audita-oficial-branca.png" width={8
 
 export function SellerAnalysisPage({ approach }: { approach?: SellerApproach } = {}) {
   const utms = useMemo(() => typeof window === "undefined" ? {} : Object.fromEntries(new URLSearchParams(window.location.search).entries()), []);
-  const appUrl = "https://app.auditainteligente.com.br/";
+  const appUrl = `https://app.auditainteligente.com.br/#${approach?.slug ?? "analise-vendedor"}`;
   const goToApp = (event: MouseEvent<HTMLAnchorElement>, plan?: string) => {
     event.preventDefault();
     const query = new URLSearchParams(window.location.search);
     if (plan) query.set("plano", plan);
-    window.location.href = `${appUrl}${query.size ? `?${query}` : ""}`;
+    const destination = new URL(appUrl);destination.search = query.toString();
+    window.location.href = destination.href;
   };
   useEffect(() => { track("view_seller_analysis_lp", { ...utms, approach: approach?.slug ?? "vendedor" }); }, [utms, approach?.slug]);
 

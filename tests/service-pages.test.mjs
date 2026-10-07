@@ -4,7 +4,7 @@ import { readFileSync, existsSync } from 'node:fs';
 const pages = JSON.parse(readFileSync('content/service-pages.json', 'utf8'));
 const sellerApproaches = JSON.parse(readFileSync('content/seller-approaches.json', 'utf8'));
 
-test('eight commercial approaches reuse the seller landing and current app destination', () => {
+test('eight commercial approaches reuse the seller landing and their app destinations', () => {
   const route = readFileSync('app/servicos/[slug]/page.tsx', 'utf8');
   const landing = readFileSync('components/audita/SellerAnalysisPage.tsx', 'utf8');
   const home = readFileSync('app/home-clara/page.tsx', 'utf8');
@@ -20,7 +20,15 @@ test('eight commercial approaches reuse the seller landing and current app desti
   }
   assert.ok(route.includes('...sellerApproaches'));
   assert.ok(route.includes('<SellerAnalysisPage approach={approach} />'));
-  assert.ok(landing.includes('const appUrl = "https://app.auditainteligente.com.br/"'));
+  const redirect=landing.slice(landing.indexOf('  const appUrl ='),landing.indexOf('  useEffect(() => { track("view_seller_analysis_lp"')).replace('(event: MouseEvent<HTMLAnchorElement>, plan?: string)','(event, plan)');
+  for(const approach of [undefined,...sellerApproaches]) {
+    const browser={location:{search:'?utm_source=fixture'}};
+    const api=new Function('approach','window',redirect+'return {appUrl,goToApp}')(approach,browser);
+    api.goToApp({preventDefault(){}},'test');
+    const target=new URL(browser.location.href);
+    assert.equal(target.hash,'#'+(approach?.slug||'analise-vendedor'));assert.equal(target.searchParams.get('utm_source'),'fixture');assert.equal(target.searchParams.get('plano'),'test');
+    assert.equal(new URL(api.appUrl).hash,target.hash);
+  }
   assert.ok(landing.includes('approach?.cta ?? "Analisar o vendedor"'));
 });
 
