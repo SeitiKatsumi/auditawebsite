@@ -48,7 +48,7 @@ const debts = [["Cartão de crédito",85.1],["Carnês de lojas",15.8],["Crédito
 export default function LightHome() {
   return <main className={styles.home}>
     <section className={`${styles.wrap} ${styles.hero}`}>
-      <div className={styles.heroCopy}><p className={styles.eyebrow}>Inteligência a serviço das pessoas</p><h1>Informação complexa.<br/><em>Entendimento simples.</em></h1><p className={styles.lead}>Inteligência artificial, organização documental e análise técnica para transformar informações em decisões mais claras.</p><div className={styles.actions}><a className={styles.button} href="#servicos">Conheça nossas soluções</a><a className={styles.link} href="#sobre">Sobre a IA Audita</a></div></div>
+      <div className={styles.heroCopy}><p className={styles.eyebrow}>Inteligência a serviço das pessoas</p><h1>Informação complexa.<br/><em>Entendimento simples.</em></h1><p className={styles.lead}>Inteligência artificial, organização documental e análise técnica para transformar informações em decisões mais claras.</p><div className={styles.actions}><a className={styles.button} href="/central-de-servicos">Conheça nossas soluções</a><a className={styles.link} href="#sobre">Sobre a IA Audita</a></div></div>
       <Image className={styles.heroArt} src="/images/home-clara-marca.png" width={900} height={900} alt="" priority />
       <div className={styles.statement}><p>Tecnologia para ler. Clareza para decidir.</p><span>Mais informação.<br/>Mais possibilidades.</span></div>
     </section>

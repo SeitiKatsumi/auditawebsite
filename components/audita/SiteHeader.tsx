@@ -55,11 +55,12 @@ export function SiteHeader() {
       <button className={styles.toggle} aria-expanded={open} aria-controls="site-navigation" onClick={() => open ? closeNavigation() : setOpen(true)}>{open ? "Fechar ×" : "Menu ☰"}</button>
       <nav id="site-navigation" className={`${styles.nav} ${open ? styles.open : ""}`} aria-label="Navegação principal" onClick={(event) => { if ((event.target as Element).closest("a")) closeNavigation(); }}>
         {!light && <Link href="/">Início</Link>}
+        <Link href="/central-de-servicos" aria-current={pathname === "/central-de-servicos" ? "page" : undefined}>Central de serviços</Link>
         <details ref={solutionsRef} className={styles.solutions}>
           <summary>Soluções <span aria-hidden="true">⌄</span></summary>
           <div className={styles.solutionsPanel}>
             <ul>{solutions.map(([label, href]) => <li key={href}><Link href={href} aria-current={pathname === href ? "page" : undefined}>{label}</Link></li>)}</ul>
-            <Link className={styles.allSolutions} href="/#servicos">Ver todas as soluções →</Link>
+            <Link className={styles.allSolutions} href="/central-de-servicos">Ver todas as soluções →</Link>
           </div>
         </details>
         <Link href="/#sobre">Sobre a IA Audita</Link>
