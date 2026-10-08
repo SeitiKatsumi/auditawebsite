@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MouseEvent, useEffect, useState } from "react";
 import styles from "./SellerAnalysisPage2.module.css";
+import { CertificateCoverage } from "./CertificateCoverage";
 
 declare global {
   interface Window { dataLayer?: Record<string, unknown>[]; }
@@ -66,6 +67,8 @@ export function SellerAnalysisPage2() {
         </div>
       </div>
     </section>
+
+    <CertificateCoverage />
 
     <section className={styles.realityStrip}>
       <div className={styles.container}>

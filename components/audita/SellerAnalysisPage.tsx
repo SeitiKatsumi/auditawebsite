@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MouseEvent, useEffect, useMemo } from "react";
 import sellerApproaches from "../../content/seller-approaches.json";
 import { DocumentaryAnalysisContent } from "./DocumentaryAnalysisContent";
+import { CertificateCoverage } from "./CertificateCoverage";
 import styles from "./SellerAnalysisPage.module.css";
 
 type SellerApproach = (typeof sellerApproaches)[number];
@@ -71,6 +72,7 @@ export function SellerAnalysisPage({ approach }: { approach?: SellerApproach } =
         <small>{approach?.note ?? "Mais segurança na negociação, com informação."}</small>
       </div></div>
     </section>
+    <CertificateCoverage />
     {approach ? <DocumentaryAnalysisContent approach={approach} /> : <>
     <section className={styles.section} id="analise"><div className={styles.container}>
       <p className={styles.eyebrow}>Mais contexto para uma boa decisão</p>
