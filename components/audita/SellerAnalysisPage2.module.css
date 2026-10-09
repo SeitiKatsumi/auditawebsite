@@ -21,3 +21,16 @@
 .caseLead h2 .caseHighlight{color:#ff8a1f}
 
 .caseItauTitle{font-size:clamp(20px,2vw,28px);font-weight:800}
+
+.cardsSection{padding:90px 0;border-bottom:1px solid var(--line)}
+.cardsLayout{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
+.cardsCopy{border-left:4px solid #ff8a1f;padding-left:28px}
+.cardsCopy .kicker{margin:0 0 22px}
+.cardsCopy h2{margin:0 0 22px;color:#ff8a1f;font-size:clamp(40px,4.5vw,60px);font-weight:850;line-height:1.18;letter-spacing:-.035em}
+.cardsCopy>p:not(.kicker){color:var(--muted);font-size:17px;line-height:1.6}
+.cardsCopy>p.cardsHighlight{color:var(--text);font-size:clamp(21px,2.1vw,28px);font-weight:850;line-height:1.35}
+.cardsStats{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:0;padding:32px;background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.cardsStats dt{font-size:clamp(32px,3.3vw,44px);font-weight:850;line-height:1.1;letter-spacing:-.04em;white-space:nowrap}
+.cardsStats dd{margin:12px 0 0;color:#ff8a1f;font-size:15px;line-height:1.5}
+@media(max-width:900px){.cardsLayout{grid-template-columns:1fr;gap:32px}.cardsStats{max-width:640px}}
+@media(max-width:600px){.cardsSection{padding:60px 0}.cardsCopy{padding-left:20px}.cardsCopy h2{font-size:40px}.cardsStats{padding:24px;gap:20px}.cardsStats dt{font-size:clamp(32px,9vw,42px)}.cardsStats dd{font-size:14px}}

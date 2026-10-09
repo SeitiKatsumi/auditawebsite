@@ -11,6 +11,7 @@ declare global {
 
 const appUrl = "https://app.auditainteligente.com.br/#analise-cobrancas";
 const officialCaseUrl = "https://www.mpmg.mp.br/portal/menu/comunicacao/noticias/itau-vai-pagar-multas-diarias-se-descumprir-acordo-firmado-com-o-procon-mpmg-e-idec-por-cobrancas-indevidas.shtml";
+const officialCardsUrl = "https://www.itau.com.br/relacoes-com-investidores/noticias/itau-unibanco-lanca-sua-maior-campanha-de-cartoes/?lang=en";
 
 const occurrences = [
   ["Seguro cartão", "SEGURO CARTÃO", "A descrição pode aparecer abreviada no meio dos demais itens da fatura."],
@@ -90,6 +91,22 @@ export function ChargeAnalysisPage() {
       <div className={styles.container}>
         <strong>O caso existe. A cobrança pode estar escondida no seu histórico.</strong>
         <span>Sem olhar os documentos, você pode nem saber quanto pagou.</span>
+      </div>
+    </section>
+
+    <section className={styles.cardsSection} id="cartoes-itau" aria-labelledby="itau-cards-title">
+      <div className={`${styles.container} ${styles.cardsLayout}`}>
+        <div className={styles.cardsCopy}>
+          <p className={styles.kicker}>Dado divulgado pelo próprio Itaú em 2021</p>
+          <h2 id="itau-cards-title">Em 2021, o Itaú divulgou ter mais de 70 milhões de cartões emitidos. Você pode ser um deles.</h2>
+          <p>Segundo a notícia oficial do banco, esses cartões pertenciam a 46 milhões de pessoas e correspondiam a cerca de 1 em cada 3 cartões de crédito no Brasil naquele período.</p>
+          <p className={styles.cardsHighlight}>O banco assumiu obrigações de ressarcimento — mas devolve apenas o valor principal, sem juros, correção monetária ou devolução em dobro.</p>
+          <a className={styles.sourceLink} href={officialCardsUrl} target="_blank" rel="noreferrer">Consultar a notícia oficial do Itaú · 23/06/2021 ↗</a>
+        </div>
+        <dl className={styles.cardsStats}>
+          <div><dt>70 Mi+</dt><dd>Cartões de crédito emitidos (dado oficial de 2021)</dd></div>
+          <div><dt>46 Mi</dt><dd>Pessoas titulares no período da notícia</dd></div>
+        </dl>
       </div>
     </section>
 
