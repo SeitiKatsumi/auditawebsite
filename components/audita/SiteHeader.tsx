@@ -39,7 +39,8 @@ export function SiteHeader() {
     return () => document.removeEventListener("pointerdown", closeOutside);
   }, []);
   const photoService = ["auditoria-de-glosas", "auxilio-acidente", "audita-kids", "dividas-bancarias", "pis-pasep", "isencao-imposto-de-renda", "auditoria-de-importacao", "revisao-contas-de-luz", "laudos-de-processos-judiciais", "laudos-de-exames", ...sellerApproaches.map(({ slug }) => slug)].some(slug => pathname === `/servicos/${slug}`);
-  const light = pathname === "/" || pathname === "/home-clara" || (pathname.startsWith("/servicos/") && !photoService);
+  const isHome = pathname === "/" || pathname === "/home-clara";
+  const light = pathname.startsWith("/servicos/") && !photoService;
   return <header className={`${styles.header} ${light ? styles.light : ""}`} onKeyDown={(event) => {
     if (event.key !== "Escape") return;
     if (solutionsRef.current?.open) {
@@ -54,7 +55,7 @@ export function SiteHeader() {
       <Link href="/" className={styles.brand} onClick={closeNavigation} aria-label="IA Audita — início"><Image src="/images/audita-oficial-branca.png" alt="" width={64} height={48} priority /><span>IA Audita</span></Link>
       <button className={styles.toggle} aria-expanded={open} aria-controls="site-navigation" onClick={() => open ? closeNavigation() : setOpen(true)}>{open ? "Fechar ×" : "Menu ☰"}</button>
       <nav id="site-navigation" className={`${styles.nav} ${open ? styles.open : ""}`} aria-label="Navegação principal" onClick={(event) => { if ((event.target as Element).closest("a")) closeNavigation(); }}>
-        {!light && <Link href="/">Início</Link>}
+        {!light && !isHome && <Link href="/">Início</Link>}
         <Link href="/central-de-servicos" aria-current={pathname === "/central-de-servicos" ? "page" : undefined}>Central de serviços</Link>
         <details ref={solutionsRef} className={styles.solutions}>
           <summary>Soluções <span aria-hidden="true">⌄</span></summary>
