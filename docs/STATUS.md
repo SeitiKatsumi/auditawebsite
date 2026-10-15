@@ -20,3 +20,7 @@ A transcrição registra decisões e compromissos, não comprova publicação ou
 - Playwright: destaque revisado a 1440 e 390 px, home e títulos da Central conferidos em celular, sem rolagem horizontal e sem erros de console. Os seis SVGs das categorias retornam HTTP 200.
 - Evidências visuais locais: `output/playwright/coverage-desktop.png`, `coverage-mobile.png`, `home-coverage-mobile.png` e `central-heading-mobile.png`; não incluídas no commit.
 - Próximo passo: publicação coordenada no GitHub/CapRover pelo responsável da tarefa principal e verificação das páginas públicas. A porta 3013 foi usada apenas para validação interna; o aplicativo da porta 3000 pertence ao outro repositório e não foi alterado por esta tarefa.
+
+## 2026-10-15 - Relatorio de exemplo na pagina de cobrancas
+- Inserida secao entre os canais de extratos e o requerimento de atermacao. Previa visual e PDF de duas paginas fornecido pelo usuario, valores identificados como exemplo e sujeitos a revisao. Sem dados pessoais no modelo conferido. Componente e CSS isolados; nenhum fluxo de analise alterado.
+- Typecheck e15 testes aprovados; HTML, imagem e PDF HTTP200 em localhost3001, ordem das secoes conferida. PDF renderizado e inspecionado; interface sem verificacao visual no navegador. Sem commit/push/deploy; arquivo nao versionado auditron.png preservado.

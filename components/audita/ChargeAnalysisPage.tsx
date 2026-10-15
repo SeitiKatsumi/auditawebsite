@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MouseEvent, useEffect, useState } from "react";
 import styles from "./SellerAnalysisPage2.module.css";
+import { ChargeReportExample } from "./ChargeReportExample";
 
 declare global {
   interface Window { dataLayer?: Record<string, unknown>[]; }
@@ -219,6 +220,8 @@ export function ChargeAnalysisPage() {
         </div>
       </div>
     </section>
+
+    <ChargeReportExample />
 
     <section className={`${styles.agreementSection} ${styles.atermacao}`} id="o-que-voce-recebe" aria-labelledby="atermacao-title">
       <div className={styles.container}>
