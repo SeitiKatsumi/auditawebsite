@@ -2,8 +2,6 @@ import approaches from "./seller-approaches.json";
 
 type Service = { name: string; text: string; href: string; status?: string };
 export const serviceGroups: { id: string; name: string; icon: string; text: string; services: Service[] }[] = [
-  { id: "emissao-certidoes", name: "Emissão Certidões", icon: "file-earmark-text", text: "", services: [] },
-  { id: "emissao-processos-judiciais-nacionais", name: "Emissão e baixa Processos Judiciais", icon: "bank", text: "", services: [] },
   { id: "financeiro", name: "Financeiro e tributos", icon: "bank", text: "Entenda cobranças, confira valores e organize sua documentação financeira.", services: [
     { name: "Cobranças indevidas · Caso Itaú", text: "Localize seguros e tarifas não reconhecidos em faturas e extratos e organize as evidências em um relatório técnico.", href: "/analise-cobrancas-indevidas" },
     { name: "Dívidas bancárias", text: "Confira contratos, juros, tarifas e evolução do saldo para apoiar a revisão da dívida e a negociação com o banco.", href: "/servicos/dividas-bancarias" },
@@ -29,6 +27,10 @@ export const serviceGroups: { id: string; name: string; icon: string; text: stri
   { id: "ia-e-educacao", name: "Inteligência artificial e educação", icon: "chat-left-text", text: "Apoio no dia a dia e novas formas de descobrir o mundo.", services: [
     { name: "Assistente IA Audita", text: "Converse, resuma documentos, organize ideias e encontre informações em textos, PDFs e imagens.", href: "https://app.auditainteligente.com.br/chat" },
     { name: "Audita Kids", text: "Uma jornada de jogos, descobertas e um álbum digital de figurinhas para aprender em família com Auditron.", href: "/servicos/audita-kids", status: "Em desenvolvimento" },
+  ] },
+  { id: "emissao-certidoes", name: "Emissão Certidões", icon: "file-earmark-text", text: "", services: [] },
+  { id: "emissao-processos-judiciais-nacionais", name: "Emissão e baixa Processos Judiciais", icon: "bank", text: "Cópias dos autos para consultar, organizar e encaminhar ao profissional responsável.", services: [
+    { name: "Emissão e download de processos judiciais", text: "Conheça o futuro serviço para solicitar cópias dos documentos disponíveis de um processo em PDF, a partir do seu número.", href: "/servicos/emissao-processos-judiciais", status: "Em desenvolvimento" },
   ] },
 ];
 
