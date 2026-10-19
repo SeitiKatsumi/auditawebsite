@@ -2,6 +2,8 @@ import approaches from "./seller-approaches.json";
 
 type Service = { name: string; text: string; href: string; status?: string };
 export const serviceGroups: { id: string; name: string; icon: string; text: string; services: Service[] }[] = [
+  { id: "emissao-certidoes", name: "Emissão Certidões", icon: "file-earmark-text", text: "", services: [] },
+  { id: "emissao-processos-judiciais-nacionais", name: "Emissão e baixa Processos Judiciais", icon: "bank", text: "", services: [] },
   { id: "financeiro", name: "Financeiro e tributos", icon: "bank", text: "Entenda cobranças, confira valores e organize sua documentação financeira.", services: [
     { name: "Cobranças indevidas · Caso Itaú", text: "Localize seguros e tarifas não reconhecidos em faturas e extratos e organize as evidências em um relatório técnico.", href: "/analise-cobrancas-indevidas" },
     { name: "Dívidas bancárias", text: "Confira contratos, juros, tarifas e evolução do saldo para apoiar a revisão da dívida e a negociação com o banco.", href: "/servicos/dividas-bancarias" },
