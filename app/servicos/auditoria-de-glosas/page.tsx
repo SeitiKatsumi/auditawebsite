@@ -18,7 +18,7 @@ export default function GlosasPage() {
         <h1>Seu atendimento foi prestado.<br/><em>O pagamento foi glosado?</em></h1>
         <p className={s.lead}>Transforme demonstrativos de glosas em uma análise clara, com evidências por item e minutas para contestação.</p>
         <p>A IA Audita cruza documentos de faturamento, contratos e autorizações para ajudar sua equipe a entender as divergências e preparar o próximo passo.</p>
-        <div className={s.actions}><a className={s.button} href="#como-funciona">Conheça a auditoria <span aria-hidden="true">→</span></a><a href="#relatorio">Veja o que você recebe ↓</a></div>
+        <div className={s.actions}><a className={s.button} href="https://app.auditainteligente.com.br/#auditoria-glosas">Conheça a auditoria <span aria-hidden="true">→</span></a><a href="#relatorio">Veja o que você recebe ↓</a></div>
         <p className={s.note}>Para clínicas, hospitais e equipes de faturamento. O módulo está em desenvolvimento e ainda não recebe documentos por este site.</p>
       </div>
       </div><small className={s.imageCaption}>Imagem ilustrativa gerada por IA.</small>

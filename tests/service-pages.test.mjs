@@ -68,7 +68,7 @@ test('five dedicated landings retain availability and use their own page composi
 
 test('shared solutions menu links all active services and keeps the mobile menu accessible', () => {
   const header = readFileSync('components/audita/SiteHeader.tsx', 'utf8');
-  for (const href of [...pages.map(page => '/servicos/' + page.slug), '/analise-de-vendedor', '/analise-cobrancas-indevidas']) assert.ok(header.includes(`"${href}"`), href);
+  for (const href of [...pages.map(page => '/servicos/' + page.slug), '/analise-de-vendedor', '/analise-cobrancas-indevidas']) assert.ok(readFileSync("content/service-catalog.ts", "utf8").includes(`"${href}"`), href);
   assert.ok(header.includes('<summary>Soluções'));
   assert.ok(header.includes('aria-expanded={open}'));
   assert.ok(header.includes('closest("a")'), 'Opening the solutions disclosure must not close mobile navigation');

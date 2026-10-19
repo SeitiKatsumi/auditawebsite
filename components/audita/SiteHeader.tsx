@@ -5,23 +5,9 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import sellerApproaches from "../../content/seller-approaches.json";
 import styles from "./SiteHeader.module.css";
+import { serviceGroups } from "../../content/service-catalog";
 
-const solutions = [
-  ["Audita Kids · Em desenvolvimento", "/servicos/audita-kids"],
-  ["Assistente IA", "https://app.auditainteligente.com.br/chat"],
-  ["Cobranças indevidas", "/analise-cobrancas-indevidas"],
-  ["Dívidas bancárias", "/servicos/dividas-bancarias"],
-  ["PIS/PASEP", "/servicos/pis-pasep"],
-  ["Auxílio-acidente · Em desenvolvimento", "/servicos/auxilio-acidente"],
-  ["Isenção de Imposto de Renda", "/servicos/isencao-imposto-de-renda"],
-  ["Certidões do vendedor", "/analise-de-vendedor"],
-  ["Auditoria de importação", "/servicos/auditoria-de-importacao"],
-  ["Revisão de contas de luz", "/servicos/revisao-contas-de-luz"],
-  ["Consulta de imóveis", "/servicos/consulta-de-imoveis"],
-  ["Auditoria de glosas · Em desenvolvimento", "/servicos/auditoria-de-glosas"],
-  ["Laudos de exames", "/servicos/laudos-de-exames"],
-  ["Laudos de processos judiciais", "/servicos/laudos-de-processos-judiciais"],
-];
+
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -60,7 +46,7 @@ export function SiteHeader() {
         <details ref={solutionsRef} className={styles.solutions}>
           <summary>Soluções <span aria-hidden="true">⌄</span></summary>
           <div className={styles.solutionsPanel}>
-            <ul>{solutions.map(([label, href]) => <li key={href}><Link href={href} aria-current={pathname === href ? "page" : undefined}>{label}</Link></li>)}</ul>
+            <div className={styles.solutionGroups}>{serviceGroups.map(group => <section className={styles.solutionGroup} key={group.id} aria-labelledby={`menu-${group.id}`}><h3 id={`menu-${group.id}`}>{group.name}</h3><ul>{group.services.map(({ name, href, status }) => <li key={href}><Link href={href} aria-current={pathname === href ? "page" : undefined}><span>{name}</span>{status && <small>{status}</small>}</Link></li>)}</ul></section>)}</div>
             <Link className={styles.allSolutions} href="/central-de-servicos">Ver todas as soluções →</Link>
           </div>
         </details>
