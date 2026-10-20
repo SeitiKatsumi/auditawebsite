@@ -19,8 +19,8 @@ const questions = [
   ["O que significa emissão e baixa de processos?", "Neste serviço, significa obter uma cópia dos documentos e baixar os arquivos. Não significa abrir uma ação, emitir uma decisão judicial, encerrar ou dar baixa no processo perante o tribunal."],
   ["Será possível obter qualquer processo?", "A cobertura será informada no lançamento. Processos físicos, sistemas não integrados, documentos indisponíveis e restrições de acesso podem limitar o atendimento. Não há garantia de acesso a todos os tribunais ou a todos os autos."],
   ["E os processos em segredo de justiça?", "O serviço deverá respeitar as restrições de acesso e as autorizações exigidas. Informar um número de processo não concede acesso a documentos sigilosos."],
-  ["Qual será o preço e o prazo?", "Valores, formas de contratação e prazos ainda serão definidos. As condições deverão ser apresentadas antes da confirmação de cada solicitação."],
-  ["A cópia inclui uma análise jurídica?", "A proposta deste serviço é a obtenção dos documentos disponíveis. Pareceres, cálculos e análises jurídicas não estão incluídos automaticamente e dependerão de contratação e escopo próprios."],
+  ["Qual será o preço e o prazo?", "A emissão avulsa será de R$ 49,90 por processo. Os planos mensais previstos vão de R$ 120,00 por 3 processos a R$ 2.500,00 por 100 processos. Confira a tabela de preços nesta página. Os prazos e as condições de contratação serão apresentados no lançamento, antes da confirmação do pedido."],
+  ["A cópia inclui uma análise jurídica?", "A oferta prevista inclui Inteiro Teor e Certidão de Objeto e Pé com análise e auditoria automatizadas por IA, conforme a disponibilidade e o acesso aos documentos na origem. Essa análise documental não substitui um parecer jurídico. Pareceres profissionais e cálculos dependerão de escopo próprio."],
 ];
 
 export default function ProcessosPage() {
@@ -31,7 +31,7 @@ export default function ProcessosPage() {
         <p className={s.lead}>Emissão e download de cópias de processos judiciais em PDF, a partir do número do processo.</p>
         <p>Estamos preparando um caminho mais simples para reunir os autos disponíveis, consultar as peças e organizar os documentos de que você precisa.</p>
         <div className={s.actions}><a className={s.button} href="#como-funciona">Conheça o futuro serviço <span aria-hidden="true">→</span></a><a href="#documentos">Veja os documentos previstos ↓</a></div>
-        <p className={s.note}>Solicitações ainda não abertas. Cobertura, preços e prazos serão informados no lançamento.</p>
+        <p className={s.note}>Solicitações ainda não abertas. <a href="#planos">Confira os preços previstos ↓</a> Cobertura e prazos serão informados no lançamento.</p>
       </div>
       <div className={s.preview} aria-label="Ilustração do futuro serviço, sem consulta disponível">
         <div className={s.previewTop}><strong>IA AUDITA / PROCESSOS</strong><span>Prévia ilustrativa</span></div>
@@ -60,6 +60,26 @@ export default function ProcessosPage() {
     ].map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
 
     <section className={`${s.section} ${s.tint}`}><div className={`${s.wrap} ${s.split}`}><div><p className={s.kicker}>Disponibilidade e acesso</p><h2>Cada tribunal.<br/><em>Cada condição de acesso.</em></h2></div><div><p>A cobertura dos sistemas judiciais será divulgada após os testes de integração. O acesso a cada documento dependerá da disponibilidade na origem e das permissões exigidas.</p><p><strong>“Baixa”, aqui, significa download dos arquivos.</strong> A solicitação de uma cópia não altera a situação do processo nem realiza qualquer protocolo no tribunal.</p><p className={s.note}>A IA Audita é uma iniciativa privada. Este serviço não é um portal oficial do Poder Judiciário e não substitui os canais dos tribunais.</p></div></div></section>
+
+    <section className={`${s.section} ${s.tint}`} id="planos"><div className={s.wrap}>
+      <p className={s.kicker}>Preços e planos</p>
+      <h2>Um processo ou uma rotina inteira.<br/><em>Escolha pelo seu volume.</em></h2>
+      <p className={s.intro}>Todos os planos preveem Inteiro Teor + Certidão de Objeto e Pé, analisados e auditados via IA, conforme a disponibilidade dos documentos e as permissões de acesso.</p>
+      <div className={s.singlePrice}><div><span className={s.badge}>Emissão avulsa</span><h3>Para uma solicitação pontual</h3></div><div><strong>R$ 49,90</strong><span> / processo</span></div></div>
+      <div className={s.plans}>{[
+        { name: "Start Audita", count: 3, unit: "40", total: "120,00" },
+        { name: "Pro Audita", count: 10, unit: "35", total: "350,00" },
+        { name: "Corporate Audita", count: 30, unit: "30", total: "900,00" },
+        { name: "Enterprise Audita", count: 100, unit: "25", total: "2.500,00" },
+      ].map(plan => <article key={plan.name} className={plan.name === "Pro Audita" ? s.featuredPlan : undefined}>
+        {plan.name === "Pro Audita" && <span className={s.planHighlight}>Em destaque</span>}
+        <h3>{plan.name}</h3><p>{plan.count} processos / mês</p>
+        <div className={s.unitPrice}><strong>R$ {plan.unit}</strong><span> / processo</span></div>
+        <div className={s.planTotal}>Total: R$ {plan.total}<span> / mês</span></div>
+        <ul><li>Inteiro Teor</li><li>Certidão de Objeto e Pé</li><li>Análise e auditoria via IA</li></ul>
+      </article>)}</div>
+      <p className={s.note}>Valores previstos para o lançamento. Serviço em desenvolvimento, ainda sem contratação disponível. Cobertura, prazos e regras dos planos serão informados antes da abertura das solicitações.</p>
+    </div></section>
 
     <section className={s.section}><div className={s.wrap}><p className={s.kicker}>Perguntas frequentes</p><h2>Antes de solicitar,<br/><em>entenda o serviço.</em></h2><div className={s.faq}>{questions.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></div></section>
     <section className={s.closing}><div className={s.wrap}><span className={s.badge}>Em breve na IA Audita</span><h2>Mais acesso à informação.<br/><em>Mais contexto para decidir.</em></h2><p>Enquanto preparamos este serviço, conheça as demais soluções da IA Audita.</p><Link className={s.button} href="/central-de-servicos">Explorar a Central de serviços <span aria-hidden="true">→</span></Link></div></section>
