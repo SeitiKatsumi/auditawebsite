@@ -40,14 +40,15 @@ export default async function ServiceLanding({ params }: { params: Promise<{ slu
   if (CustomPage) return <CustomPage page={page} />;
   const appUrl = `https://app.auditainteligente.com.br/#${page.appHash}`;
   const isExam = slug === "laudos-de-exames";
-  return <main className={`${styles.page} ${isExam ? styles.examDark : ""}`}>
+  const isProperty = slug === "consulta-de-imoveis";
+  return <main className={`${styles.page} ${isExam ? styles.examDark : ""} ${isProperty ? styles.propertyDark : ""}`}>
     <section className={styles.hero}>
       {isExam && <Image className={styles.examPhoto} src="/images/services/ir-hero.webp" alt="Cena ilustrativa de uma mulher idosa conversando com uma familiar." fill priority sizes="100vw"/>}
       <div className={styles.wrap}>
         <nav className={styles.breadcrumb} aria-label="Você está aqui"><Link href="/">Início</Link><span aria-hidden="true">/</span><Link href="/#servicos">Soluções</Link><span aria-hidden="true">/</span><span>{page.category}</span></nav>
         <div className={styles.heroGrid}>
           <div><p className={styles.eyebrow}>{page.eyebrow}</p>{page.status && <p className={styles.status}>{page.status}</p>}<h1>{page.headline}<br/><em>{page.accent}</em></h1><p className={styles.lead}>{page.description}</p><div className={styles.actions}><a className={styles.button} href={appUrl}>{page.cta}<span aria-hidden="true">↗</span></a><a className={styles.textLink} href="#como-funciona">Entenda como funciona ↓</a></div><p className={styles.micro}>Informação organizada. Próximos passos mais claros.</p></div>
-          {!isExam && <div className={styles.heroVisual}><Image src={page.image} alt={page.imageAlt} width={800} height={800} priority sizes="(max-width: 760px) 90vw, 42vw"/><p>{page.insight}</p></div>}
+          {!isExam && <div className={styles.heroVisual}>{isProperty ? <div className={styles.propertyMark} role="img" aria-label="IA Audita"/> : <Image src={page.image} alt={page.imageAlt} width={800} height={800} priority sizes="(max-width: 760px) 90vw, 42vw"/>}<p>{page.insight}</p></div>}
         </div>
       </div>
     </section>

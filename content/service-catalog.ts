@@ -16,7 +16,7 @@ export const serviceGroups: { id: string; name: string; icon: string; text: stri
   ] },
   { id: "imoveis", name: "Imóveis", icon: "house", text: "Mais contexto antes de comprar, consultar ou alugar.", services: [
     { name: "Análise do vendedor de imóvel", text: "Reúna certidões e documentos para conhecer quem está vendendo e identificar pontos de atenção antes de fechar negócio.", href: "/analise-de-vendedor" },
-    { name: "Consulta de imóveis", text: "Conheça os canais de pesquisa de informações imobiliárias e o escopo das consultas em validação.", href: "/servicos/consulta-de-imoveis", status: "Em homologação" },
+    { name: "Consulta Certidões do Imóvel", text: "Conheça os canais de pesquisa de informações imobiliárias e o escopo das consultas em validação.", href: "/servicos/consulta-de-imoveis", status: "Em homologação" },
     ...approaches.filter(p => p.slug === "analise-para-locacao").map(p => ({ name: p.title, text: p.description, href: `/servicos/${p.slug}` })),
   ] },
   { id: "negocios", name: "Pessoas e negócios", icon: "briefcase", text: "Documentos e registros para decisões sobre sociedades, contratos e parceiros.", services: approaches.filter(p => p.slug !== "analise-para-locacao").map(p => ({ name: p.title, text: p.description, href: `/servicos/${p.slug}` })) },

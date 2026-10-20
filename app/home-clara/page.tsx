@@ -32,8 +32,8 @@ const groups = [
   { title: "Energia", label: "Conta de luz: revisão de cobranças", icon: "file-earmark-text", services: [
     { name: "Auditoria de contas de luz", text: "Conferência de consumo, tarifas, tributos e somas das faturas de residências e empresas. Histórico organizado e requerimento para avaliação pela distribuidora, sem envio automático ou garantia de restituição.", href: "/servicos/revisao-contas-de-luz", action: "Conhecer a auditoria de contas de luz" },
   ] },
-  { title: "Imóveis", label: "Consulta de imóveis", icon: "house", services: [
-    { name: "Consulta de imóveis", text: "Um ponto de partida para acessar informações imobiliárias. Canais e cobertura estão em validação; conheça as opções de pesquisa e as condições de disponibilidade.", status: "Em homologação", href: "/servicos/consulta-de-imoveis", action: "Conhecer a consulta de imóveis" },
+  { title: "Imóveis", label: "Consulta Certidões do Imóvel", icon: "house", services: [
+    { name: "Consulta Certidões do Imóvel", text: "Um ponto de partida para acessar informações imobiliárias. Canais e cobertura estão em validação; conheça as opções de pesquisa e as condições de disponibilidade.", status: "Em homologação", href: "/servicos/consulta-de-imoveis", action: "Consultar certidões do imóvel" },
   ] },
   { title: "Saúde e faturamento", label: "Auditoria de glosas", icon: "file-earmark-text", services: [
     { name: "Auditoria de glosas com IA", text: "Conferência de demonstrativos, faturamento, contratos e autorizações para entender divergências, organizar evidências e preparar relatórios e minutas de contestação para revisão.", status: "Em desenvolvimento", href: "/servicos/auditoria-de-glosas", action: "Conhecer a auditoria de glosas" },

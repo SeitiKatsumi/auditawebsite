@@ -24,7 +24,7 @@ export function SiteHeader() {
     document.addEventListener("pointerdown", closeOutside);
     return () => document.removeEventListener("pointerdown", closeOutside);
   }, []);
-  const photoService = ["emissao-de-certidoes", "emissao-processos-judiciais", "auditoria-de-glosas", "auxilio-acidente", "audita-kids", "dividas-bancarias", "pis-pasep", "isencao-imposto-de-renda", "auditoria-de-importacao", "revisao-contas-de-luz", "laudos-de-processos-judiciais", "laudos-de-exames", ...sellerApproaches.map(({ slug }) => slug)].some(slug => pathname === `/servicos/${slug}`);
+  const photoService = ["consulta-de-imoveis", "emissao-de-certidoes", "emissao-processos-judiciais", "auditoria-de-glosas", "auxilio-acidente", "audita-kids", "dividas-bancarias", "pis-pasep", "isencao-imposto-de-renda", "auditoria-de-importacao", "revisao-contas-de-luz", "laudos-de-processos-judiciais", "laudos-de-exames", ...sellerApproaches.map(({ slug }) => slug)].some(slug => pathname === `/servicos/${slug}`);
   const isHome = pathname === "/" || pathname === "/home-clara";
   const light = pathname.startsWith("/servicos/") && !photoService;
   return <header className={`${styles.header} ${light ? styles.light : ""}`} onKeyDown={(event) => {
