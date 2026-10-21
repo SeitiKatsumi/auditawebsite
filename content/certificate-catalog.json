@@ -1,0 +1,632 @@
+[
+  {
+    "name": "Tribunais estaduais",
+    "items": [
+      {
+        "name": "AP · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "AP · Criminal",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "DF · Criminal",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "DF · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "DF · Falência e Recuperação Judicial",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "DF · Especial (Cível e Criminal)",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "ES · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "ES · Criminal",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "ES · Família",
+        "detail": "CPF"
+      },
+      {
+        "name": "ES · Fiscal",
+        "detail": "CPF"
+      },
+      {
+        "name": "ES · Militar",
+        "detail": "CPF"
+      },
+      {
+        "name": "ES · Falência e recuperação judicial",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "GO · Cível",
+        "detail": "CPF"
+      },
+      {
+        "name": "GO · Criminal",
+        "detail": "CPF"
+      },
+      {
+        "name": "PA · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "PA · Criminal",
+        "detail": "CPF"
+      },
+      {
+        "name": "PE · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "PE · Criminal",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "PE · Judicial para fins eleitorais",
+        "detail": "CPF"
+      },
+      {
+        "name": "PI · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "PI · Criminal",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "PI · Judicial para fins eleitorais",
+        "detail": "CPF"
+      },
+      {
+        "name": "RR · Criminal",
+        "detail": "CPF"
+      },
+      {
+        "name": "RR · Militar",
+        "detail": "CPF"
+      },
+      {
+        "name": "RR · Concordata e Falências",
+        "detail": "CPF"
+      },
+      {
+        "name": "RS · Alvará de folha corrida",
+        "detail": "CPF"
+      },
+      {
+        "name": "TO · Cível",
+        "detail": "CPF"
+      },
+      {
+        "name": "TO · Criminal",
+        "detail": "CPF"
+      },
+      {
+        "name": "TO · Falência e recuperação judicial",
+        "detail": "CPF"
+      },
+      {
+        "name": "TO · Fiscal",
+        "detail": "CPF"
+      },
+      {
+        "name": "AP · Falência e recuperação judicial",
+        "detail": "CNPJ"
+      },
+      {
+        "name": "BA · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "BA · Criminal",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "BA · Falência e recuperação judicial",
+        "detail": "CNPJ"
+      },
+      {
+        "name": "MT · Criminal",
+        "detail": "CPF"
+      },
+      {
+        "name": "RS · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "SE · Cível",
+        "detail": "CPF / CNPJ"
+      },
+      {
+        "name": "SE · Criminal",
+        "detail": "CPF"
+      }
+    ]
+  },
+  {
+    "name": "Fiscal federal",
+    "items": [
+      {
+        "name": "PGFN — Lista de devedores da União (com PDF)",
+        "detail": "CPF / CNPJ · Nacional · Consulta com comprovante"
+      }
+    ]
+  },
+  {
+    "name": "Trabalhista",
+    "items": [
+      {
+        "name": "CNDT — Débitos trabalhistas",
+        "detail": "CPF · Nacional · Certidão"
+      },
+      {
+        "name": "TRT2 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT2 · Certidão"
+      },
+      {
+        "name": "TRT1 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT1 · Certidão"
+      },
+      {
+        "name": "TRT10 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT10 · Certidão"
+      },
+      {
+        "name": "TRT11 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT11 · Certidão"
+      },
+      {
+        "name": "TRT12 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT12 · Certidão"
+      },
+      {
+        "name": "TRT13 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT13 · Certidão"
+      },
+      {
+        "name": "TRT14 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT14 · Certidão"
+      },
+      {
+        "name": "TRT15 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT15 · Certidão"
+      },
+      {
+        "name": "TRT16 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT16 · Certidão"
+      },
+      {
+        "name": "TRT17 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT17 · Certidão"
+      },
+      {
+        "name": "TRT19 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT19 · Certidão"
+      },
+      {
+        "name": "TRT2 — Ações trabalhistas em processos físicos",
+        "detail": "CPF · TRT2 · Certidão"
+      },
+      {
+        "name": "TRT20 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT20 · Certidão"
+      },
+      {
+        "name": "TRT22 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT22 · Certidão"
+      },
+      {
+        "name": "TRT23 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT23 · Certidão"
+      },
+      {
+        "name": "TRT24 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT24 · Certidão"
+      },
+      {
+        "name": "TRT3 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT3 · Certidão"
+      },
+      {
+        "name": "TRT4 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT4 · Certidão"
+      },
+      {
+        "name": "TRT5 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT5 · Certidão"
+      },
+      {
+        "name": "TRT6 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT6 · Certidão"
+      },
+      {
+        "name": "TRT7 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT7 · Certidão"
+      },
+      {
+        "name": "TRT7 — Ações trabalhistas em processos físicos",
+        "detail": "CPF · TRT7 · Certidão"
+      },
+      {
+        "name": "TRT8 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT8 · Certidão"
+      },
+      {
+        "name": "TRT9 — Ações trabalhistas no PJe",
+        "detail": "CPF · TRT9 · Certidão"
+      }
+    ]
+  },
+  {
+    "name": "Protestos",
+    "items": [
+      {
+        "name": "Protestos nacionais — IEPTB Online",
+        "detail": "CPF / CNPJ · Nacional · Consulta de dados"
+      }
+    ]
+  },
+  {
+    "name": "Crédito",
+    "items": [
+      {
+        "name": "Dossiê de crédito completo — QUOD",
+        "detail": "CPF / CNPJ · Nacional · Consulta de dados"
+      },
+      {
+        "name": "Pendências de crédito — QUOD",
+        "detail": "CPF · Nacional · Consulta de dados"
+      }
+    ]
+  },
+  {
+    "name": "Fiscal estadual",
+    "items": [
+      {
+        "name": "AC — Débitos estaduais — SEFAZ",
+        "detail": "CPF · AC · Certidão"
+      },
+      {
+        "name": "AM — Débitos estaduais — SEFAZ e PGE",
+        "detail": "CPF · AM · Certidão"
+      },
+      {
+        "name": "AP — Tributos estaduais e dívida ativa",
+        "detail": "CPF · AP · Certidão"
+      },
+      {
+        "name": "BA — Débitos tributários estaduais",
+        "detail": "CPF · BA · Certidão"
+      },
+      {
+        "name": "CE — Débitos estaduais — CADINE",
+        "detail": "CPF · CE · Certidão"
+      },
+      {
+        "name": "ES — Débitos com a Fazenda estadual",
+        "detail": "CPF · ES · Certidão"
+      },
+      {
+        "name": "GO — Débitos inscritos em dívida ativa",
+        "detail": "CPF · GO · Certidão"
+      },
+      {
+        "name": "MA — Débitos tributários estaduais",
+        "detail": "CPF · MA · Certidão"
+      },
+      {
+        "name": "MS — Créditos tributários e não tributários",
+        "detail": "CPF · MS · Certidão"
+      },
+      {
+        "name": "MT — Débitos estaduais — SEFAZ e PGE",
+        "detail": "CPF · MT · Certidão"
+      },
+      {
+        "name": "PB — Débitos tributários e dívida ativa",
+        "detail": "CPF · PB · Certidão"
+      },
+      {
+        "name": "RJ — Regularidade fiscal — SEFAZ",
+        "detail": "CPF · RJ · Certidão"
+      },
+      {
+        "name": "RR — Obrigações e débitos tributários",
+        "detail": "CPF · RR · Certidão"
+      },
+      {
+        "name": "RS — Situação fiscal estadual",
+        "detail": "CPF · RS · Certidão"
+      },
+      {
+        "name": "SC — Débitos estaduais",
+        "detail": "CPF · SC · Certidão"
+      },
+      {
+        "name": "SP — Débitos tributários não inscritos em dívida ativa",
+        "detail": "CPF · SP · Certidão"
+      },
+      {
+        "name": "TO — Débitos inscritos em dívida ativa",
+        "detail": "CPF · TO · Certidão"
+      },
+      {
+        "name": "GO — Consulta ao CADIN",
+        "detail": "CPF · GO · Consulta com comprovante"
+      },
+      {
+        "name": "RS — Consulta ao CADIN",
+        "detail": "CPF · RS · Consulta com comprovante"
+      },
+      {
+        "name": "SP — Consulta ao CADIN",
+        "detail": "CPF · SP · Consulta com comprovante"
+      },
+      {
+        "name": "MG — Consulta estruturada ao CADIN",
+        "detail": "CPF · MG · Consulta de dados"
+      },
+      {
+        "name": "PA — Consulta estruturada ao CADIN",
+        "detail": "CPF · PA · Consulta de dados"
+      },
+      {
+        "name": "PE — Regularidade fiscal — portal SEFAZ",
+        "detail": "CPF · PE · Certidão"
+      }
+    ]
+  },
+  {
+    "name": "Justiça Federal",
+    "items": [
+      {
+        "name": "TRF1 — Cível",
+        "detail": "CPF · TRF1 · Certidão"
+      },
+      {
+        "name": "TRF1 — Criminal",
+        "detail": "CPF · TRF1 · Certidão"
+      },
+      {
+        "name": "TRF2 — Cível",
+        "detail": "CPF · TRF2 · Certidão"
+      },
+      {
+        "name": "TRF2 — Criminal",
+        "detail": "CPF · TRF2 · Certidão"
+      },
+      {
+        "name": "TRF3 — Cível",
+        "detail": "CPF · TRF3 · Certidão"
+      },
+      {
+        "name": "TRF3 — Criminal",
+        "detail": "CPF · TRF3 · Certidão"
+      },
+      {
+        "name": "TRF4 — Cível",
+        "detail": "CPF · TRF4 · Certidão"
+      },
+      {
+        "name": "TRF4 — Criminal",
+        "detail": "CPF · TRF4 · Certidão"
+      },
+      {
+        "name": "TRF5 — Cível",
+        "detail": "CPF · TRF5 · Certidão"
+      },
+      {
+        "name": "TRF5 — Criminal",
+        "detail": "CPF · TRF5 · Certidão"
+      },
+      {
+        "name": "TRF6 — Cível",
+        "detail": "CPF · TRF6 · Certidão"
+      },
+      {
+        "name": "TRF6 — Criminal",
+        "detail": "CPF · TRF6 · Certidão"
+      }
+    ]
+  },
+  {
+    "name": "Empresas",
+    "items": [
+      {
+        "name": "Vínculos empresariais por CPF",
+        "detail": "CPF · Nacional · Consulta de dados"
+      }
+    ]
+  },
+  {
+    "name": "Processos",
+    "items": [
+      {
+        "name": "Processos judiciais — visão agrupada",
+        "detail": "CPF / CNPJ · Nacional · Consulta de dados"
+      },
+      {
+        "name": "Processos judiciais — consulta detalhada",
+        "detail": "CPF / CNPJ · Nacional · Consulta de dados"
+      }
+    ]
+  },
+  {
+    "name": "Fiscal municipal",
+    "items": [
+      {
+        "name": "Aracaju-SE — Débitos municipais",
+        "detail": "CPF · Aracaju-SE · Certidão"
+      },
+      {
+        "name": "Goiânia-GO — Débitos municipais",
+        "detail": "CPF · Goiânia-GO · Certidão"
+      },
+      {
+        "name": "Lajes-RN — Débitos municipais",
+        "detail": "CPF · Lajes-RN · Certidão"
+      },
+      {
+        "name": "São Bento do Norte-RN — Débitos municipais",
+        "detail": "CPF · São Bento do Norte-RN · Certidão"
+      }
+    ]
+  },
+  {
+    "name": "Trabalhista — empresas",
+    "items": [
+      {
+        "name": "FGTS — Regularidade do empregador",
+        "detail": "CNPJ · Nacional · Certidão"
+      },
+      {
+        "name": "CNDT — Débitos trabalhistas — empresa",
+        "detail": "CNPJ · Nacional · Certidão"
+      }
+    ]
+  },
+  {
+    "name": "Fiscal estadual — empresas",
+    "items": [
+      {
+        "name": "AC — Débitos estaduais — SEFAZ — empresa",
+        "detail": "CNPJ · AC · Certidão"
+      },
+      {
+        "name": "AM — Débitos estaduais — SEFAZ e PGE — empresa",
+        "detail": "CNPJ · AM · Certidão"
+      },
+      {
+        "name": "AP — Tributos estaduais e dívida ativa — empresa",
+        "detail": "CNPJ · AP · Certidão"
+      },
+      {
+        "name": "BA — Débitos tributários estaduais — empresa",
+        "detail": "CNPJ · BA · Certidão"
+      },
+      {
+        "name": "CE — Débitos estaduais — CADINE — empresa",
+        "detail": "CNPJ · CE · Certidão"
+      },
+      {
+        "name": "ES — Débitos com a Fazenda estadual — empresa",
+        "detail": "CNPJ · ES · Certidão"
+      },
+      {
+        "name": "GO — Débitos inscritos em dívida ativa — empresa",
+        "detail": "CNPJ · GO · Certidão"
+      },
+      {
+        "name": "MS — Créditos tributários e não tributários — empresa",
+        "detail": "CNPJ · MS · Certidão"
+      },
+      {
+        "name": "MT — Débitos estaduais — SEFAZ e PGE — empresa",
+        "detail": "CNPJ · MT · Certidão"
+      },
+      {
+        "name": "PB — Débitos tributários e dívida ativa — empresa",
+        "detail": "CNPJ · PB · Certidão"
+      },
+      {
+        "name": "RR — Obrigações e débitos tributários — empresa",
+        "detail": "CNPJ · RR · Certidão"
+      },
+      {
+        "name": "SC — Débitos estaduais — empresa",
+        "detail": "CNPJ · SC · Certidão"
+      },
+      {
+        "name": "TO — Débitos inscritos em dívida ativa — empresa",
+        "detail": "CNPJ · TO · Certidão"
+      },
+      {
+        "name": "MA — Débitos tributários estaduais — empresa",
+        "detail": "CNPJ · MA · Certidão"
+      },
+      {
+        "name": "RJ — Regularidade fiscal — SEFAZ — empresa",
+        "detail": "CNPJ · RJ · Certidão"
+      },
+      {
+        "name": "RS — Situação fiscal estadual — empresa",
+        "detail": "CNPJ · RS · Certidão"
+      }
+    ]
+  },
+  {
+    "name": "Justiça Federal — empresas",
+    "items": [
+      {
+        "name": "TRF1 — Cível — empresa",
+        "detail": "CNPJ · TRF1 · Certidão"
+      },
+      {
+        "name": "TRF1 — Criminal — empresa",
+        "detail": "CNPJ · TRF1 · Certidão"
+      },
+      {
+        "name": "TRF2 — Cível — empresa",
+        "detail": "CNPJ · TRF2 · Certidão"
+      },
+      {
+        "name": "TRF2 — Criminal — empresa",
+        "detail": "CNPJ · TRF2 · Certidão"
+      },
+      {
+        "name": "TRF3 — Cível — empresa",
+        "detail": "CNPJ · TRF3 · Certidão"
+      },
+      {
+        "name": "TRF3 — Criminal — empresa",
+        "detail": "CNPJ · TRF3 · Certidão"
+      },
+      {
+        "name": "TRF4 — Cível — empresa",
+        "detail": "CNPJ · TRF4 · Certidão"
+      },
+      {
+        "name": "TRF4 — Criminal — empresa",
+        "detail": "CNPJ · TRF4 · Certidão"
+      },
+      {
+        "name": "TRF6 — Cível — empresa",
+        "detail": "CNPJ · TRF6 · Certidão"
+      },
+      {
+        "name": "TRF6 — Criminal — empresa",
+        "detail": "CNPJ · TRF6 · Certidão"
+      },
+      {
+        "name": "TRF5 — Cível — empresa",
+        "detail": "CNPJ · TRF5 · Certidão"
+      },
+      {
+        "name": "TRF5 — Criminal — empresa",
+        "detail": "CNPJ · TRF5 · Certidão"
+      }
+    ]
+  },
+  {
+    "name": "Fiscal municipal — empresas",
+    "items": [
+      {
+        "name": "São Paulo-SP — Tributos mobiliários — empresa",
+        "detail": "CNPJ · São Paulo-SP · Certidão"
+      }
+    ]
+  }
+]

@@ -29,7 +29,7 @@ export const serviceGroups: { id: string; name: string; icon: string; text: stri
     { name: "Audita Kids", text: "Uma jornada de jogos, descobertas e um álbum digital de figurinhas para aprender em família com Auditron.", href: "/servicos/audita-kids", status: "Em desenvolvimento" },
   ] },
   { id: "emissao-certidoes", name: "Emissão Certidões", icon: "file-earmark-text", text: "Documentos judiciais, fiscais e imobiliários organizados por tema e localidade.", services: [
-    { name: "Emissão de certidões", text: "Confira o catálogo, os preços e as opções de emissão de certidões, com apoio da IA à leitura documental.", href: "/servicos/emissao-de-certidoes" },
+    { name: "Emissão de certidões", text: "Confira as certidões e consultas por tema e acesse a emissão diretamente no app.", href: "/servicos/emissao-de-certidoes" },
   ] },
   { id: "emissao-processos-judiciais-nacionais", name: "Emissão e baixa Processos Judiciais", icon: "bank", text: "Cópias dos autos para consultar, organizar e encaminhar ao profissional responsável.", services: [
     { name: "Emissão e download de processos judiciais", text: "Conheça o futuro serviço para solicitar cópias dos documentos disponíveis de um processo em PDF, a partir do seu número.", href: "/servicos/emissao-processos-judiciais", status: "Em desenvolvimento" },
