@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const faq = [
-  ["Como solicitar uma certidão?", "Escolha uma opção do catálogo para acessar a emissão no app. Lá você informa o titular, seleciona os estados e confere a disponibilidade e as condições antes de confirmar."],
+  ["Como solicitar uma certidão?", "Use o botão do catálogo para acessar a emissão no app. Lá você informa o titular, seleciona os estados e confere a disponibilidade e as condições antes de confirmar."],
   ["Quais dados preciso informar?", "Os dados variam conforme a certidão e o órgão emissor. Tenha em mãos a identificação da pessoa ou empresa e confira os campos solicitados na plataforma. Para documentos imobiliários, podem ser necessários a matrícula e o cartório responsável."],
   ["A IA Audita é o órgão emissor?", "Não. A IA Audita reúne o acesso aos serviços e apoia a organização e a leitura dos documentos. A emissão oficial e as informações certificadas pertencem ao órgão ou cartório responsável."],
   ["Todas as certidões têm cobertura nacional?", "A abrangência depende de cada fonte. O catálogo nesta página identifica os estados atendidos em cada opção. Confira a localidade e o tipo de documento antes de solicitar."],
@@ -24,7 +24,7 @@ export default function CertidoesPage() {
     <section className={s.hero}><div className={`${s.wrap} ${s.heroGrid}`}>
       <div><p className={s.kicker}>IA Audita · Emissão de certidões</p>
         <h1>As certidões certas.<br/><em>Mais clareza antes de decidir.</em></h1>
-        <p className={s.lead}>Emita certidões, organize os documentos e conte com o apoio da inteligência artificial para identificar pontos de atenção.</p>
+        <p className={s.lead}>Solicite certidões oficiais para CPF e CNPJ e organize a análise de passivos judiciais com o apoio da inteligência artificial.</p>
         <p>Consulte as opções por tema e localidade. Da distribuição judicial à regularidade fiscal, encontre o documento adequado à sua necessidade.</p>
         <div className={s.actions}><a className={s.button} href={appUrl}>Acessar plataforma <span aria-hidden="true">↗</span></a><a href="#catalogo">Ver todas as opções ↓</a></div>
         <p className={s.note}>Disponibilidade, dados exigidos e prazo de emissão dependem da fonte consultada. Confira as condições na plataforma.</p>
@@ -53,13 +53,23 @@ export default function CertidoesPage() {
       <div className={c.catalogAction}><a className={s.button} href={appUrl}>Emitir certidões no app ↗</a></div>
     </div></section>
 
-    <section className={`${s.section} ${s.tint}`}><div className={`${s.wrap} ${s.split}`}>
-      <div><p className={s.kicker}>Inteligência artificial integrada</p><h2>Além de reunir.<br/><em>Entender o documento.</em></h2><p>A proposta da IA Audita é conectar a emissão à leitura das certidões, organizando informações relevantes antes de uma contratação ou negociação.</p></div>
-      <div className={s.audiences}>{[
-        ["Identificação de apontamentos", "Destaque para ocorrências e pendências registradas no documento, com atenção à fonte e à abrangência da consulta."],
-        ["Conferência das informações", "Apoio à verificação dos dados identificadores, das datas e de possíveis divergências que precisem de revisão."],
-        ["Contexto para o próximo passo", "Organização dos achados para orientar a conferência com o órgão emissor ou o profissional responsável."],
-      ].map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
+    <section className={s.section + ' ' + s.tint} id="analise"><div className={s.wrap}>
+      <p className={s.kicker}>Da solicitação à análise</p><h2>Documentos oficiais.<br/><em>Informações para decidir.</em></h2>
+      <div className={c.steps}>{[
+        ["01", "Solicite no app", "Informe o titular, escolha as certidões e selecione as localidades necessárias."],
+        ["02", "Receba da fonte", "O órgão responsável emite a certidão conforme seus registros, requisitos e disponibilidade."],
+        ["03", "Analise com IA", "Após a coleta, assinantes IA podem solicitar a leitura dos documentos e organizar os pontos de atenção."],
+      ].map(([number,title,text])=><article key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+      <div className={c.analysisIntro}><h3>Análise de passivos para CPF e CNPJ</h3><p>Mais do que identificar uma ocorrência, entenda as informações disponíveis sobre o processo. A profundidade da análise depende do conteúdo das certidões e das peças fornecidas.</p></div>
+      <div className={c.insights}>{[
+        ["Fase e contexto do processo", "Organize as partes, a natureza da ação e a fase registrada nos documentos, como conhecimento, execução ou recurso."],
+        ["Valores e exposição financeira", "Diferencie o valor da causa dos valores de condenação, bloqueio ou penhora, quando essas informações constarem nos autos."],
+        ["Vínculos e divergências", "Compare nomes, CPF ou CNPJ e a participação da pessoa ou empresa nos documentos para destacar divergências que precisam de conferência."],
+        ["Resumo dos pontos de atenção", "Reúna ocorrências, fontes e lacunas em uma leitura organizada para apoiar a revisão documental e o próximo passo."],
+      ].map(([title,text])=><article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
+      <div className={c.context}><details><summary>Cobertura por ramo e localidade</summary><p>O catálogo reúne opções da Justiça Estadual, da Justiça Federal e da Justiça do Trabalho, além de consultas fiscais, de protestos e de crédito. A disponibilidade varia por CPF ou CNPJ, tribunal, estado e município; confira as opções atuais no app.</p><p>Uma consulta não cobre automaticamente todos os tribunais, comarcas ou tipos de ação. A abrangência e as ressalvas de cada documento orientam sua leitura.</p></details>
+      <details><summary>Em quais decisões os documentos ajudam?</summary><p>Organização documental para negociações imobiliárias, avaliação de fornecedores, contratação de parceiros, operações de crédito e análise de empresas. Escolha as fontes de acordo com a pessoa, a empresa e a finalidade da consulta.</p></details>
+      <details><summary>Origem, autenticidade e atualização</summary><p>A certidão oficial é emitida pelo órgão responsável. Confira a data, o titular, a abrangência e o código de validação, quando disponível. Consultas de dados e comprovantes são identificados separadamente no catálogo.</p><p>A análise retrata os documentos consultados: não garante ausência de passivos, resultado judicial nem monitoramento contínuo. Novas ocorrências exigem nova consulta.</p></details></div>
     </div></section>
 
     <section className={`${s.section} ${s.tint}`}><div className={s.wrap}><p className={s.kicker}>Perguntas frequentes</p><h2>Antes da emissão,<br/><em>confira os detalhes.</em></h2><div className={s.faq}>{faq.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></div></section>
