@@ -8,11 +8,8 @@ import { CertificateCoverage } from "../../components/audita/CertificateCoverage
 export const metadata: Metadata = { title: "Uma nova visão | IA Audita", robots: { index: false, follow: false }, alternates: { canonical: "/home-clara" } };
 const app = "https://app.auditainteligente.com.br/";
 const groups = [
-  { title: "Audita Kids", label: "Aventura · Aprendizado · Família", icon: "house", services: [
-    { name: "Audita Kids — A jornada dos detetives", text: "Um universo planejado de jogos, descobertas pelo mundo, missões ambientais e figurinhas para aprender em família com Auditron.", status: "Em desenvolvimento", href: "/servicos/audita-kids", action: "Conhecer o Audita Kids" },
-  ] },
-  { title: "Assistente IA", label: "Conversas · Documentos · Resumos", icon: "chat-left-text", services: [
-    { name: "Assistente IA Audita", text: "Converse, organize ideias e trabalhe com documentos. Apoio à leitura de PDFs e imagens, resumos, traduções, textos e identificação de cláusulas, datas e valores. Confira sempre as respostas geradas.", href: `${app}chat`, action: "Conhecer o assistente" },
+  { title: "Inteligência artificial", label: "Conversas · Documentos · Resumos", icon: "chat-left-text", services: [
+    { name: "Inteligência artificial Audita", text: "Converse, organize ideias e trabalhe com documentos. Apoio à leitura de PDFs e imagens, resumos, traduções, textos e identificação de cláusulas, datas e valores. Confira sempre as respostas geradas.", href: `${app}chat`, action: "Conhecer o assistente" },
   ] },
   { title: "Bancário", label: "Cobranças indevidas · Dívidas bancárias", icon: "bank", services: [
     { name: "Análise de cobranças indevidas", text: "Leitura de faturas e extratos para localizar seguros e tarifas não reconhecidos, organizar valores e documentos e preparar um relatório técnico em PDF. Conheça o escopo da análise para cartões e contas Itaú.", href: "/analise-cobrancas-indevidas", action: "Conhecer a análise de cobranças" },
@@ -24,7 +21,7 @@ const groups = [
     { name: "Isenção e restituição de IR", text: "Organização de laudos e comprovantes para avaliar a possibilidade de isenção por moléstia grave para aposentados, pensionistas e militares na reserva ou reforma. Requisitos e períodos de restituição dependem de análise profissional.", href: "/servicos/isencao-imposto-de-renda", action: "Conhecer o serviço" },
   ] },
   { title: "Certidões", label: "CPF e CNPJ · Estados e Brasil inteiro", icon: "file-earmark-text", services: [
-    { name: "Certidões e análise documental", text: "Consulte documentos de pessoas físicas e empresas em um estado, vários estados ou no pacote Brasil inteiro. Reúna as certidões disponíveis e avance para a análise documental conforme o escopo escolhido no aplicativo.", href: "/analise-de-vendedor", action: "Conhecer a análise de vendedor" },
+    { name: "Certidões e análise documental", text: "Consulte documentos de pessoas físicas e empresas em um estado, vários estados ou no pacote Brasil inteiro. Reúna as certidões disponíveis e avance para a análise documental conforme o escopo escolhido no aplicativo.", href: "/servicos/emissao-de-certidoes", action: "Conhecer a emissão de certidões" },
   ] },
   { title: "Imposto de Importação", label: "Auditoria do Imposto de Importação", icon: "briefcase", services: [
     { name: "Auditoria do Imposto de Importação", text: "Conferência de Invoice, Packing List e fichas técnicas, sugestões de NCM/TIPI e pesquisa de possíveis benefícios. Simulação de II e IPI com revisão humana, sem registro de DI/Duimp nem garantia de economia.", status: "Recebimento de documentos ainda não habilitado", href: "/servicos/auditoria-de-importacao", action: "Conhecer a auditoria de importação" },
@@ -41,6 +38,9 @@ const groups = [
   { title: "Laudos", label: "Análise de exames · Atualização de processos judiciais", icon: "file-earmark-text", services: [
     { name: "Laudo para análise de exames", text: "Informações sobre o serviço de análise de exames. O módulo ainda não recebe arquivos ou solicitações.", status: "Em desenvolvimento", href: "/servicos/laudos-de-exames", action: "Conhecer o serviço" },
     { name: "Laudo para atualização de processos judiciais", text: "Informações sobre laudos para processos judiciais. O módulo ainda não recebe arquivos ou solicitações.", status: "", href: "/servicos/laudos-de-processos-judiciais", action: "Conhecer o serviço" },
+  ] },
+  { title: "Educação e descobertas", label: "Aventura · Aprendizado · Família", icon: "house", services: [
+    { name: "Audita Kids — A jornada dos detetives", text: "Um universo planejado de jogos, descobertas pelo mundo, missões ambientais e figurinhas para aprender em família com Auditron.", status: "Em desenvolvimento", href: "/servicos/audita-kids", action: "Conhecer o Audita Kids" },
   ] },
 ];
 // CNC/Peic, agosto de 2026: percentual entre famílias endividadas, não entre todas as famílias.

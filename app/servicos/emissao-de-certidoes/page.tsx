@@ -3,6 +3,7 @@ import Link from "next/link";
 import s from "../emissao-processos-judiciais/page.module.css";
 import c from "./page.module.css";
 import catalog from "../../../content/certificate-catalog.json";
+const nationalUrl = "https://app.auditainteligente.com.br/#certidao-nacional";
 const appUrl = "https://app.auditainteligente.com.br/#emissao-certidoes";
 
 export const metadata: Metadata = {
@@ -24,21 +25,14 @@ export default function CertidoesPage() {
     <section className={s.hero}><div className={`${s.wrap} ${s.heroGrid}`}>
       <div><p className={s.kicker}>IA Audita · Emissão de certidões</p>
         <h1>As certidões certas.<br/><em>Mais clareza antes de decidir.</em></h1>
-        <p className={s.lead}>Solicite certidões oficiais para CPF e CNPJ e organize a análise de passivos judiciais com o apoio da inteligência artificial.</p>
+        <p className={s.lead}>Consulte processos judiciais em âmbito nacional ou solicite certidões diversas por CPF e CNPJ. Escolha o caminho adequado à sua necessidade.</p>
         <p>Consulte as opções por tema e localidade. Da distribuição judicial à regularidade fiscal, encontre o documento adequado à sua necessidade.</p>
-        <div className={s.actions}><a className={s.button} href={appUrl}>Acessar plataforma <span aria-hidden="true">↗</span></a><a href="#catalogo">Ver todas as opções ↓</a></div>
+        <div className={s.actions}><a href="#catalogo">Ver o catálogo de certidões ↓</a></div>
         <p className={s.note}>Disponibilidade, dados exigidos e prazo de emissão dependem da fonte consultada. Confira as condições na plataforma.</p>
       </div>
-      <div className={s.preview} aria-label="Resumo do catálogo de certidões">
-        <div className={s.previewTop}><strong>IA AUDITA / CERTIDÕES</strong><span>Documentos para sua decisão</span></div>
-        <p className={s.kicker}>Emissão + leitura documental</p><h2>Da certidão<br/><em>ao ponto de atenção.</em></h2>
-        <div className={s.files}>{[
-          ["01", "Escolha a certidão", "Tipo de documento e localidade"],
-          ["02", "Confira os dados", "Identificação de quem será consultado"],
-          ["03", "Acesse o documento", "Emissão conforme a disponibilidade da fonte"],
-          ["04", "Entenda os apontamentos", "Apoio da IA à análise documental"],
-        ].map(([number, title, text]) => <div key={number}><span className={s.fileIcon}>{number}</span><div><strong>{title}</strong><small>{text}</small></div></div>)}</div>
-        <p className={s.note}>Selecione certidões e consultas no app. Após a coleta, assinantes IA podem solicitar uma análise personalizada dos documentos.</p>
+      <div className={c.entryOptions} aria-label="Escolha o serviço">
+        <article><p className={s.kicker}>Consulta nacional de processos</p><h2>Certidão Nacional dos processos judiciais em todos Tribunais do Brasil por CPF e CNPJ</h2><p>Pesquise processos vinculados a uma pessoa ou empresa e escolha entre a visão agrupada e a consulta detalhada dos registros disponíveis.</p><a className={s.button} href={nationalUrl}>Consultar processos nacionais ↗</a></article>
+        <article><p className={s.kicker}>Emissão de certidões diversas</p><h2>Certidões por CPF e CNPJ</h2><p>Selecione as certidões disponíveis por tema e localidade e obtenha os documentos emitidos, com opção de análise pela IA Audita.</p><p className={c.entryNote}>A emissão e a abrangência dependem do órgão e da fonte selecionada. Após a coleta, assinantes IA podem solicitar a análise dos documentos.</p><a className={s.button} href={appUrl}>Emitir certidões diversas ↗</a></article>
       </div>
     </div></section>
 
@@ -73,6 +67,6 @@ export default function CertidoesPage() {
     </div></section>
 
     <section className={`${s.section} ${s.tint}`}><div className={s.wrap}><p className={s.kicker}>Perguntas frequentes</p><h2>Antes da emissão,<br/><em>confira os detalhes.</em></h2><div className={s.faq}>{faq.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></div></section>
-    <section className={s.closing}><div className={s.wrap}><p className={s.kicker}>Emissão de certidões · IA Audita</p><h2>Seu próximo passo começa<br/><em>com a informação certa.</em></h2><p>Acesse a plataforma para conferir as opções de emissão e os dados necessários.</p><div className={c.closingActions}><a className={s.button} href={appUrl}>Acessar plataforma ↗</a><Link href="/central-de-servicos">Ver todos os serviços →</Link></div></div></section>
+    <section className={s.closing}><div className={s.wrap}><p className={s.kicker}>Emissão de certidões · IA Audita</p><h2>Seu próximo passo começa<br/><em>com a informação certa.</em></h2><p>Escolha entre a consulta nacional de processos e a emissão de certidões diversas.</p><div className={c.closingActions}><a className={s.button} href={nationalUrl}>Consultar processos nacionais ↗</a><a className={s.button} href={appUrl}>Emitir certidões diversas ↗</a><Link href="/central-de-servicos">Ver todos os serviços →</Link></div></div></section>
   </main>;
 }
